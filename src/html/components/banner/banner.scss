@@ -1,0 +1,100 @@
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 170px;
+
+  &__wrap {
+    // position: relative;
+    padding-top: 60px;
+  }
+
+  &__block {
+    &-lg {
+      flex: 1 1 1100px;
+    }
+
+    &-sm {
+      flex: 1 1 415px;
+      margin-left: 55px;
+    }
+  }
+
+  &__bg-img {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url("../../../img/banner/fone.png");
+    background-repeat: no-repeat;
+    background-position: center 100px;
+    opacity: 0.8;
+    // background-size: cover;
+    // height: 1300px;
+  }
+
+  &__small {
+    position: relative;
+    max-width: 415px;
+    max-height: 245px;
+
+    &:first-child {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__large {
+    max-width: 1100px;
+    height: 100%;
+  }
+
+  &__link {
+    display: block;
+    height: 100%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: inherit;
+  }
+
+  //   .figure {
+  //     width: 0;
+  //     height: 0;
+  //     border-right: 117px solid $banner-figure-orange;
+  //     border-top: 112px solid transparent;
+  //     position: absolute;
+  //     bottom: 0;
+  //     right: 0;
+  //     // background-color: rgb(255, 105, 0);
+  //     z-index: 1;
+  //   }
+
+  //   .sale {
+  //     position: absolute;
+  //     bottom: 20px;
+  //     right: 8px;
+  //     z-index: 2;
+  //     font-size: 32px;
+  //     font-family: $main-font;
+  //     color: $white;
+  //     font-weight: bold;
+
+  //     &::before {
+  //       content: "-";
+  //       margin-right: 5px;
+  //     }
+  //   }
+
+  &__advanteg {
+    position: absolute;
+    width: 56%;
+    bottom: -18%;
+    left: 7%;
+  }
+}

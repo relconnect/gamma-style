@@ -1,0 +1,52 @@
+.basket {
+  .page__title {
+    h1.page__title-basket {
+      font-size: $page__title-size;
+      font-family: $page__title-font;
+      color: $page__title-color;
+      text-transform: uppercase;
+      line-height: 0.769;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__wrap {
+    max-width: 1370px;
+    margin: 0 auto;
+  }
+
+  .basket__table {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    tr {
+      padding: 3px; /* Поля вокруг содержимого таблицы */
+      /* Параметры рамки */
+      text-align: left; /* Выравнивание по левому краю */
+      border-bottom: 3px solid #f2f2f3;
+    }
+
+    td {
+      padding-left: 40px;
+      box-sizing: border-box;
+    }
+
+    thead {
+      tr {
+        height: 50px;
+        font-size: 17px;
+        font-family: "Bahnschrift";
+        color: rgb(103, 184, 29);
+        line-height: 1.75;
+        text-align: left;
+      }
+    }
+
+    tbody {
+      .basket__table-img {
+        padding: 40px;
+      }
+    }
+  }
+}

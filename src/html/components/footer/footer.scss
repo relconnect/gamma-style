@@ -1,0 +1,288 @@
+footer {
+  background-color: $footer-color;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  padding-top: 45px;
+  padding-bottom: 30px;
+
+  &__copyright {
+    display: flex;
+    background-color: $footer-color;
+    border-top: 1px solid $white;
+    height: 73px;
+    box-sizing: border-box;
+
+    .container {
+      width: 100%;
+    }
+
+    .copyright__text {
+      font-size: 16px;
+      font-family: "Roboto";
+      color: $copyright-color;
+      margin: 0;
+    }
+
+    .copyrigh__link {
+      font-size: 16px;
+      font-family: "Roboto";
+      color: $white;
+      margin-left: 30px;
+
+      &:hover {
+        color: $menu-color_hover;
+      }
+    }
+  }
+
+  &__content {
+    max-width: 600px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-right: 5px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-family: "Roboto";
+    color: $white;
+    line-height: 1.5;
+    margin-top: 35px;
+  }
+
+  &__col {
+    padding-top: 15px;
+    // letter-spacing: 0.2px;
+    flex: 1 0 auto;
+    
+    ul {
+      margin-top: 20px;
+      padding-left: 0px;
+    }
+
+    &-title {
+      font-size: 18px;
+      font-family: $main-font;
+      color: $white;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    &-item {
+      a {
+        font-size: 16px;
+        font-family: $main-font;
+        color: $white;
+        line-height: 1.5;
+      }
+
+      &:hover {
+        a {
+          color: $menu-color_hover;
+        }
+      }
+    }
+
+    &--clients {
+      max-width: 230px;
+      margin-left: 70px;
+      box-sizing: border-box;
+    }
+
+    &--about {
+      box-sizing: border-box;
+      margin-left: 50px;
+    }
+
+    &--social {
+      margin-left: 40px;
+      min-width: 220px;
+
+      .social {
+        padding-top: 7px;
+      }
+
+      .social__link {
+        position: relative;
+        width: 46px;
+        height: 46px;
+        border-radius: 10px;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        background-image: linear-gradient(
+          90deg,
+          $social-from 1%,
+          $social-to 100%
+        );
+
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+
+        &:last-of-type {
+          margin-right: 0px;
+        }
+
+        &:hover {
+          background-image: linear-gradient(
+            90deg,
+            $from-color 0%,
+            $to-color 100%
+          );
+        }
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          max-width: 70%;
+          max-height: 95%;
+        }
+      }
+    }
+
+    &--contact {
+      margin-left: 30px;
+      padding-left: 10px;
+      box-sizing: border-box;
+
+      .tels-block {
+        // display: flex;
+        // align-items: flex-end;
+      }
+
+      .tels {
+        width: 230px;
+        height: 46px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 3px;
+        padding-bottom: 2px;
+        padding-left: 43px;
+        background: url(../../../img/tel/smartphone.svg) no-repeat top left;
+        background-position-x: -5px;
+        background-position-y: center;
+        background-size: 38px auto;
+        // margin-left: 90px;
+        box-sizing: border-box;
+
+        &__text {
+          font-family: $main-font-light;
+          //   font-weight: 300;
+          font-size: 14px;
+          margin: 0px;
+          letter-spacing: 0.36px;
+          color: $white;
+        }
+      }
+
+      .tels-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        // margin-left: 40px;
+        background-image: linear-gradient(
+          90deg,
+          $from-color 0%,
+          $to-color 100%
+        );
+        width: 186px;
+        height: 40px;
+        margin-bottom: 1px;
+        margin-top: 25px;
+        color: $icon-text-color;
+        cursor: pointer;
+
+        span {
+          font-family: $main-font-light;
+          font-size: $main-fs;
+          letter-spacing: 0.5px;
+          //   font-weight: 300;
+        }
+      }
+
+      .dropdown {
+        position: relative;
+
+        .tel {
+          font-size: 24px;
+          font-family: $main-font-light;
+          letter-spacing: 0.7px;
+          //   font-weight: 300;
+          color: $white;
+          text-decoration: none;
+
+          &:hover {
+            color: $main-color;
+          }
+        }
+
+        .arrow {
+          width: 30px;
+          height: 20px;
+          position: absolute;
+          display: inline-flex;
+          top: 0px;
+          right: -10px;
+          margin: auto;
+          justify-content: center;
+
+          &:after {
+            // content: url(../../../img/arrow.png);
+            content: "";
+            width: 20px;
+            height: 24px;
+            position: absolute;
+            background: url(../../../img/arrow/arrow-bot-white.svg) no-repeat
+              50%;
+            background-size: 60%;
+            z-index: 1000;
+            top: 0;
+            transition: all 0.5s ease;
+          }
+        }
+
+        &__list {
+          position: absolute;
+          margin: 0px;
+          padding: 0px;
+          letter-spacing: 0.5px;
+
+          &-dark {
+            // display: none;
+            top: 100%;
+            // left: -30px;
+            right: -10px;
+            width: 205px;
+            width: 100%;
+            background: $tel-block-color;
+            z-index: 20;
+            border: 1px solid $tel-block-border;
+            border-radius: 6px;
+            text-align: center;
+            // padding-left: 0;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            list-style: none;
+            -webkit-box-shadow: 0 23px 38px rgba(0, 0, 0, 0.13);
+            box-shadow: 0 23px 38px rgba(0, 0, 0, 0.13);
+            opacity: 0;
+            transition: all 0.5s ease;
+
+            li {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
