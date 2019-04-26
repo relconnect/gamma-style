@@ -1,0 +1,2490 @@
+@charset "UTF-8";
+
+/*
+   Import partials below
+*/
+
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+
+/**
+   * Remove the margin in all browsers.
+   */
+
+body {
+  margin: 0;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+
+/**
+   * Add the correct display in IE 10+.
+   */
+
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../fonts/Bahnschrift/Bahnschrift.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BahnschriftLight";
+  src: url("../fonts/Bahnschrift/BahnschriftLight.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica/Helvetica.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaLight";
+  src: url("../fonts/Helvetica/HelveticaLight.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaBold";
+  src: url("../fonts/Helvetica/HelveticaBold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/PTSans/PT_Sans-Web-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSans Bold";
+  src: url("../fonts/PTSans/PT_Sans-Web-Bold.ttf");
+  font-style: normal;
+}
+
+body {
+  background-color: #f2f2f3;
+}
+
+.container {
+  max-width: 1630px;
+  padding: 0 30px;
+  display: flex;
+  margin: auto;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.wrapper {
+  position: relative;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+  color: none;
+  outline-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+}
+
+img {
+  display: block;
+}
+
+.block {
+  display: block;
+}
+
+input {
+  outline: none;
+  position: relative;
+}
+
+.best-sale {
+  margin-top: -5px;
+  margin-bottom: 85px;
+}
+
+.r-tabs {
+  width: 100%;
+}
+
+.r-tabs .r-tabs-nav {
+  position: relative;
+}
+
+.r-tabs .r-tabs-nav:before {
+  content: "";
+  position: absolute;
+  background-color: #dfdfdf;
+  left: 0;
+  bottom: -7px;
+  width: 100%;
+  height: 1px;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-tab {
+  padding: 0 20px;
+  letter-spacing: 1.4px;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-state-active {
+  position: relative;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-state-active::before {
+  content: "";
+  position: absolute;
+  background-color: #67b81d;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 3px;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+  color: #67b81d;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+  font-size: 26px;
+  font-family: "HelveticaLight";
+  color: #9a9a9a;
+}
+
+.text-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 80px;
+}
+
+.text-content__wrap.hide-text {
+  overflow: hidden;
+  height: 170px;
+}
+
+.text-content__title {
+  font-size: 22px;
+  font-family: "HelveticaBold";
+  color: #1c1c1c;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+.text-content__row {
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  line-height: 1.5;
+}
+
+.text-content__more-btn {
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  position: relative;
+}
+
+.text-content__more-btn:hover {
+  color: #67b81d;
+  cursor: pointer;
+}
+
+.text-content__more-btn.open::after {
+  content: "";
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  background: url(../../../img/arrow/arrow-active-top.svg) no-repeat 50%;
+  background-size: 60%;
+  /* background-position: 13px 14px; */
+  z-index: 1000;
+  top: 0;
+  left: 60px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  transition: all 0.5s ease;
+}
+
+.text-content__more-btn::after {
+  content: "";
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  background: url(../../../img/arrow/arrow-active-top.svg) no-repeat 50%;
+  background-size: 60%;
+  /* background-position: 13px 14px; */
+  z-index: 1000;
+  top: 0;
+  left: 60px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: all 0.5s ease;
+}
+
+.stock {
+  min-height: 481px;
+}
+
+.stock-compare__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: none;
+  outline-color: transparent;
+}
+
+.stock-compare__link.active .control__icon-libra {
+  fill: #67b81d;
+}
+
+.stock-compare__link.active .compare-show {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 18px;
+  height: 18px;
+}
+
+.stock-compare__link.active .compare-show::after {
+  content: url("../../../img/arrow/compared.png");
+  position: absolute;
+}
+
+.stock__item {
+  background-color: white;
+  position: relative;
+  height: inherit;
+  padding: 20px 20px 30px;
+}
+
+.stock__item::after {
+  content: " ";
+  background-image: url("../../../img/tabs-slider/sale-img.png");
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.stock__item.notavailable {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.stock__item.notavailable h2,
+.stock__item.notavailable .stock__price-new {
+  color: #dfdfdf;
+}
+
+.stock__notavailable {
+  font-size: 18px;
+  font-family: "Bahnschrift";
+  color: #dfdfdf;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 38px;
+  display: none;
+}
+
+.stock__title {
+  width: 95%;
+  font-size: 18px;
+  font-family: "Bahnschrift";
+  color: black;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 27px;
+  padding-left: 10px;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+.stock__img {
+  width: 100%;
+  min-height: 180px;
+  position: relative;
+}
+
+.stock__price {
+  font-family: "Bahnschrift";
+  padding-left: 10px;
+  min-height: 10px;
+  letter-spacing: 1px;
+}
+
+.stock__price span {
+  margin-left: 6px;
+}
+
+.stock__price-new {
+  font-size: 26px;
+  font-family: "Bahnschrift";
+  color: black;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.stock__price-new:first-letter {
+  margin-right: 5px;
+}
+
+.stock__price-old {
+  font-size: 18px;
+  font-family: "Bahnschrift";
+  color: #dfdfdf;
+  font-weight: bold;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+.stock__buy {
+  display: flex;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.stock__button {
+  width: 183px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  color: white;
+  border-radius: 8px;
+  background-image: linear-gradient(90deg, #559f18, #67b81d);
+  font-weight: 300;
+  position: relative;
+  padding: 14px 30px;
+  margin-right: 30px;
+  letter-spacing: 0.4px;
+}
+
+.stock__button:after {
+  content: url("../../../img/basket/basket.png");
+  position: absolute;
+  top: 8px;
+  right: 30px;
+}
+
+#bx-slider {
+  max-width: 1290px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#bx-slider .slick-prev {
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  width: 47px;
+  position: absolute;
+  height: 47px;
+  left: -100px;
+  opacity: 0.2;
+}
+
+#bx-slider .slick-prev:hover {
+  opacity: 1;
+}
+
+#bx-slider .slick-prev::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../../../img/arrow/arrow-active-top.svg) no-repeat 50%;
+  background-size: 40%;
+  background-position: 14px 14px;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+#bx-slider .slick-next {
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  width: 47px;
+  position: absolute;
+  height: 47px;
+  right: -100px;
+  opacity: 0.2;
+}
+
+#bx-slider .slick-next:hover {
+  opacity: 1;
+}
+
+#bx-slider .slick-next::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../../../img/arrow/arrow-active-top.svg) no-repeat 50%;
+  background-size: 40%;
+  background-position: 14px 14px;
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.price__block {
+  min-height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slick-slide {
+  min-width: 300px;
+}
+
+.slick-slide {
+  margin-right: 2px;
+}
+
+.slick-list {
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #515f6b;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+
+.footer__copyright {
+  display: flex;
+  background-color: #515f6b;
+  border-top: 1px solid white;
+  height: 73px;
+  box-sizing: border-box;
+}
+
+.footer__copyright .container {
+  width: 100%;
+}
+
+.footer__copyright .copyright__text {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #9a9a9a;
+  margin: 0;
+}
+
+.footer__copyright .copyrigh__link {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: white;
+  margin-left: 30px;
+}
+
+.footer__copyright .copyrigh__link:hover {
+  color: #67b81d;
+}
+
+.footer__content {
+  max-width: 600px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+
+.footer__text {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: white;
+  line-height: 1.5;
+  margin-top: 35px;
+}
+
+.footer__col {
+  padding-top: 15px;
+  flex: 1 0 auto;
+}
+
+.footer__col ul {
+  margin-top: 20px;
+  padding-left: 0px;
+}
+
+.footer__col-title {
+  font-size: 18px;
+  font-family: "Bahnschrift";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.footer__col-item a {
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  color: white;
+  line-height: 1.5;
+}
+
+.footer__col-item:hover a {
+  color: #67b81d;
+}
+
+.footer__col--clients {
+  max-width: 230px;
+  margin-left: 70px;
+  box-sizing: border-box;
+}
+
+.footer__col--about {
+  box-sizing: border-box;
+  margin-left: 50px;
+}
+
+.footer__col--social {
+  margin-left: 40px;
+  min-width: 220px;
+}
+
+.footer__col--social .social {
+  padding-top: 7px;
+}
+
+.footer__col--social .social__link {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-image: linear-gradient(90deg, #464e56 1%, #6c7b88 100%);
+  transition: 0.2s;
+}
+
+.footer__col--social .social__link:last-of-type {
+  margin-right: 0px;
+}
+
+.footer__col--social .social__link:hover {
+  background-image: linear-gradient(90deg, #559f18 0%, #67b81d 100%);
+}
+
+.footer__col--social .social__link img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  max-height: 95%;
+}
+
+.footer__col--contact {
+  margin-left: 30px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.footer__col--contact .tels {
+  width: 230px;
+  height: 46px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-left: 43px;
+  background: url(../../../img/tel/smartphone.svg) no-repeat top left;
+  background-position-x: -5px;
+  background-position-y: center;
+  background-size: 38px auto;
+  box-sizing: border-box;
+}
+
+.footer__col--contact .tels__text {
+  font-family: "BahnschriftLight";
+  font-size: 14px;
+  margin: 0px;
+  letter-spacing: 0.36px;
+  color: white;
+}
+
+.footer__col--contact .tels-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-image: linear-gradient(90deg, #559f18 0%, #67b81d 100%);
+  width: 186px;
+  height: 40px;
+  margin-bottom: 1px;
+  margin-top: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.footer__col--contact .tels-btn span {
+  font-family: "BahnschriftLight";
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.footer__col--contact .dropdown {
+  position: relative;
+}
+
+.footer__col--contact .dropdown .tel {
+  font-size: 24px;
+  font-family: "BahnschriftLight";
+  letter-spacing: 0.7px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer__col--contact .dropdown .tel:hover {
+  color: #67b81d;
+}
+
+.footer__col--contact .dropdown .arrow {
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  display: inline-flex;
+  top: 0px;
+  right: -10px;
+  margin: auto;
+  justify-content: center;
+}
+
+.footer__col--contact .dropdown .arrow:after {
+  content: "";
+  width: 20px;
+  height: 24px;
+  position: absolute;
+  background: url(../../../img/arrow/arrow-bot-white.svg) no-repeat 50%;
+  background-size: 60%;
+  z-index: 1000;
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+.footer__col--contact .dropdown__list {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 0.5px;
+}
+
+.footer__col--contact .dropdown__list-dark {
+  top: 100%;
+  right: -10px;
+  width: 205px;
+  width: 100%;
+  background: #515f6b;
+  z-index: 20;
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  list-style: none;
+  box-shadow: 0 23px 38px rgba(0, 0, 0, 0.13);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.footer__col--contact .dropdown__list-dark li {
+  margin-bottom: 10px;
+}
+
+.menu {
+  margin-top: 10px;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+}
+
+.menu__box {
+  width: 100%;
+}
+
+.menu__list {
+  display: flex;
+  height: 93px;
+}
+
+.menu__item {
+  display: flex;
+  flex-basis: 168px;
+  justify-content: center;
+  background-color: #67b81d;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.menu__item:hover {
+  background-color: #559f18;
+}
+
+.menu__item:hover .sub-menu {
+  display: flex;
+}
+
+.menu__item:after {
+  content: "";
+  height: 67px;
+  position: absolute;
+  border-left: 1px solid white;
+  right: 0;
+  top: calc((93px - 67px) / 2);
+}
+
+.menu__item:first-child {
+  padding-left: 40px;
+}
+
+.menu__item:last-child {
+  padding-right: 36px;
+}
+
+.menu__item:last-child:after {
+  content: "";
+  border-left: unset;
+}
+
+.menu__link {
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  font-family: "Bahnschrift";
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-top: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu__image {
+  background-position-x: center;
+  background-position-y: 36px;
+  background-repeat: no-repeat;
+}
+
+.menu__image-ofice {
+  background-image: url(../../../img/menu/office.png);
+}
+
+.menu__image-trade {
+  background-image: url(../../../img/menu/trade.png);
+}
+
+.menu__image-drugstore {
+  background-image: url(../../../img/menu/drugstore.png);
+}
+
+.menu__image-home {
+  background-image: url(../../../img/menu/home.png);
+}
+
+.menu__image-bank {
+  background-image: url(../../../img/menu/bank.png);
+}
+
+.menu__image-chair {
+  background-image: url(../../../img/menu/chair.png);
+}
+
+.menu__image-sofa {
+  background-image: url(../../../img/menu/sofa.png);
+}
+
+.menu__image-call {
+  background-image: url(../../../img/menu/call-center.png);
+}
+
+.menu__image-mattress {
+  background-image: url(../../../img/menu/mattress.png);
+}
+
+.sub-menu {
+  min-height: 100%;
+  display: none;
+  border: 3px solid #67b81d;
+  background-color: white;
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  z-index: 1;
+}
+
+.sub-menu__list {
+  padding-left: 0px;
+}
+
+.sub-menu__item {
+  font-size: 20px;
+  font-family: "Bahnschrift";
+  font-weight: 300;
+  margin-bottom: 17px;
+  letter-spacing: 0.7px;
+}
+
+.sub-menu__item a {
+  color: #1c1c1c;
+  transition: all 0.2s ease;
+}
+
+.sub-menu__item > div:hover a {
+  color: #67b81d;
+}
+
+.sub-menu__item-nested {
+  margin-bottom: 20px;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+.sub-menu__item-nested:hover div a {
+  color: #67b81d;
+}
+
+.sub-menu__item-nested div a {
+  color: #9a9a9a;
+  transition: all 0.2s ease;
+}
+
+.sub-menu__wrapper {
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-top: 28px;
+  padding-bottom: 5px;
+}
+
+.sub-menu__list-nested {
+  padding-left: 20px;
+  margin-top: 18px;
+}
+
+.sub-menu__col {
+  width: 320px;
+  box-sizing: border-box;
+  margin-left: 30px;
+  position: relative;
+}
+
+.sub-menu__col:not(:last-child):after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  border-left: 1px solid #f2f2f3;
+  right: 0;
+  top: -10px;
+}
+
+.sub-menu__col-next {
+  padding-left: 15px;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 170px;
+}
+
+.banner__wrap {
+  padding-top: 60px;
+}
+
+.banner__block-lg {
+  flex: 1 1 1100px;
+}
+
+.banner__block-sm {
+  flex: 1 1 415px;
+  margin-left: 55px;
+}
+
+.banner__bg-img {
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  background-image: url("../../../img/banner/fone.png");
+  background-repeat: no-repeat;
+  background-position: center 100px;
+  opacity: 0.8;
+}
+
+.banner__small {
+  position: relative;
+  max-width: 415px;
+  max-height: 245px;
+}
+
+.banner__small:first-child {
+  margin-bottom: 50px;
+}
+
+.banner__large {
+  max-width: 1100px;
+  height: 100%;
+}
+
+.banner__link {
+  display: block;
+  height: 100%;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: inherit;
+}
+
+.banner__advanteg {
+  position: absolute;
+  width: 56%;
+  bottom: -18%;
+  left: 7%;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  padding-right: 15px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.breadcrumbs__item::before {
+  content: "/";
+  position: absolute;
+  left: -10px;
+  color: #58a01a;
+}
+
+.breadcrumbs__item:first-of-type::before {
+  content: none;
+}
+
+.breadcrumbs__item:last-of-type::before {
+  color: #dfdfdf;
+}
+
+.breadcrumbs__item:last-of-type .breadcrumbs__link span {
+  color: #dfdfdf;
+}
+
+.breadcrumbs__item .breadcrumbs__link span {
+  font-size: 16px;
+  font-family: "BahnschriftLight";
+  color: #58a01a;
+  line-height: 1.5;
+}
+
+.header {
+  padding: 10px 0 0 0;
+}
+
+.header__menu {
+  width: 600px;
+}
+
+.header__nav {
+  width: 100%;
+}
+
+.header__nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  padding-top: 16px;
+  margin-bottom: 26px;
+}
+
+.header__nav ul li {
+  font-size: 18px;
+  font-family: "Bahnschrift";
+}
+
+.header__nav ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  transition: all 0.2s ease;
+}
+
+.header__nav ul li a:hover {
+  color: #67b81d;
+}
+
+.header ul {
+  list-style: none;
+}
+
+.header__logo {
+  max-width: 187px;
+}
+
+.header__logo-img {
+  width: 100%;
+}
+
+.header__logo-link {
+  display: block;
+}
+
+.search {
+  display: flex;
+}
+
+.search__text {
+  max-width: 435px;
+  width: 100%;
+  height: 45px;
+  border-left: 2px solid #dedede;
+  border-top: 2px solid #dedede;
+  border-bottom: 2px solid #dedede;
+  border-right: 0px solid transparent;
+  border-radius: 10px 0 0 10px;
+  padding-left: 18px;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+  background-color: #f2f2f3;
+}
+
+.search__text:focus {
+  outline: none;
+}
+
+.search__text::-webkit-input-placeholder {
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  color: black;
+  font-weight: 300;
+  line-height: 0.875;
+  transition: all 0.3s ease;
+}
+
+.search__text:-ms-input-placeholder {
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  color: black;
+  font-weight: 300;
+  line-height: 0.875;
+  transition: all 0.3s ease;
+}
+
+.search__text::-ms-input-placeholder {
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  color: black;
+  font-weight: 300;
+  line-height: 0.875;
+  transition: all 0.3s ease;
+}
+
+.search__text::placeholder {
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  color: black;
+  font-weight: 300;
+  line-height: 0.875;
+  transition: all 0.3s ease;
+}
+
+.search__text:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.search__text:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.search__text:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.search__text:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.search__button {
+  background-image: linear-gradient(90deg, #559f18 0%, #67b81d 100%);
+  width: 167px;
+  height: 45px;
+  font-size: 18px;
+  font-family: "Bahnschrift";
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+}
+
+.header__contact {
+  display: flex;
+  height: 125px;
+}
+
+.header__contact .tels-block {
+  display: flex;
+  align-items: flex-end;
+}
+
+.header__contact .tels {
+  width: 230px;
+  height: 46px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-left: 43px;
+  background: url(../../../img/tel/smartphone.svg) no-repeat top left;
+  background-position-x: -5px;
+  background-position-y: center;
+  background-size: 38px auto;
+  box-sizing: border-box;
+}
+
+.header__contact .tels__text {
+  font-family: "Bahnschrift";
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0px;
+  letter-spacing: 0.36px;
+  color: black;
+}
+
+.header__contact .tels-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 40px;
+  background-image: linear-gradient(90deg, #559f18 0%, #67b81d 100%);
+  width: 186px;
+  height: 40px;
+  margin-bottom: 1px;
+  color: white;
+  cursor: pointer;
+}
+
+.header__contact .tels-btn span {
+  font-family: "Bahnschrift";
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown__tels.open .dropdown__list {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.dropdown__tels.open .arrow:after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.dropdown .tel {
+  font-size: 24px;
+  font-family: "Bahnschrift";
+  letter-spacing: 0.7px;
+  font-weight: 300;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown .tel:hover {
+  color: #67b81d;
+}
+
+.dropdown .arrow {
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  display: inline-flex;
+  top: 0px;
+  right: -10px;
+  margin: auto;
+  justify-content: center;
+}
+
+.dropdown .arrow:after {
+  content: "";
+  width: 20px;
+  height: 24px;
+  position: absolute;
+  background: url(../../../img/arrow/arrow-bot.svg) no-repeat 50%;
+  background-size: 60%;
+  z-index: 1000;
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+.dropdown__list {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.dropdown__list-white {
+  top: 100%;
+  right: -15px;
+  width: 205px;
+  width: 100%;
+  background: white;
+  z-index: 20;
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  list-style: none;
+  box-shadow: 0 23px 38px rgba(0, 0, 0, 0.13);
+}
+
+.dropdown__list-white li {
+  margin-bottom: 10px;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 115px;
+  margin-left: 38px;
+}
+
+.control__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.control__box {
+  display: flex;
+  position: relative;
+}
+
+.control__link {
+  text-decoration: none;
+  height: 40px;
+}
+
+.control__link .count {
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  font-family: "Bahnschrift";
+  color: #f2f2f3;
+  line-height: 1.67;
+  top: -4px;
+  right: -3px;
+  z-index: 2;
+}
+
+.control__link .count:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #e96903;
+  border-radius: 50%;
+  display: block;
+  min-width: 14px;
+  min-height: 14px;
+  z-index: -1;
+  padding: 2px;
+}
+
+.control__link .count-show {
+  display: block;
+}
+
+.control__link.active .control__icon-libra,
+.control__link.active .control__icon-basket {
+  fill: #67b81d;
+}
+
+.control__top {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 27px;
+  padding-right: 2px;
+}
+
+.control__top .dropdown__lang:hover .top .lang {
+  color: #67b81d;
+}
+
+.control__top .dropdown__lang:hover .top .arrow:after {
+  content: "";
+  position: absolute;
+  background: url(../../../img/arrow/arrow-bot.svg) no-repeat center center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s linear;
+  background-size: 40%;
+}
+
+.control__top .dropdown__lang .top {
+  display: flex;
+  width: 60px;
+  height: 30px;
+  border: 2px solid #67b81d;
+  border-radius: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  padding-left: 10px;
+  position: relative;
+}
+
+.control__top .dropdown__lang .top .arrow {
+  top: 0px;
+  right: 0px;
+  height: 100%;
+}
+
+.control__top .dropdown__lang .top .arrow:after {
+  content: "";
+  position: absolute;
+  background: url(../../../img/arrow/arrow-bot.svg) no-repeat center center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s linear;
+  background-size: 40%;
+}
+
+.control__top .dropdown.lang-box.open .dropdown__list {
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+
+.control__top .dropdown.lang-box.open .arrow:after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.control__top .lang {
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.control__top .lang:hover {
+  color: #67b81d;
+}
+
+.category {
+  margin-bottom: 100px;
+}
+
+.category__row {
+  display: flex;
+  width: 100%;
+}
+
+.category__row .banner__block {
+  display: flex;
+  flex: 1 1 400px;
+}
+
+.category__row .banner__link img {
+  width: 100%;
+  height: inherit;
+}
+
+.category__block {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex: 1 1 1100px;
+  max-width: 1100px;
+}
+
+.category__block-ml {
+  margin-left: 70px;
+}
+
+.category__block-mr {
+  margin-right: 70px;
+}
+
+.category__block-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.category__block-wrap:last-of-type {
+  margin-bottom: 0px;
+}
+
+.category__item {
+  flex: 1 1 530px;
+  height: 320px;
+  border-radius: 10px;
+  background-color: white;
+  max-width: 530px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.category__item:nth-of-type(even) {
+  margin-left: 40px;
+}
+
+.category__item-title {
+  font-size: 26px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 26px;
+  margin-bottom: 25px;
+  position: relative;
+  letter-spacing: 0.8px;
+}
+
+.category__item-title:before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  background-color: #559f18;
+  bottom: -13px;
+}
+
+.category__item-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.category__item-links a {
+  font-size: 18px;
+  font-family: "Bahnschrift";
+  font-weight: 300;
+  color: #1c1c1c;
+  margin-bottom: 7px;
+}
+
+.category__item-links a:hover {
+  color: #67b81d;
+}
+
+.category__item-img {
+  position: absolute;
+  right: 40px;
+  top: 93px;
+  max-width: 46%;
+}
+
+.category__item-img img {
+  width: 100%;
+}
+
+.category__item-button {
+  border: 2px solid #67b81d;
+  max-width: 208px;
+  border-radius: 8px;
+  margin-top: 18px;
+  letter-spacing: 0.4px;
+  position: relative;
+  z-index: 2;
+}
+
+.category__item-button a {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  font-family: "Bahnschrift";
+  font-weight: 300;
+  color: #1c1c1c;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 58px;
+  letter-spacing: 0.4px;
+}
+
+.category__item-button a:after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background: url("../../../img/arrow/arrow-active-top.svg") 50% center/contain no-repeat;
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 50%;
+  margin-top: -5px;
+  margin-left: 12px;
+}
+
+.category__item-button a:hover {
+  color: #67b81d;
+}
+
+.contact__wrap {
+  position: relative;
+}
+
+.contact__info {
+  background-color: white;
+  width: 500px;
+  height: 437px;
+  transition: all 0.2s linear;
+  box-sizing: border-box;
+  padding: 22px;
+  position: absolute;
+  top: 75px;
+}
+
+.contact__info:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contact__info .button {
+  width: 251px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(90deg, #579f18 2%, #68b71d 100%);
+  margin: 0 auto;
+}
+
+.contact__info .button a {
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.contact__title {
+  font-size: 26px;
+  font-family: "HelveticaBold";
+  color: #1c1c1c;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 29px;
+}
+
+.contact__text {
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  color: #1c1c1c;
+  text-align: center;
+  width: 320px;
+  letter-spacing: 0.6px;
+  margin: 0 auto;
+  line-height: 1.5;
+  margin-bottom: 35px;
+}
+
+.contact__text span {
+  color: #67b81d;
+}
+
+.contact__row {
+  display: flex;
+  margin-bottom: 17px;
+}
+
+.contact__row .working-hours,
+.contact__row .tels {
+  flex: 1 1 auto;
+}
+
+.contact__row .working-hours {
+  margin-right: 50px;
+}
+
+.contact__row .tels .hours {
+  margin-bottom: 15px;
+}
+
+.contact__row .text {
+  font-size: 18px;
+  font-family: "Bahnschrift";
+  color: #67b81d;
+  margin: 0;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+.contact__row .hours {
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  margin: 0;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+.contact__location {
+  max-width: 1170px;
+  height: 578px;
+  background-color: #aeaeae;
+  transition: all 0.2s linear;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.contact__location:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contact__form {
+  background-color: white;
+  max-width: 1170px;
+  height: 332px;
+  margin: 0 auto;
+  padding: 40px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s linear;
+}
+
+.contact__form:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contact__form-btn {
+  background-image: linear-gradient(90deg, #559f18, #67b81d);
+  border: none;
+  width: 503px;
+  height: 50px;
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  color: white;
+}
+
+.contact__form .contact__title {
+  font-size: 26px;
+  font-family: "HelveticaBold";
+  color: #1c1c1c;
+}
+
+.contact__form form {
+  flex: 1;
+}
+
+.contact__form .form__name,
+.contact__form .form__email {
+  position: relative;
+  margin-bottom: 38px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #c0de97;
+  opacity: 0.6;
+  position: relative;
+}
+
+.contact__form .form__input {
+  height: 26px;
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  line-height: 1.5;
+}
+
+.contact__form .form__input:focus {
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  opacity: 1;
+  border-bottom: 1px solid #579f18;
+}
+
+.contact__form .form__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.contact__form .form__input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.contact__form .form__input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.contact__form .form__input:focus::placeholder {
+  color: transparent;
+}
+
+.contact__form textarea {
+  resize: none;
+  outline: none;
+}
+
+.contact__form textarea:focus {
+  opacity: 1;
+  border-bottom: 1px solid #579f18;
+}
+
+.contact__form textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.contact__form textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.contact__form textarea:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.contact__form textarea:focus::placeholder {
+  color: transparent;
+}
+
+.contact__form .form__wrap {
+  display: flex;
+  height: 100%;
+}
+
+.contact__form .items__wrap {
+  flex: 0 1 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.contact__form .form__text {
+  flex: 1 1 auto;
+  margin-right: 80px;
+  position: relative;
+  margin-top: auto;
+}
+
+.contact__form label {
+  position: absolute;
+  top: -15px;
+  font-size: 12px;
+  font-family: "BahnschriftLight";
+  color: #579f18;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.contact__form label.visible {
+  opacity: 1;
+}
+
+.contact__form .form__email {
+  position: relative;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #579f18;
+  opacity: 1;
+  /* Firefox */
+  transition: all 1 linear;
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #579f18;
+  opacity: 1;
+  /* Firefox */
+  transition: all 1 linear;
+}
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #579f18;
+  opacity: 1;
+  /* Firefox */
+  transition: all 1 linear;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #579f18;
+  opacity: 1;
+  /* Firefox */
+  transition: all 1 linear;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #579f18;
+  opacity: 1;
+  /* Firefox */
+  transition: all 1 linear;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #579f18;
+  opacity: 1;
+  /* Firefox */
+  transition: all 1 linear;
+}
+
+.basket .page__title h1.page__title-basket {
+  font-size: 26px;
+  font-family: "HelveticaBold";
+  color: #1c1c1c;
+  text-transform: uppercase;
+  line-height: 0.769;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.basket__wrap {
+  max-width: 1370px;
+  margin: 0 auto;
+}
+
+.basket .basket__table {
+  background-color: white;
+  width: 100%;
+  border-collapse: collapse;
+  /* Убираем двойные линии между ячейками */
+}
+
+.basket .basket__table tr {
+  padding: 3px;
+  /* Поля вокруг содержимого таблицы */
+  /* Параметры рамки */
+  text-align: left;
+  /* Выравнивание по левому краю */
+  border-bottom: 3px solid #f2f2f3;
+}
+
+.basket .basket__table td {
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.basket .basket__table thead tr {
+  height: 50px;
+  font-size: 17px;
+  font-family: "Bahnschrift";
+  color: #67b81d;
+  line-height: 1.75;
+  text-align: left;
+}
+
+.basket .basket__table tbody td {
+  box-sizing: border-box;
+  min-width: 120px;
+}
+
+.basket .basket__table tbody .basket__table-img {
+  padding: 40px 0px 40px 40px;
+  width: 16%;
+}
+
+.basket .basket__table tbody .basket__table-img a {
+  display: block;
+  max-height: 180px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.basket .basket__table tbody .basket__table-img a img {
+  max-width: 180px;
+  max-height: 180px;
+}
+
+.basket .basket__table tbody .basket__table-product a {
+  display: block;
+}
+
+.basket .basket__table tbody .basket__table-product a p {
+  font-size: 20px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  line-height: 1.5;
+  transition: all 0.2s linear;
+}
+
+.basket .basket__table tbody .basket__table-product a:hover p {
+  color: #67b81d;
+}
+
+.basket .basket__table tbody .basket__table-price .currency {
+  padding-left: 6px;
+}
+
+.basket .basket__table tbody .basket__table-price .basket__price--old,
+.basket .basket__table tbody .basket__table-price .basket__price--curent {
+  margin: 0;
+}
+
+.basket .basket__table tbody .basket__table-price .basket__price--old {
+  font-size: 18px;
+  font-family: "Bahnschrift";
+  color: #9a9a9a;
+  font-weight: bold;
+  text-decoration: line-through;
+  line-height: 1.5;
+}
+
+.basket .basket__table tbody .basket__table-price .basket__price--curent {
+  font-size: 26px;
+  font-family: "Bahnschrift";
+  color: black;
+  font-weight: bold;
+}
+
+.basket .basket__table tbody .basket__table-quantity .product__quantity {
+  display: flex;
+  align-items: center;
+}
+
+.basket .basket__table tbody .basket__table-quantity .product__quantity .minus {
+  cursor: pointer;
+}
+
+.basket .basket__table tbody .basket__table-quantity .product__quantity .minus img {
+  width: 15px;
+}
+
+.basket .basket__table tbody .basket__table-quantity .product__quantity .plus {
+  cursor: pointer;
+}
+
+.basket .basket__table tbody .basket__table-quantity .product__quantity .plus img {
+  width: 15px;
+}
+
+.basket .basket__table tbody .basket__table-quantity .product__quantity .number input {
+  text-align: center;
+  width: 56px;
+  font-size: 22px;
+  font-family: "PTSans Bold";
+  color: #222222;
+  line-height: 2.273;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 2px solid #67b81d;
+}
+
+.basket .basket__table tbody .basket__table-total .total__price {
+  font-size: 26px;
+  font-family: "Bahnschrift";
+  color: black;
+  font-weight: bold;
+}
+
+.basket .basket__table tbody .basket__table-total .total__price .currency {
+  padding-left: 6px;
+}
+
+.basket .basket__table tbody .basket__table-dell .product__dell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: red;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.basket .basket__table tbody .basket__table-dell .product__dell img {
+  width: 14px;
+  height: 14px;
+}
+
+.basket .basket__control {
+  display: flex;
+  background-color: white;
+  padding: 35px 40px 36px 40px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.basket .basket__control .basket__total-price {
+  margin-left: auto;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.basket .basket__control .basket__total-price .total__price {
+  font-size: 26px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+.basket .basket__control .basket__total-price .currency {
+  font-size: 22px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+.basket .basket__control .basket__total-price .total {
+  font-size: 22px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  text-transform: uppercase;
+  margin-right: 35px;
+}
+
+.basket .basket__control .basket__btn {
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  color: #1c1c1c;
+}
+
+.basket .basket__control .basket__buymore .basket__btn--more {
+  background-color: white;
+  border-width: 2px;
+  border-color: #579f18;
+  border-style: solid;
+  width: 247px;
+  height: 50px;
+}
+
+.basket .basket__control .basket__buymore .basket__btn--more:hover {
+  color: white;
+  background-image: linear-gradient(90deg, #579f18 2%, #68b71d 100%);
+}
+
+.basket .basket__control .basket__chekout {
+  color: white;
+}
+
+.basket .basket__control .basket__chekout .basket__btn--chekout {
+  color: white;
+  background-image: linear-gradient(90deg, #579f18 2%, #68b71d 100%);
+  border: none;
+  width: 251px;
+  height: 50px;
+}
+
+.basket .basket__control .basket__chekout .basket__btn--chekout:hover {
+  background-image: linear-gradient(90deg, #68b71d 2%, #579f18 100%);
+}

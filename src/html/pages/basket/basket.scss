@@ -17,7 +17,7 @@
   }
 
   .basket__table {
-    background-color: rgb(255, 255, 255);
+    background-color: $white;
     width: 100%;
     border-collapse: collapse; /* Убираем двойные линии между ячейками */
     tr {
@@ -37,15 +37,243 @@
         height: 50px;
         font-size: 17px;
         font-family: "Bahnschrift";
-        color: rgb(103, 184, 29);
+        color: $main-color;
         line-height: 1.75;
         text-align: left;
       }
     }
 
     tbody {
+      td {
+        box-sizing: border-box;
+        min-width: 120px;
+      }
+
       .basket__table-img {
-        padding: 40px;
+        padding: 40px 0px 40px 40px;
+        width: 16%;
+
+        a {
+          display: block;
+          max-height: 180px;
+          width: fit-content;
+
+          img {
+            max-width: 180px;
+            max-height: 180px;
+          }
+        }
+      }
+
+      .basket__table-product {
+        // width: 520px;
+
+        a {
+          display: block;
+          
+
+          p {
+            font-size: 20px;
+            font-family: $main-font;
+            color: rgb(28, 28, 28);
+            line-height: 1.5;
+            transition: all 0.2s linear;
+          }
+          
+          &:hover {
+            p {
+              color: $main-color;
+            }
+          }
+        }
+      }
+
+      .basket__table-price {
+        .currency {
+          padding-left: 6px;
+        }
+
+        .basket__price--old,
+        .basket__price--curent {
+          margin: 0;
+        }
+
+        .basket__price--old {
+          font-size: 18px;
+          font-family: "Bahnschrift";
+          color: rgb(154, 154, 154);
+          font-weight: bold;
+          text-decoration: line-through;
+          line-height: 1.5;
+        }
+
+        .basket__price--curent {
+          font-size: 26px;
+          font-family: $main-font;
+          color: $text-color;
+          font-weight: bold;
+          // margin-bottom: 30px;
+        }
+      }
+
+      .basket__table-quantity {
+        .product__quantity {
+          display: flex;
+          align-items: center;
+
+          .minus {
+            cursor: pointer;
+
+            img {
+              width: 15px;
+            }
+          }
+
+          .plus {
+            cursor: pointer;
+
+            img {
+              width: 15px;
+              // zoom: 1.2;
+            }
+          }
+
+          .number {
+            input {
+              text-align: center;
+              width: 56px;
+              font-size: 22px;
+              font-family: $PTSans-bold;
+              color: rgb(34, 34, 34);
+              line-height: 2.273;
+              border: none;
+              margin-left: 10px;
+              margin-right: 10px;
+              border-bottom: 2px solid $main-color;
+            }
+          }
+        }
+      }
+
+      .basket__table-total {
+        .total__price {
+          font-size: 26px;
+          font-family: $main-font;
+          color: $text-color;
+          font-weight: bold;
+
+          .currency {
+            padding-left: 6px;
+          }
+        }
+      }
+
+      .basket__table-dell {
+        .product__dell {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 4px;
+          background-color: rgb(255, 0, 0);
+          width: 28px;
+          height: 28px;
+          cursor: pointer;
+
+          img {
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .basket__control {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 35px 40px 36px 40px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    .basket__total-price {
+      margin-left: auto;
+      margin-right: 40px;
+      display: flex;
+      align-items: center;
+
+      .total__price {
+        font-size: 26px;
+        font-family: $main-font;
+        color: rgb(28, 28, 28);
+        font-weight: bold;
+      }
+
+      .currency {
+        font-size: 22px;
+        font-family: $main-font;
+        color: rgb(28, 28, 28);
+        font-weight: bold;
+        margin-left: 6px;
+      }
+
+      .total {
+        font-size: 22px;
+        font-family: $main-font;
+        color: rgb(28, 28, 28);
+        text-transform: uppercase;
+        margin-right: 35px;
+      }
+    }
+
+    .basket__btn {
+      font-size: 18px;
+      font-family: $main-font-light;
+      color: rgb(28, 28, 28);
+    }
+
+    .basket__buymore {
+      .basket__btn--more {
+        background-color: $white;
+        // box-sizing: border-box;
+        border-width: 2px;
+        border-color: rgb(87, 159, 24);
+        border-style: solid;
+        width: 247px;
+        height: 50px;
+        
+
+        &:hover {
+          color: $white;
+          background-image: linear-gradient(
+          90deg,
+          rgb(87, 159, 24) 2%,
+          rgb(104, 183, 29) 100%
+        );
+        }
+      }
+    }
+
+    .basket__chekout {
+      color: rgb(255, 255, 255);
+
+      .basket__btn--chekout {
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(
+          90deg,
+          rgb(87, 159, 24) 2%,
+          rgb(104, 183, 29) 100%
+        );
+        border: none;
+        width: 251px;
+        height: 50px;
+
+        &:hover {
+          background-image: linear-gradient(
+          90deg,
+          rgb(104, 183, 29) 2%,
+          rgb(87, 159, 24) 100%
+        );
+        }
       }
     }
   }
