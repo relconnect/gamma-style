@@ -1,6 +1,6 @@
-.basket {
+.checkout {
   .page__title {
-    h1.page__title-basket {
+    h1.page__title-checkout {
       font-size: $page__title-size;
       font-family: $page__title-font;
       color: $page__title-color;
@@ -12,24 +12,92 @@
   }
 
   &__wrap {
-    max-width: 1370px;
-    margin: 0 auto;
+    width: 100%;
   }
 
-  .basket__table {
+  &__container {
+    display: flex;
+  }
+
+  .checkout__info {
+    width: 270px;
+    margin-left: 30px;
+    border: 2px solid $white;
+    height: fit-content;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-family: "Bahnschrift";
+    color: rgb(28, 28, 28);
+    // line-height: 0.9;
+
+    p {
+      display: flex;
+    }
+
+    .dotted {
+      flex: 1 1 auto;
+      border-bottom: 1px dotted rgb(28, 28, 28);
+      margin-bottom: 5px;
+    }
+
+    .cost,
+    .currency {
+      font-size: 20px;
+      font-family: "Bahnschrift";
+      color: rgb(28, 28, 28);
+      font-weight: bold;
+    }
+
+    .currency {
+      margin-left: 5px;
+    }
+
+    .checkout__info-summ {
+      font-size: 22px;
+      font-family: "Bahnschrift";
+      color: rgb(28, 28, 28);
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 40px;
+
+      .cost {
+        font-size: 26px;
+        font-family: "Bahnschrift";
+        color: rgb(103, 184, 29);
+        font-weight: bold;
+      }
+
+      .currency {
+        font-size: 26px;
+        font-family: "Bahnschrift";
+        color: rgb(103, 184, 29);
+        font-weight: bold;
+        text-transform: none;
+      }
+    }
+  }
+
+  &__form-wrap {
+    flex: 1 1 auto;
+  }
+
+  .checkout__table {
     background-color: $white;
     width: 100%;
     border-collapse: collapse; /* Убираем двойные линии между ячейками */
     tr {
       padding: 3px; /* Поля вокруг содержимого таблицы */
-      
+
       /* Параметры рамки */
       text-align: left; /* Выравнивание по левому краю */
       border-bottom: 3px solid #f2f2f3;
     }
 
     td {
-      padding-left: 40px;
+      padding-left: 20px;
       box-sizing: border-box;
     }
 
@@ -47,11 +115,11 @@
     tbody {
       td {
         box-sizing: border-box;
-        min-width: 120px;
+        // min-width: 120px;
       }
 
-      .basket__table-img {
-        padding: 40px 0px 40px 40px;
+      .checkout__table-img {
+        padding: 40px 0px 40px 20px;
         width: 16%;
 
         a {
@@ -66,12 +134,12 @@
         }
       }
 
-      .basket__table-product {
-        // width: 520px;
+      .checkout__table-product {
+        width: 490px;
+        padding-left: 20px;
 
         a {
           display: block;
-          
 
           p {
             font-size: 20px;
@@ -79,8 +147,9 @@
             color: rgb(28, 28, 28);
             line-height: 1.5;
             transition: all 0.2s linear;
+            max-width: 470px;
           }
-          
+
           &:hover {
             p {
               color: $main-color;
@@ -89,17 +158,17 @@
         }
       }
 
-      .basket__table-price {
+      .checkout__table-price {
         .currency {
           padding-left: 6px;
         }
 
-        .basket__price--old,
-        .basket__price--curent {
+        .checkout__price--old,
+        .checkout__price--curent {
           margin: 0;
         }
 
-        .basket__price--old {
+        .checkout__price--old {
           font-size: 18px;
           font-family: "Bahnschrift";
           color: rgb(154, 154, 154);
@@ -108,7 +177,7 @@
           line-height: 1.5;
         }
 
-        .basket__price--curent {
+        .checkout__price--curent {
           font-size: 26px;
           font-family: $main-font;
           color: $text-color;
@@ -117,7 +186,7 @@
         }
       }
 
-      .basket__table-quantity {
+      .checkout__table-quantity {
         .product__quantity {
           display: flex;
           align-items: center;
@@ -156,7 +225,7 @@
         }
       }
 
-      .basket__table-total {
+      .checkout__table-total {
         .total__price {
           font-size: 26px;
           font-family: $main-font;
@@ -169,34 +238,36 @@
         }
       }
 
-      .basket__table-dell {
+      .checkout__table-dell {
+        width: 75px;
         .product__dell {
           display: flex;
           justify-content: center;
           align-items: center;
-          border-radius: 4px;
-          background-color: rgb(255, 0, 0);
-          width: 28px;
-          height: 28px;
+          border-radius: 50%;
+          border: 2px solid rgb(255, 0, 0);
+          //   background-color:
+          width: 31px;
+          height: 31px;
           cursor: pointer;
 
           img {
-            width: 14px;
-            height: 14px;
+            width: 17px;
+            height: 17px;
           }
         }
       }
     }
   }
 
-  .basket__control {
+  .checkout__control {
     display: flex;
     background-color: rgb(255, 255, 255);
     padding: 35px 40px 36px 40px;
     justify-content: space-between;
     margin-bottom: 50px;
 
-    .basket__total-price {
+    .checkout__total-price {
       margin-left: auto;
       margin-right: 40px;
       display: flex;
@@ -226,14 +297,14 @@
       }
     }
 
-    .basket__btn {
+    .checkout__btn {
       font-size: 18px;
       font-family: $main-font-light;
       color: rgb(28, 28, 28);
     }
 
-    .basket__buymore {
-      .basket__btn--more {
+    .checkout__buymore {
+      .checkout__btn--more {
         background-color: $white;
         // box-sizing: border-box;
         border-width: 2px;
@@ -241,23 +312,22 @@
         border-style: solid;
         width: 247px;
         height: 50px;
-        
 
         &:hover {
           color: $white;
           background-image: linear-gradient(
-          90deg,
-          rgb(87, 159, 24) 2%,
-          rgb(104, 183, 29) 100%
-        );
+            90deg,
+            rgb(87, 159, 24) 2%,
+            rgb(104, 183, 29) 100%
+          );
         }
       }
     }
 
-    .basket__chekout {
+    .checkout__chekout {
       color: rgb(255, 255, 255);
 
-      .basket__btn--chekout {
+      .checkout__btn--chekout {
         color: rgb(255, 255, 255);
         background-image: linear-gradient(
           90deg,
@@ -270,10 +340,10 @@
 
         &:hover {
           background-image: linear-gradient(
-          90deg,
-          rgb(104, 183, 29) 2%,
-          rgb(87, 159, 24) 100%
-        );
+            90deg,
+            rgb(104, 183, 29) 2%,
+            rgb(87, 159, 24) 100%
+          );
         }
       }
     }

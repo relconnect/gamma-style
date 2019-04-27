@@ -2488,3 +2488,325 @@ footer {
 .basket .basket__control .basket__chekout .basket__btn--chekout:hover {
   background-image: linear-gradient(90deg, #68b71d 2%, #579f18 100%);
 }
+
+.checkout .page__title h1.page__title-checkout {
+  font-size: 26px;
+  font-family: "HelveticaBold";
+  color: #1c1c1c;
+  text-transform: uppercase;
+  line-height: 0.769;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.checkout__wrap {
+  width: 100%;
+}
+
+.checkout__container {
+  display: flex;
+}
+
+.checkout .checkout__info {
+  width: 270px;
+  margin-left: 30px;
+  border: 2px solid white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+}
+
+.checkout .checkout__info p {
+  display: flex;
+}
+
+.checkout .checkout__info .dotted {
+  flex: 1 1 auto;
+  border-bottom: 1px dotted #1c1c1c;
+  margin-bottom: 5px;
+}
+
+.checkout .checkout__info .cost,
+.checkout .checkout__info .currency {
+  font-size: 20px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+.checkout .checkout__info .currency {
+  margin-left: 5px;
+}
+
+.checkout .checkout__info .checkout__info-summ {
+  font-size: 22px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.checkout .checkout__info .checkout__info-summ .cost {
+  font-size: 26px;
+  font-family: "Bahnschrift";
+  color: #67b81d;
+  font-weight: bold;
+}
+
+.checkout .checkout__info .checkout__info-summ .currency {
+  font-size: 26px;
+  font-family: "Bahnschrift";
+  color: #67b81d;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.checkout__form-wrap {
+  flex: 1 1 auto;
+}
+
+.checkout .checkout__table {
+  background-color: white;
+  width: 100%;
+  border-collapse: collapse;
+  /* Убираем двойные линии между ячейками */
+}
+
+.checkout .checkout__table tr {
+  padding: 3px;
+  /* Поля вокруг содержимого таблицы */
+  /* Параметры рамки */
+  text-align: left;
+  /* Выравнивание по левому краю */
+  border-bottom: 3px solid #f2f2f3;
+}
+
+.checkout .checkout__table td {
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.checkout .checkout__table thead tr {
+  height: 50px;
+  font-size: 17px;
+  font-family: "Bahnschrift";
+  color: #67b81d;
+  line-height: 1.75;
+  text-align: left;
+}
+
+.checkout .checkout__table tbody td {
+  box-sizing: border-box;
+}
+
+.checkout .checkout__table tbody .checkout__table-img {
+  padding: 40px 0px 40px 20px;
+  width: 16%;
+}
+
+.checkout .checkout__table tbody .checkout__table-img a {
+  display: block;
+  max-height: 180px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.checkout .checkout__table tbody .checkout__table-img a img {
+  max-width: 180px;
+  max-height: 180px;
+}
+
+.checkout .checkout__table tbody .checkout__table-product {
+  width: 490px;
+  padding-left: 20px;
+}
+
+.checkout .checkout__table tbody .checkout__table-product a {
+  display: block;
+}
+
+.checkout .checkout__table tbody .checkout__table-product a p {
+  font-size: 20px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  line-height: 1.5;
+  transition: all 0.2s linear;
+  max-width: 470px;
+}
+
+.checkout .checkout__table tbody .checkout__table-product a:hover p {
+  color: #67b81d;
+}
+
+.checkout .checkout__table tbody .checkout__table-price .currency {
+  padding-left: 6px;
+}
+
+.checkout .checkout__table tbody .checkout__table-price .checkout__price--old,
+.checkout .checkout__table tbody .checkout__table-price .checkout__price--curent {
+  margin: 0;
+}
+
+.checkout .checkout__table tbody .checkout__table-price .checkout__price--old {
+  font-size: 18px;
+  font-family: "Bahnschrift";
+  color: #9a9a9a;
+  font-weight: bold;
+  text-decoration: line-through;
+  line-height: 1.5;
+}
+
+.checkout .checkout__table tbody .checkout__table-price .checkout__price--curent {
+  font-size: 26px;
+  font-family: "Bahnschrift";
+  color: black;
+  font-weight: bold;
+}
+
+.checkout .checkout__table tbody .checkout__table-quantity .product__quantity {
+  display: flex;
+  align-items: center;
+}
+
+.checkout .checkout__table tbody .checkout__table-quantity .product__quantity .minus {
+  cursor: pointer;
+}
+
+.checkout .checkout__table tbody .checkout__table-quantity .product__quantity .minus img {
+  width: 15px;
+}
+
+.checkout .checkout__table tbody .checkout__table-quantity .product__quantity .plus {
+  cursor: pointer;
+}
+
+.checkout .checkout__table tbody .checkout__table-quantity .product__quantity .plus img {
+  width: 15px;
+}
+
+.checkout .checkout__table tbody .checkout__table-quantity .product__quantity .number input {
+  text-align: center;
+  width: 56px;
+  font-size: 22px;
+  font-family: "PTSans Bold";
+  color: #222222;
+  line-height: 2.273;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 2px solid #67b81d;
+}
+
+.checkout .checkout__table tbody .checkout__table-total .total__price {
+  font-size: 26px;
+  font-family: "Bahnschrift";
+  color: black;
+  font-weight: bold;
+}
+
+.checkout .checkout__table tbody .checkout__table-total .total__price .currency {
+  padding-left: 6px;
+}
+
+.checkout .checkout__table tbody .checkout__table-dell {
+  width: 75px;
+}
+
+.checkout .checkout__table tbody .checkout__table-dell .product__dell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid red;
+  width: 31px;
+  height: 31px;
+  cursor: pointer;
+}
+
+.checkout .checkout__table tbody .checkout__table-dell .product__dell img {
+  width: 17px;
+  height: 17px;
+}
+
+.checkout .checkout__control {
+  display: flex;
+  background-color: white;
+  padding: 35px 40px 36px 40px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.checkout .checkout__control .checkout__total-price {
+  margin-left: auto;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.checkout .checkout__control .checkout__total-price .total__price {
+  font-size: 26px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+.checkout .checkout__control .checkout__total-price .currency {
+  font-size: 22px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+.checkout .checkout__control .checkout__total-price .total {
+  font-size: 22px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  text-transform: uppercase;
+  margin-right: 35px;
+}
+
+.checkout .checkout__control .checkout__btn {
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  color: #1c1c1c;
+}
+
+.checkout .checkout__control .checkout__buymore .checkout__btn--more {
+  background-color: white;
+  border-width: 2px;
+  border-color: #579f18;
+  border-style: solid;
+  width: 247px;
+  height: 50px;
+}
+
+.checkout .checkout__control .checkout__buymore .checkout__btn--more:hover {
+  color: white;
+  background-image: linear-gradient(90deg, #579f18 2%, #68b71d 100%);
+}
+
+.checkout .checkout__control .checkout__chekout {
+  color: white;
+}
+
+.checkout .checkout__control .checkout__chekout .checkout__btn--chekout {
+  color: white;
+  background-image: linear-gradient(90deg, #579f18 2%, #68b71d 100%);
+  border: none;
+  width: 251px;
+  height: 50px;
+}
+
+.checkout .checkout__control .checkout__chekout .checkout__btn--chekout:hover {
+  background-image: linear-gradient(90deg, #68b71d 2%, #579f18 100%);
+}
