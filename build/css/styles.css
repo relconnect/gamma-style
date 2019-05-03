@@ -2814,12 +2814,14 @@ footer {
 
 .checkout .form__info {
   display: flex;
+  justify-content: space-between;
   background-color: #fff;
-  padding: 30px 30px 35px 20px;
+  padding: 10px 20px 35px 20px;
 }
 
-.checkout .form__info p {
+.checkout .form__info-text {
   font-size: 18px;
+  margin-bottom: 30px;
   font-family: "BahnschriftLight";
   color: #dfdfdf;
 }
@@ -2905,4 +2907,132 @@ footer {
 
 .checkout .form__info-block label.visible {
   opacity: 1;
+}
+
+.checkout .form__info .form__message {
+  flex: 0 1 600px;
+  margin: 0 auto;
+}
+
+.checkout .form__info .form__message-title {
+  font-size: 20px;
+  font-family: "Bahnschrift";
+  color: #579f18;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.checkout .form__info .form__message-text {
+  font-size: 20px;
+  font-family: "Bahnschrift";
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.checkout .form__info .form__message-img {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.catalog__filter {
+  flex: 1 1 370px;
+}
+
+.catalog__wrap {
+  margin-left: 30px;
+  flex: 1 1 1170px;
+}
+
+.catalog .page__title-text {
+  font-size: 26px;
+  font-family: "HelveticaBold";
+  color: #1c1c1c;
+  line-height: 1;
+  margin-top: 0;
+}
+
+.catalog__controls .filter-active {
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__controls .filter-item {
+  display: inline-block;
+  border: 2px solid #dfdfdf;
+  box-sizing: border-box;
+  margin-left: 10px;
+  transition: all 0.1s linear;
+  color: black;
+}
+
+.catalog__controls .filter-item:first-of-type {
+  margin-left: 0px;
+}
+
+.catalog__controls .filter-item:hover {
+  border: 2px solid #67b81d;
+}
+
+.catalog__controls .filter-item:hover .filter-link {
+  color: inherit;
+}
+
+.catalog__controls .filter-item:hover .filter-link:after {
+  content: "";
+  background: url("../../../img/icons/close-button-active.svg") no-repeat center center;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-size: contain;
+  right: 0px;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: all 0.1s linear;
+}
+
+.catalog__controls .filter-item:hover .filter-link_reset:after {
+  content: none;
+}
+
+.catalog__controls .filter-item:hover .filter-link_reset {
+  color: red;
+}
+
+.catalog__controls .filter-item_reset:hover {
+  border: 2px solid red;
+}
+
+.catalog__controls .filter-link {
+  display: block;
+  font-size: 16px;
+  font-family: "BahnschriftLight";
+  color: #dfdfdf;
+  padding: 3px 27px 3px 9px;
+  position: relative;
+  transition: all 0.1s linear;
+}
+
+.catalog__controls .filter-link:after {
+  content: "";
+  background: url("../../../img/icons/close-button.svg") no-repeat center center;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-size: contain;
+  right: 0px;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.catalog__controls .filter-link_reset {
+  padding-right: 9px;
+}
+
+.catalog__controls .filter-link_reset:after {
+  content: none;
 }

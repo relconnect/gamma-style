@@ -1,13 +1,14 @@
 /*
    Import partials below
 */
-@import 'normalize';
-@import 'variables';
-@import 'fonts';
-@import 'common';
-@import './components';
-@import '../html/pages/main/main';
-@import '../html/pages/contacts/contacts';
-@import '../html/pages/basket/basket';
-@import '../html/pages/checkout/checkout';
-@import 'media';
+@import "normalize";
+@import "variables";
+@import "fonts";
+@import "common";
+@import "./components";
+@import "../html/pages/main/main";
+@import "../html/pages/contacts/contacts";
+@import "../html/pages/basket/basket";
+@import "../html/pages/checkout/checkout";
+@import "../html/pages/catalog/catalog";
+@import "media";

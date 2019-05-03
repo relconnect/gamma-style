@@ -209,7 +209,9 @@
             </div>
             <div class="form__info">
               <div class="form__info-block">
-                <p>Для получения заказа необходимо заполнить форму</p>
+                <p class="form__info-text">
+                  Для получения заказа необходимо заполнить форму
+                </p>
                 <div class="form__name">
                   <label class="form__label" for="name">Имя</label>
 
@@ -255,12 +257,20 @@
                 </button>
               </div>
               <div class="form__message">
-                <h2>Ваш заказ принят</h2>
-                <p>Если у Вас возникли вопросы, пожалуйста свяжитесь с нами.</p>
-                <p>Спасибо за покупки в нашем интернет-магазине!</p>
+                <h2 class="form__message-title">Ваш заказ принят</h2>
+                <p class="form__message-text">
+                  Если у Вас возникли вопросы, пожалуйста свяжитесь с нами.
+                </p>
+                <p class="form__message-text">
+                  Спасибо за покупки в нашем интернет-магазине!
+                </p>
                 <img
+                  class="form__message-img"
                   src="../../../img/checkout/bag-success@1x.png"
-                  srcset="bag-success@1x.png 1x, bag-success@2x 2x"
+                  srcset="
+                    img/checkout/bag-success@1x.png,
+                    img/checkout/bag-success@2x.png 2x
+                  "
                   alt="bag"
                 />
               </div>

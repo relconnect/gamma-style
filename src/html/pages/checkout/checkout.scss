@@ -352,14 +352,16 @@
 
   .form__info {
     display: flex;
+    justify-content: space-between;
 
-    p {
+    &-text {
       font-size: 18px;
+      margin-bottom: 30px;
       font-family: $main-font-light;
       color: rgb(223, 223, 223);
     }
     background-color: #fff;
-    padding: 30px 30px 35px 20px;
+    padding: 10px 20px 35px 20px;
 
     .form__name,
     .form__surname,
@@ -436,6 +438,33 @@
         &.visible {
           opacity: 1;
         }
+      }
+    }
+
+    .form__message {
+      flex: 0 1 600px;
+      margin: 0 auto;
+
+      &-title {
+        font-size: 20px;
+        font-family: $main-font;
+        color: rgb(87, 159, 24);
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      &-text {
+        font-size: 20px;
+        font-family: $main-font;
+        color: $text-color;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      &-img {
+        margin: 0 auto;
+        margin-top: 50px;
       }
     }
   }
