@@ -20,7 +20,8 @@
   }
 
   .checkout__info {
-    width: 270px;
+    min-width: 270px;
+    max-width: 400px;
     margin-left: 30px;
     border: 2px solid $white;
     height: fit-content;
@@ -344,6 +345,96 @@
             rgb(104, 183, 29) 2%,
             rgb(87, 159, 24) 100%
           );
+        }
+      }
+    }
+  }
+
+  .form__info {
+    display: flex;
+
+    p {
+      font-size: 18px;
+      font-family: $main-font-light;
+      color: rgb(223, 223, 223);
+    }
+    background-color: #fff;
+    padding: 30px 30px 35px 20px;
+
+    .form__name,
+    .form__surname,
+    .form__city,
+    .form__adress {
+      position: relative;
+      margin-bottom: 38px;
+    }
+
+    & label {
+      position: absolute;
+      top: -15px;
+      font-size: 12px;
+      font-family: $main-font-light;
+      color: #579f18;
+      font-weight: 700;
+      opacity: 0;
+    }
+
+    &-block {
+      width: 504px;
+
+      .submit__form-btn {
+        color: $white;
+        font-size: 18px;
+        font-family: $main-font-light;
+        height: 50px;
+        width: 100%;
+        background-image: linear-gradient(
+          90deg,
+          rgb(87, 159, 24) 2%,
+          rgb(104, 183, 29) 100%
+        );
+        border: none;
+        outline: none;
+      }
+    }
+
+    &-block {
+      .form__input {
+        height: 26px;
+        font-size: 16px;
+        font-family: $main-font-light;
+        color: #1c1c1c;
+        line-height: 1.5;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #c0de97;
+        opacity: 0.6;
+        position: relative;
+
+        &:focus {
+          font-size: 16px;
+          font-family: $main-font-light;
+          //   color: #1c1c1c;
+          opacity: 1;
+          border-bottom: 1px solid #579f18;
+
+          &::placeholder {
+            color: transparent;
+          }
+        }
+      }
+
+      label {
+        position: absolute;
+        top: -15px;
+        font-size: 12px;
+        font-family: $main-font-light;
+        color: #579f18;
+        font-weight: 700;
+        opacity: 0;
+
+        &.visible {
+          opacity: 1;
         }
       }
     }

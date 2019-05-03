@@ -2508,7 +2508,8 @@ footer {
 }
 
 .checkout .checkout__info {
-  width: 270px;
+  min-width: 270px;
+  max-width: 400px;
   margin-left: 30px;
   border: 2px solid white;
   height: -webkit-fit-content;
@@ -2809,4 +2810,99 @@ footer {
 
 .checkout .checkout__control .checkout__chekout .checkout__btn--chekout:hover {
   background-image: linear-gradient(90deg, #68b71d 2%, #579f18 100%);
+}
+
+.checkout .form__info {
+  display: flex;
+  background-color: #fff;
+  padding: 30px 30px 35px 20px;
+}
+
+.checkout .form__info p {
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  color: #dfdfdf;
+}
+
+.checkout .form__info .form__name,
+.checkout .form__info .form__surname,
+.checkout .form__info .form__city,
+.checkout .form__info .form__adress {
+  position: relative;
+  margin-bottom: 38px;
+}
+
+.checkout .form__info label {
+  position: absolute;
+  top: -15px;
+  font-size: 12px;
+  font-family: "BahnschriftLight";
+  color: #579f18;
+  font-weight: 700;
+  opacity: 0;
+}
+
+.checkout .form__info-block {
+  width: 504px;
+}
+
+.checkout .form__info-block .submit__form-btn {
+  color: white;
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  height: 50px;
+  width: 100%;
+  background-image: linear-gradient(90deg, #579f18 2%, #68b71d 100%);
+  border: none;
+  outline: none;
+}
+
+.checkout .form__info-block .form__input {
+  height: 26px;
+  font-size: 16px;
+  font-family: "BahnschriftLight";
+  color: #1c1c1c;
+  line-height: 1.5;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #c0de97;
+  opacity: 0.6;
+  position: relative;
+}
+
+.checkout .form__info-block .form__input:focus {
+  font-size: 16px;
+  font-family: "BahnschriftLight";
+  opacity: 1;
+  border-bottom: 1px solid #579f18;
+}
+
+.checkout .form__info-block .form__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.checkout .form__info-block .form__input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.checkout .form__info-block .form__input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.checkout .form__info-block .form__input:focus::placeholder {
+  color: transparent;
+}
+
+.checkout .form__info-block label {
+  position: absolute;
+  top: -15px;
+  font-size: 12px;
+  font-family: "BahnschriftLight";
+  color: #579f18;
+  font-weight: 700;
+  opacity: 0;
+}
+
+.checkout .form__info-block label.visible {
+  opacity: 1;
 }
