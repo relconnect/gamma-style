@@ -2953,10 +2953,18 @@ footer {
   margin-top: 0;
 }
 
+.catalog__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .catalog__controls .filter-active {
   padding-left: 0px;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .catalog__controls .filter-item {
@@ -3035,4 +3043,117 @@ footer {
 
 .catalog__controls .filter-link_reset:after {
   content: none;
+}
+
+.catalog__controls .sort {
+  display: flex;
+}
+
+.catalog__controls .sort__dropdown .dropdown__param .arrow {
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  display: inline-flex;
+  top: 7px;
+  right: 5px;
+  margin: auto;
+  justify-content: center;
+}
+
+.catalog__controls .sort__dropdown .dropdown__param.open .dropdown__list-sort {
+  opacity: 1;
+}
+
+.catalog__controls .sort__dropdown .dropdown__param.open .arrow::after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.catalog__controls .sort__dropdown .dropdown__list-sort {
+  width: 100%;
+  opacity: 0;
+  border: 1px solid #dedede;
+  background-color: white;
+  padding: 10px 20px 10px 15px;
+  box-sizing: border-box;
+}
+
+.catalog__controls .sort__dropdown .dropdown__list-sort li {
+  margin-bottom: 10px;
+}
+
+.catalog__controls .sort-active {
+  display: block;
+  padding: 4px 40px 4px 15px;
+  border: 1px solid #dedede;
+  background-color: white;
+}
+
+.catalog__controls .sort_param {
+  display: block;
+  font-size: 18px;
+  font-family: "PTSans";
+  color: #222222;
+  line-height: 1.5;
+  border-width: 1px;
+  transition: all 0.2s linear;
+}
+
+.catalog__controls .sort_param:hover {
+  color: #67b81d;
+  transition: all 0.1s linear;
+}
+
+.catalog__controls .sort .catalog__mode {
+  display: flex;
+  align-items: center;
+}
+
+.catalog__controls .sort .catalog__mode-btn {
+  margin-left: 20px;
+  width: 32px;
+  height: 32px;
+}
+
+.catalog__controls .sort .catalog__mode .mode__link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.catalog__controls .sort .catalog__mode .mode__link-list:after {
+  content: "";
+  background: url("../../../img/icons/mode-list.svg") no-repeat center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.catalog__controls .sort .catalog__mode .mode__link-list.active:after {
+  content: "";
+  background: url("../../../img/icons/mode-list-active.svg") no-repeat center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.catalog__controls .sort .catalog__mode .mode__link-grid:after {
+  content: "";
+  background: url("../../../img/icons/mode-menu.svg") no-repeat center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.catalog__controls .sort .catalog__mode .mode__link-grid.active:after {
+  content: "";
+  background: url("../../../img/icons/mode-menu-active.svg") no-repeat center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }

@@ -69,17 +69,38 @@ $(document).ready(function() {
     e.stopPropagation();
   });
 
-  $('.form__input').focus(function(){
-    $(this).siblings('.form__label').addClass('visible');
+  $(".form__input").focus(function() {
+    $(this)
+      .siblings(".form__label")
+      .addClass("visible");
   });
-  $('.form__message').focus(function(){
-    $(this).siblings('.form__label').addClass('visible');
+  $(".form__message").focus(function() {
+    $(this)
+      .siblings(".form__label")
+      .addClass("visible");
   });
 
-  $('.form__input').blur(function(){
-    $(this).siblings('.form__label').removeClass('visible');
+  $(".form__input").blur(function() {
+    $(this)
+      .siblings(".form__label")
+      .removeClass("visible");
   });
-  $('.form__message').blur(function(){
-    $(this).siblings('.form__label').removeClass('visible');
+  $(".form__message").blur(function() {
+    $(this)
+      .siblings(".form__label")
+      .removeClass("visible");
+  });
+
+  //Меняем цвет активной кнопки для изменения отображения товаров в каталоге
+
+  $(function() {
+    $(".mode__link").click(function(e) {
+      e.preventDefault();
+
+      $(".mode__link").each(function(index, elem) {
+        $(elem).removeClass("active");
+      });
+      $(e.target).addClass("active");
+    });
   });
 });
