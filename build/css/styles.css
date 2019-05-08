@@ -2068,6 +2068,40 @@ footer {
   margin-top: 20px;
 }
 
+.catalog__filter .more-filter__btn {
+  font-size: 16px;
+  font-family: "BahnschriftLight";
+  color: #1c1c1c;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.1s linear;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.catalog__filter .more-filter__btn:after {
+  content: "";
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  background: url(../../../img/arrow/arrow-active-top.svg) no-repeat 50%;
+  background-size: 60%;
+  z-index: 1000;
+  top: 0;
+  left: 60px;
+  transition: all 0.5s ease;
+}
+
+.catalog__filter .more-filter__btn:hover {
+  color: #67b81d;
+}
+
+.catalog__filter .more-filter__btn.open:after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 .catalog__filter .filter_block-name .filter_title {
   font-size: 18px;
   font-family: "Bahnschrift";
@@ -2187,6 +2221,7 @@ footer {
 .catalog__filter .filter__params-list {
   padding: 0;
   margin: 0;
+  overflow-y: hidden;
 }
 
 .catalog__filter .filter__params-list .filter__params-item {

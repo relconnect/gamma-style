@@ -37,6 +37,34 @@
   .filter-controls {
     margin-top: 20px;
   }
+  .more-filter__btn {
+    font-size: 16px;
+    font-family: $main-font-light;
+    color: rgb(28, 28, 28);
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.1s linear;
+    position: relative;
+    transform: rotate(0deg);
+    &:after {
+      content: "";
+      width: 20px;
+      height: 18px;
+      position: absolute;
+      background: url(../../../img/arrow/arrow-active-top.svg) no-repeat 50%;
+      background-size: 60%;
+      z-index: 1000;
+      top: 0;
+      left: 60px;
+      transition: all 0.5s ease;
+    }
+    &:hover {
+      color: rgb(103, 184, 29);
+    }
+    &.open:after {
+      transform: rotate(180deg);
+    }
+  }
   .filter_block-name {
     .filter_title {
       font-size: 18px;
@@ -152,6 +180,7 @@
   .filter__params-list {
     padding: 0;
     margin: 0;
+    overflow-y: hidden;
 
     .filter__params-item {
       // margin-bottom: 22px;

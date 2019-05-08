@@ -137,4 +137,32 @@ $(document).ready(function() {
     var $this = $(this);
     $("#slider").slider("values", $this.data("index"), $this.val());
   });
+
+  // Плавное появление списка фильтров в каталоге
+  $(function() {
+    var nav = $(".more-filter__btn").prev(),
+      animateTime = 500,
+      navLink = $(".more-filter__btn");
+    navLink.click(function(e) {
+      if (nav.height() === 164) {
+        autoHeightAnimate(nav, animateTime);
+        nav.removeClass("hide");
+        $(".more-filter__btn").toggleClass("open");
+      } else {
+        nav.stop().animate({ height: "164" }, animateTime);
+        nav.addClass("hide");
+        $(".more-filter__btn").toggleClass("open");
+      }
+    });
+
+    /* Function to animate height: auto */
+    function autoHeightAnimate(element, time) {
+      var curHeight = element.height(); // Get Default Height
+      console.log(curHeight);
+      autoHeight = element.css("height", "auto").height(); // Get Auto Height
+      console.log(autoHeight);
+      element.height(curHeight); // Reset to Default Height
+      element.stop().animate({ height: autoHeight }, time); // Animate to Auto Height
+    }
+  });
 });
