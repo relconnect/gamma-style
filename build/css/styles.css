@@ -1200,7 +1200,7 @@ footer {
   position: absolute;
   top: 90px;
   left: 0px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .sub-menu__list {
