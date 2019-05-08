@@ -61,7 +61,7 @@ gulp.task('styles2', () =>
 
 gulp.task('styles3', () =>
   gulp
-    .src('/src/scss/jquery-ui.min.css')
+    .src('./src/scss/jquery-ui.min.css')
     .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.stream()),
 );

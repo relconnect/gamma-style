@@ -1,6 +1,7 @@
 .catalog {
   // display: flex;
-  &__filter {
+  &__filter-wrap {
+    margin-top: 30px;
     // width: 370px;
     flex: 1 1 370px;
   }
@@ -20,7 +21,7 @@
     flex: 1 1 877px;
     box-sizing: border-box;
     border-radius: 10px;
-    z-index: 10;
+    // z-index: 10;
     overflow: hidden;
 
     &:nth-last-child(-n + 3) {
@@ -316,6 +317,41 @@
   .product__item {
     &:nth-last-child(-n + 3) {
       margin-bottom: 0px;
+    }
+  }
+  //Popup menu
+  &__popup-menu {
+    background-image: linear-gradient(90deg, #559f18, #67b81d);
+    // width: 370px;
+    height: 50px;
+    display: flex;
+    .popup-menu-link {
+      display: block;
+      height: 100%;
+      width: 50px;
+      position: relative;
+      margin-left: 6px;
+      &:after {
+        content: "";
+        background: url(../../../img/icons/mode-list.svg) no-repeat 50%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: 50%;
+      }
+    }
+
+    .popup-menu-text {
+      margin: 0;
+      font-size: 18px;
+      font-family: $main-font;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      margin-top: 3px;
+      padding-left: 10px;
     }
   }
 }

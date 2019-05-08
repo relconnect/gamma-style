@@ -103,4 +103,38 @@ $(document).ready(function() {
       $(e.target).addClass("active");
     });
   });
+
+  // Show/hide  параметры фильтра в каталоге
+  $(function() {
+    $(".filter_block-name .filter_img").click(function(e) {
+      let img = $(this);
+      let parent = img.closest(".filter_block");
+      img.toggleClass("show");
+      if (!img.hasClass("show")) {
+        parent.find(".js-show").hide(100);
+      } else {
+        parent.find(".js-show").show(100);
+      }
+    });
+  });
+});
+//Настройка range слайдера
+$(document).ready(function() {
+  $("#slider").slider({
+    min: 0,
+    max: 5000,
+    step: 1,
+    range: true,
+    values: [0, 5000],
+    slide: function(event, ui) {
+      for (var i = 0; i < ui.values.length; ++i) {
+        $("input.sliderValue[data-index=" + i + "]").val(ui.values[i]);
+      }
+    }
+  });
+
+  $("input.sliderValue").change(function() {
+    var $this = $(this);
+    $("#slider").slider("values", $this.data("index"), $this.val());
+  });
 });

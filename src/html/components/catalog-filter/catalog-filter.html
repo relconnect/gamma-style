@@ -1,0 +1,99 @@
+<div class="catalog__filter">
+  <p class="catalog__filter-text">Фильтр</p>
+  <form>
+    <ul class="catalog__filter-list">
+      <li class="catalog__filter-item">
+        <div class="filter_block price-filter">
+          <div class="filter_block-name">
+            <span class="filter_title">Цена</span>
+            <img src="../../../img/icons/plus.svg" class="filter_img show" />
+            <!-- Add class active to show filter -->
+          </div>
+          <div class="filter-controls price-control js-show">
+            <div class="price-control-wrap">
+              <label for="start-value"
+                >от<input
+                  type="text"
+                  name="start-value"
+                  class="sliderValue filter-price price-min"
+                  data-index="0"
+                  value="0"
+              /></label>
+              <label for="end-value"
+                >до<input
+                  type="text"
+                  name="end-value"
+                  class="sliderValue filter-price price-max"
+                  data-index="1"
+                  value="5000"
+              /></label>
+            </div>
+            <div id="slider"></div>
+          </div>
+        </div>
+      </li>
+      <li class="catalog__filter-item">
+        <div class="filter_block type-filter">
+          <div class="filter_block-name">
+            <span class="filter_title">Тип</span>
+            <img src="../../../img/icons/plus.svg" class="filter_img show" />
+            <!-- Add class active to show filter -->
+          </div>
+          <div class="filter-controls type-control js-show">
+            <ul class="filter__params-list">
+              <li class="filter__params-item">
+                <input type="checkbox" name="type" id="type1" /><label
+                  for="type1"
+                  >Столы для пеерговоров</label
+                >
+              </li>
+              <li class="filter__params-item">
+                <input type="checkbox" name="type" id="type2" /><label
+                  for="type2"
+                  >Прямые столы</label
+                >
+              </li>
+              <li class="filter__params-item">
+                <input type="checkbox" name="type" id="type3" /><label
+                  for="type3"
+                  >Угловые столы</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="catalog__filter-item">
+        <div class="filter_block type-filter">
+          <div class="filter_block-name">
+            <span class="filter_title">Цвет</span>
+            <img src="../../../img/icons/plus.svg" class="filter_img show" />
+            <!-- Add class active to show filter -->
+          </div>
+          <div class="filter-controls type-control js-show">
+            <ul class="filter__params-list">
+              <li class="filter__params-item">
+                <input type="checkbox" name="type" id="color1" /><label
+                  for="color1"
+                  >Желтый</label
+                >
+              </li>
+              <li class="filter__params-item">
+                <input type="checkbox" name="type" id="color2" /><label
+                  for="color2"
+                  >Синий</label
+                >
+              </li>
+              <li class="filter__params-item">
+                <input type="checkbox" name="type" id="color3" /><label
+                  for="color3"
+                  >Красный</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </form>
+</div>
