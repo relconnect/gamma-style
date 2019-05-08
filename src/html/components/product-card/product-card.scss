@@ -1,0 +1,151 @@
+.product__item {
+  width: 33.1%;
+  background-color: $white;
+  position: relative;
+  // border-radius: 10px;
+  // margin-right: 3px;
+  height: inherit;
+  padding: 20px 20px 30px;
+  box-sizing: border-box;
+  margin-bottom: 3px;
+
+  //   &::after {
+  //     content: " ";
+  //     background-image: url("../../../img/tabs-slider/sale-img.png");
+  //     position: absolute;
+  //     top: 20px;
+  //     right: 20px;
+  //     display: block;
+  //     width: 100px;
+  //     height: 100px;
+  //   }
+
+  &.notavailable {
+    filter: grayscale(100%);
+
+    h2,
+    .product__price-new {
+      color: rgb(223, 223, 223);
+    }
+  }
+}
+
+.product {
+  &-compare__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: none;
+    outline-color: transparent;
+  }
+
+  &-compare__link.active {
+    .control__icon-libra {
+      fill: $main-color;
+    }
+
+    .compare-show {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 18px;
+      height: 18px;
+
+      &::after {
+        content: url("../../../img/arrow/compared.png");
+        position: absolute;
+        top: 5px;
+      }
+    }
+  }
+
+  &__notavailable {
+    font-size: 18px;
+    font-family: $main-font;
+    color: rgb(223, 223, 223);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 38px;
+    display: none;
+  }
+
+  &__title {
+    width: 95%;
+    font-size: 18px;
+    font-family: $main-font;
+    color: $text-color;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 27px;
+    padding-left: 10px;
+    margin-bottom: 57px;
+    letter-spacing: 0.5px;
+  }
+
+  &__img {
+    width: 100%;
+    min-height: 180px;
+    position: relative;
+  }
+
+  &__price {
+    font-family: $main-font;
+    padding-left: 10px;
+    min-height: 10px;
+    letter-spacing: 1px;
+
+    span {
+      margin-left: 6px;
+    }
+
+    &-new {
+      font-size: 26px;
+      font-family: $main-font;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      margin-top: 5px;
+
+      &:first-letter {
+        margin-right: 5px;
+      }
+    }
+
+    &-old {
+      font-size: 18px;
+      font-family: $main-font;
+      color: rgb(223, 223, 223);
+      font-weight: bold;
+      text-decoration: line-through;
+      margin-left: 5px;
+    }
+  }
+
+  &__buy {
+    display: flex;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+
+  &__button {
+    width: 183px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: $main-font-light;
+    color: $white;
+    // border-radius: 8px;
+    background-image: linear-gradient(90deg, $from-color, $to-color);
+    font-weight: 300;
+    position: relative;
+    padding: 14px 35px;
+    padding-left: 10%;
+    margin-right: 20px;
+    letter-spacing: 0.4px;
+
+    &:after {
+      content: url("../../../img/basket/basket.png");
+      position: absolute;
+      top: 8px;
+      right: 11%;
+    }
+  }
+}

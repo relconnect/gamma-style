@@ -24,6 +24,7 @@
       &::after {
         content: url("../../../img/arrow/compared.png");
         position: absolute;
+        top: 5px;
       }
     }
   }
@@ -213,9 +214,9 @@
 
 .price__block {
   min-height: 54px;
-  display: flex;  
+  display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .slick-slide {

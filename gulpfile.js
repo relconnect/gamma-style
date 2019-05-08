@@ -54,7 +54,14 @@ gulp.task('styles', () =>
 
 gulp.task('styles2', () =>
   gulp
-    .src(['./node_modules/responsive-tabs/css/responsive-tabs.css','./src/libs/slick/slick.css','./src/libs/slick/slick-theme.css'])   
+    .src(['./node_modules/responsive-tabs/css/responsive-tabs.css', './src/libs/slick/slick.css', './src/libs/slick/slick-theme.css'])
+    .pipe(gulp.dest('./build/css'))
+    .pipe(browserSync.stream()),
+);
+
+gulp.task('styles3', () =>
+  gulp
+    .src('/src/scss/jquery-ui.min.css')
     .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.stream()),
 );
@@ -62,7 +69,7 @@ gulp.task('styles2', () =>
 
 gulp.task('scripts', () =>
   gulp
-    .src(['./src/js/**/*.js','./src/js/**/*.min.js','./node_modules/responsive-tabs/js/jquery.responsiveTabs.js','./src/libs/slick/slick.js'])
+    .src(['./src/js/**/*.js', './src/js/**/*.min.js', './node_modules/responsive-tabs/js/jquery.responsiveTabs.js', './src/libs/slick/slick.js'])
     // .pipe(plumber())
     // .pipe(
     //   babel({
@@ -71,9 +78,9 @@ gulp.task('scripts', () =>
     // )
     // .pipe(concat('scripts.js'))
     .pipe(gulp.dest('./build/js'))
-    // .pipe(uglify())
-    // .pipe(rename('scripts.min.js'))
-    // .pipe(gulp.dest('./build/js')),
+  // .pipe(uglify())
+  // .pipe(rename('scripts.min.js'))
+  // .pipe(gulp.dest('./build/js')),
 );
 
 gulp.task('svg-sprite', () =>
@@ -104,7 +111,7 @@ gulp.task('images', () =>
 );
 
 gulp.task('fonts', () =>
-  gulp.src(['./src/fonts/**/*.{woff,woff2,ttf}','./src/libs/slick/fonts/**/*.{woff,woff2,ttf}']).pipe(gulp.dest('./build/fonts')),
+  gulp.src(['./src/fonts/**/*.{woff,woff2,ttf}', './src/libs/slick/fonts/**/*.{woff,woff2,ttf}']).pipe(gulp.dest('./build/fonts')),
 );
 
 gulp.task('watch', () => {
@@ -133,10 +140,11 @@ gulp.task('prepare', () => del(['**/.gitkeep', 'README.md', 'banner.png']));
 gulp.task('build', cb =>
   sequence(
     'del:build',
-    'svg-sprite',    
+    'svg-sprite',
     'fonts',
     'styles',
     'styles2',
+    'styles3',
     'html',
     'scripts',
     'images',
