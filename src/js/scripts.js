@@ -117,6 +117,35 @@ $(document).ready(function() {
       }
     });
   });
+
+  //Показать/скрыть дополнительное меню вторго уровня в каталоге
+  $(function() {
+    $(".sub-menu__item").hover(function(e) {
+      let item = $(this);
+      let link = item.find(".sub-menu__link");
+      link.toggleClass("show");
+      if ($(link).hasClass("show")) {
+        $(link)
+          .next(".sum-menu__list-second")
+          .show();
+      } else {
+        link.next(".sum-menu__list-second").hide();
+      }
+    });
+  });
+
+  $(function() {
+    $(".popup-menu-link").click(function(e) {
+      e.preventDefault();
+      $(this).toggleClass("isShown");
+
+      if ($(this).hasClass("isShown")) {
+        $(".pop-up__submenu").show();
+      } else {
+        $(".pop-up__submenu").hide();
+      }
+    });
+  });
 });
 //Настройка range слайдера
 $(document).ready(function() {
@@ -165,4 +194,16 @@ $(document).ready(function() {
       element.stop().animate({ height: autoHeight }, time); // Animate to Auto Height
     }
   });
+});
+
+//Скрываем дополнительное меню при клике за пределами блока
+$(document).on("click", function(e) {
+  if (
+    !$(e.target).closest($(".popup-menu-link")).length &&
+    $(".popup-menu-link").hasClass("isShown")
+  ) {
+    $(".popup-menu-link").removeClass("isShown");
+    $(".pop-up__submenu").hide();
+  }
+  e.stopPropagation();
 });

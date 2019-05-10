@@ -197,6 +197,9 @@
         input[type="checkbox"]:not(:checked) + label:before {
           border: 1px solid #67b81d;
         }
+        label {
+          color: #67b81d;
+        }
       }
       input[type="checkbox"]:checked,
       input[type="checkbox"]:not(:checked) {

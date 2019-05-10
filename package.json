@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/axZerk/gulp-starter-kit/issues"
   },
-  "homepage": "https://github.com/axZerk/gulp-starter-kit#readme",
+  "homepage": "https://relconnect.github.io/gamma-style/build/",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
     "babel-core": "^6.26.3",
