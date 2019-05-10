@@ -355,72 +355,72 @@
       padding-left: 10px;
     }
 
-    //Выпадающее меню на странице каталога
-    .pop-up__submenu {
-      display: none;
-      position: absolute;
-      width: 100%;
-      height: auto;
-      top: 50px;
-      z-index: 100;
-      background-color: $white;
-      border: 2px solid #67b81d;
-      box-sizing: border-box;
+   
+  }
+}
+ //Выпадающее меню на странице каталога
+ .pop-up__submenu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50px;
+  z-index: 100;
+  background-color: $white;
+  border: 2px solid #67b81d;
+  box-sizing: border-box;
+}
+  .sub-menu__item {
+    font-family: $main-font-light;
+    cursor: pointer;
+  }
 
-      .sub-menu__item {
-        font-family: $main-font-light;
-        cursor: pointer;
+  .sub-menu__link {
+    position: relative;
+
+    &:hover {
+      color: #67b81d;
+    }
+
+    &:after {
+      content: "";
+      width: 20px;
+      height: 18px;
+      position: absolute;
+      background: url(../../../img/arrow/arrow-active-top.svg) no-repeat 50%;
+      background-size: 60%;
+      z-index: 1000;
+      top: 0;
+      right: -30px;
+      transform: rotate(90deg);
+      transition: all 0.2s ease;
+    }
+
+    &.show {
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .sub-menu__list-second {
+    display: none;
+
+    .sub-menu__item-second {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      &:hover {
+        color: #67b81d;
       }
 
-      .sub-menu__link {
-        position: relative;
-
+      a {
+        display: block;
+        height: 100%;
+        color: #9a9a9a;
         &:hover {
           color: #67b81d;
-        }
-
-        &:after {
-          content: "";
-          width: 20px;
-          height: 18px;
-          position: absolute;
-          background: url(../../../img/arrow/arrow-active-top.svg) no-repeat 50%;
-          background-size: 60%;
-          z-index: 1000;
-          top: 0;
-          right: -30px;
-          transform: rotate(90deg);
-          transition: all 0.2s ease;
-        }
-
-        &.show {
-          &:after {
-            transform: rotate(180deg);
-          }
-        }
-      }
-
-      .sum-menu__list-second {
-        display: none;
-
-        .sub-menu__item-second {
-          margin-top: 10px;
-          margin-bottom: 10px;
-
-          &:hover {
-            color: #67b81d;
-          }
-
-          a {
-            display: block;
-            height: 100%;
-            color: #9a9a9a;
-            &:hover {
-              color: #67b81d;
-            }
-          }
         }
       }
     }
   }
-}
