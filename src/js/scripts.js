@@ -212,8 +212,9 @@ $(document).on("click", function (e) {
 
 $(function () {
   $(".cat__block").hover(function (e) {
-    console.log(1)
+
     let item = $(this);
+    item.addClass('hovered');
     let link = item.find(".promo");
     link.toggleClass("show");
     if ($(link).hasClass("show")) {
@@ -223,5 +224,15 @@ $(function () {
     } else {
       link.find(".pop-menu__list").hide();
     }
+  }, function () {
+    let item = $(this);
+    item.addClass('hovered');
+    let link = item.find(".promo");
+    link.toggleClass("show");
+
+    item.removeClass('hovered');
+    link.find(".pop-menu__list").hide();
+
+
   });
 });
