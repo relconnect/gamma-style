@@ -54,6 +54,10 @@
 
   .banner__wrap {
     padding-top: 0px;
+
+    .category__banner:first-of-type {
+      margin-bottom: 10px;
+    }
   }
 
   &__banner {
@@ -82,7 +86,7 @@
       margin-bottom: 4px;
       position: relative;
       &.hovered {
-        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);  
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);  
         z-index: 100;      
       }
     }
@@ -97,7 +101,7 @@
 
       img {
         width: 100%;
-        height: auto;
+        // height: auto;
       }
     }
 
@@ -110,7 +114,7 @@
       margin-bottom: 27px;
     }
   }
-  
+
   .promo {
     // position: absolute;
     width: 100%;
@@ -123,7 +127,7 @@
 
     &.show {
       position: absolute;
-      box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.1), -10px 10px 10px 0px rgba(0, 0, 0, 0.1);
     }
 
   }

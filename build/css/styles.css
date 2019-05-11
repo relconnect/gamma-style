@@ -3911,6 +3911,10 @@ footer {
   padding-top: 0px;
 }
 
+.category .banner__wrap .category__banner:first-of-type {
+  margin-bottom: 10px;
+}
+
 .category__banner a {
   display: block;
 }
@@ -3938,7 +3942,7 @@ footer {
 }
 
 .category__list .cat__block.hovered {
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
 
@@ -3954,7 +3958,6 @@ footer {
 
 .category__list .block__img img {
   width: 100%;
-  height: auto;
 }
 
 .category__list .block__title {
@@ -3977,7 +3980,7 @@ footer {
 
 .category .promo.show {
   position: absolute;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.1), -10px 10px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .category .pop-menu__list {
