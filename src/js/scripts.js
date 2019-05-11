@@ -9,7 +9,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 6000,
-    verticalSwiping: true
+    verticalSwiping: true,
+
   });
 
   $(".r-tabs-tab").click(function () {

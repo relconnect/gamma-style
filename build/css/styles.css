@@ -815,10 +815,6 @@ input {
 }
 
 .slick-slide {
-  min-width: 300px;
-}
-
-.slick-slide {
   margin-right: 2px;
 }
 
@@ -2311,6 +2307,84 @@ footer {
 
 .catalog__filter .filter__params-list .filter__params-item input[type="checkbox"]:checked + label:after {
   opacity: 1;
+}
+
+.category__tabs {
+  max-width: 1270px;
+  margin-left: 20%;
+}
+
+.category__tabs .stock__item .stock__button {
+  padding-left: 15px;
+  border-radius: unset;
+}
+
+.category__tabs .stock__item .stock__button:after {
+  right: 20px;
+}
+
+.category__tabs .best-sale {
+  margin-top: -5px;
+  margin-bottom: 85px;
+}
+
+.category__tabs .best-sale #bx-slider {
+  max-width: 1180px;
+}
+
+.category__tabs .best-sale #bx-slider .slick-prev {
+  left: -55px;
+}
+
+.category__tabs .best-sale #bx-slider .slick-next {
+  right: -55px;
+}
+
+.category__tabs .r-tabs {
+  width: 100%;
+}
+
+.category__tabs .r-tabs .r-tabs-nav {
+  position: relative;
+}
+
+.category__tabs .r-tabs .r-tabs-nav:before {
+  content: "";
+  position: absolute;
+  background-color: #dfdfdf;
+  left: 0;
+  bottom: -7px;
+  width: 100%;
+  height: 1px;
+}
+
+.category__tabs .r-tabs .r-tabs-nav .r-tabs-tab {
+  padding: 0 20px;
+  letter-spacing: 1.4px;
+}
+
+.category__tabs .r-tabs .r-tabs-nav .r-tabs-state-active {
+  position: relative;
+}
+
+.category__tabs .r-tabs .r-tabs-nav .r-tabs-state-active::before {
+  content: "";
+  position: absolute;
+  background-color: #67b81d;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 3px;
+}
+
+.category__tabs .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+  color: #67b81d;
+}
+
+.category__tabs .r-tabs .r-tabs-nav .r-tabs-anchor {
+  font-size: 26px;
+  font-family: "HelveticaLight";
+  color: #9a9a9a;
 }
 
 .category {
@@ -3856,6 +3930,7 @@ footer {
 
 .category__wrap {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .category__col-left {
@@ -3881,8 +3956,7 @@ footer {
 }
 
 .category__menu__list {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  border: 2px solid white;
   padding-left: 20px;
   padding-top: 35px;
   padding-bottom: 15px;

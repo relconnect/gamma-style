@@ -1,6 +1,7 @@
 .category {
   &__wrap {
     display: flex;
+    margin-bottom: 30px;
   }
 
   &__col-left {
@@ -26,8 +27,8 @@
   }
 
   &__menu__list {
-    border-top: 2px solid rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    // border: 2px solid rgb(255, 255, 255);
     padding-left: 20px;
     padding-top: 35px;
     padding-bottom: 15px;
