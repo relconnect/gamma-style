@@ -477,15 +477,15 @@ input {
   margin-bottom: 85px;
 }
 
-.r-tabs {
+.best-sale .r-tabs {
   width: 100%;
 }
 
-.r-tabs .r-tabs-nav {
+.best-sale .r-tabs .r-tabs-nav {
   position: relative;
 }
 
-.r-tabs .r-tabs-nav:before {
+.best-sale .r-tabs .r-tabs-nav:before {
   content: "";
   position: absolute;
   background-color: #dfdfdf;
@@ -495,16 +495,16 @@ input {
   height: 1px;
 }
 
-.r-tabs .r-tabs-nav .r-tabs-tab {
+.best-sale .r-tabs .r-tabs-nav .r-tabs-tab {
   padding: 0 20px;
   letter-spacing: 1.4px;
 }
 
-.r-tabs .r-tabs-nav .r-tabs-state-active {
+.best-sale .r-tabs .r-tabs-nav .r-tabs-state-active {
   position: relative;
 }
 
-.r-tabs .r-tabs-nav .r-tabs-state-active::before {
+.best-sale .r-tabs .r-tabs-nav .r-tabs-state-active::before {
   content: "";
   position: absolute;
   background-color: #67b81d;
@@ -514,11 +514,11 @@ input {
   height: 3px;
 }
 
-.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+.best-sale .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
   color: #67b81d;
 }
 
-.r-tabs .r-tabs-nav .r-tabs-anchor {
+.best-sale .r-tabs .r-tabs-nav .r-tabs-anchor {
   font-size: 26px;
   font-family: "HelveticaLight";
   color: #9a9a9a;
@@ -1853,7 +1853,7 @@ footer {
   letter-spacing: 0.5px;
 }
 
-.product__img {
+.product__img-card {
   width: 100%;
   min-height: 180px;
   position: relative;
@@ -2489,13 +2489,21 @@ footer {
 
 .category__item-img {
   position: absolute;
-  right: 40px;
-  top: 93px;
+  right: 39px;
+  /* top: 85px; */
   max-width: 46%;
+  display: flex;
+  -o-object-fit: contain;
+  object-fit: contain;
+  bottom: 0px;
+  /* left: 0; */
+  height: 100%;
 }
 
 .category__item-img img {
   width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .category__item-button {
@@ -4060,4 +4068,305 @@ footer {
 .category .pop-menu__list {
   padding-left: 0px;
   display: none;
+}
+
+.category .sub-category__itle {
+  font-size: 18px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  margin-bottom: 20px;
+  text-transform: lowercase;
+  margin-top: 38px;
+}
+
+.category .sub-category__itle::first-letter {
+  text-transform: uppercase;
+}
+
+.category .cat__block-link {
+  display: block;
+}
+
+.product__info {
+  height: 456px;
+  display: flex;
+}
+
+.product__info .product__slider {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.product__info .product__slider .vertica__slider {
+  width: 100px;
+  position: relative;
+}
+
+.product__info .product__slider .vertica__slider .item__img {
+  width: 100px;
+  height: 100px;
+}
+
+.product__info .product__slider .vertica__slider .item__img img {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.product__info .product__slider .vertica__slider .slick-list {
+  border-radius: unset;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.product__info .product__slider .vertica__slider .slick-slide {
+  margin-right: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.product__info .product__slider .vertica__slider .slick-prev {
+  position: absolute;
+  bottom: -10px;
+  top: unset;
+  left: calc(100% / 2 - 10px);
+}
+
+.product__info .product__slider .vertica__slider .slick-prev:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../../../img/arrow/arrow-top.svg) no-repeat 50%;
+  background-size: 60%;
+  background-position: center center;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  opacity: 1;
+}
+
+.product__info .product__slider .vertica__slider .slick-next {
+  position: absolute;
+  top: 10px;
+  left: calc(100% / 2 - 10px);
+}
+
+.product__info .product__slider .vertica__slider .slick-next:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../../../img/arrow/arrow-top.svg) no-repeat 50%;
+  background-size: 60%;
+  background-position: center center;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.product__img {
+  width: auto;
+  min-height: unset;
+  margin-right: 30px;
+}
+
+.product__img img {
+  max-width: 450px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.product__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product__description .product-name {
+  font-family: "HelveticaBold";
+  color: #1c1c1c;
+}
+
+.product__description .product-name h1 {
+  font-size: 26px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.product .product-status {
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+}
+
+.product .product-status .status-text-grey {
+  color: #9a9a9a;
+}
+
+.product .product-status .status-text-black {
+  color: #1c1c1c;
+}
+
+.product .product-social .social-text-grey {
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  color: #9a9a9a;
+}
+
+.product .product-social .social .social-text-grey {
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  color: #9a9a9a;
+}
+
+.product .product-social .social .social {
+  padding-top: 7px;
+}
+
+.product .product-social .social .social__link {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-image: linear-gradient(90deg, #464e56 1%, #6c7b88 100%);
+  transition: 0.2s;
+}
+
+.product .product-social .social .social__link:last-of-type {
+  margin-right: 0px;
+}
+
+.product .product-social .social .social__link:hover {
+  background-image: linear-gradient(90deg, #559f18 0%, #67b81d 100%);
+}
+
+.product .product-social .social .social__link img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  max-height: 95%;
+}
+
+.product .product-price {
+  font-family: "Bahnschrift";
+  min-height: 10px;
+  letter-spacing: 1px;
+}
+
+.product .product-price .product__price-new {
+  font-family: "Bahnschrift";
+  color: black;
+  font-weight: bold;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  font-size: 36px;
+}
+
+.product .product-price .product__price-new:first-letter {
+  margin-right: 0px;
+}
+
+.product .product-price .product__price-old {
+  font-family: "Bahnschrift";
+  font-weight: bold;
+  margin-left: 5px;
+  letter-spacing: 1px;
+  font-size: 24px;
+  color: #9a9a9a;
+  text-decoration: line-through;
+}
+
+.product .product-count .product__quantity {
+  display: flex;
+  align-items: center;
+}
+
+.product .product-count .product__quantity .minus {
+  cursor: pointer;
+}
+
+.product .product-count .product__quantity .minus img {
+  width: 15px;
+}
+
+.product .product-count .product__quantity .plus {
+  cursor: pointer;
+}
+
+.product .product-count .product__quantity .plus img {
+  width: 15px;
+}
+
+.product .product-count .product__quantity .number input {
+  text-align: center;
+  width: 56px;
+  font-size: 22px;
+  font-family: "PTSans";
+  color: #222222;
+  line-height: 2.273;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 2px solid #67b81d;
+  background-color: #f2f2f3;
+}
+
+.product .product-controls .product__buy {
+  padding-left: 0px;
+}
+
+.product .product-controls .product__button {
+  width: 220px;
+  height: 47px;
+  padding-left: 40px;
+}
+
+.product .product-controls .product__button::after {
+  right: 45px;
+}
+
+.product .product__feature .feature {
+  background-color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 20px;
+  width: 250px;
+  margin-bottom: 4px;
+}
+
+.product .product__feature .feature:first-of-type {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.product .product__feature .feature:last-of-type {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.product .product__feature .feature-title {
+  font-size: 20px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.product .product__feature .feature-text {
+  font-size: 14px;
+  font-family: "BahnschriftLight";
+  color: #1c1c1c;
+  margin-bottom: 10px;
 }

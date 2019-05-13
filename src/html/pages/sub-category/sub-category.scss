@@ -1,0 +1,19 @@
+.category {
+    .sub-category__itle {
+        font-size: 18px;
+        font-family: $heading-text-font;
+        color: rgb(28, 28, 28);
+        margin-bottom: 20px;
+        text-transform: lowercase;
+        margin-top: 38px;
+       
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+  .cat__block-link {
+      display: block;
+     
+  }
+}
