@@ -2,6 +2,7 @@
   &__info {
     height: 456px;
     display: flex;
+    margin-bottom: 50px;
     .product__slider {
       display: flex;
       align-items: center;
@@ -116,15 +117,14 @@
       color: rgb(154, 154, 154);
     }
     .social {
+      // padding-top: 7px;
+      margin-top: 5px;
       //   margin-left: 40px;
       //   min-width: 220px;
       .social-text-grey {
         font-size: 18px;
         font-family: $main-font-light;
         color: rgb(154, 154, 154);
-      }
-      .social {
-        padding-top: 7px;
       }
 
       .social__link {
@@ -134,7 +134,7 @@
         // border-radius: 10px;
         display: inline-block;
         margin-right: 10px;
-        margin-bottom: 5px;
+        // margin-bottom: 5px;
         background-image: linear-gradient(90deg, $social-from 1%, $social-to 100%);
 
         -webkit-transition: 0.2s;

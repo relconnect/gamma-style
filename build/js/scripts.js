@@ -2,6 +2,12 @@ $(document).ready(function() {
   $("#responsiveTabs").responsiveTabs({
     startCollapsed: "accordion"
   });
+  $("#productTab").responsiveTabs({
+    startCollapsed: "accordion"
+  });
+  $("#prodct-sale-tab").responsiveTabs({
+    startCollapsed: "accordion"
+  });
 
   $(".bx-slider").slick({
     adaptiveHeight: true,
@@ -11,9 +17,39 @@ $(document).ready(function() {
     autoplaySpeed: 6000,
     verticalSwiping: true
   });
+  $("#recommendation-slider").slick({
+    adaptiveHeight: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 6000,
+    verticalSwiping: true
+  });
+
+  $(".bs-slider").slick({
+    adaptiveHeight: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 6000,
+    verticalSwiping: true
+  });
+
+  $("#product-action-slider").slick({
+    adaptiveHeight: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 6000,
+    verticalSwiping: true
+  });
 
   $(".r-tabs-tab").click(function() {
     $(".bx-slider").slick("setPosition");
+  });
+
+  $(".r-tabs-tab").click(function() {
+    $(".bs-slider").slick("setPosition");
   });
 
   $(".stock-compare__link").click(function(e) {
