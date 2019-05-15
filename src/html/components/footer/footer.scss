@@ -104,6 +104,10 @@ footer {
 
       .social {
         padding-top: 7px;
+        
+        &.rect .social__link{
+          border-radius: unset;
+        }
       }
 
       .social__link {
@@ -263,7 +267,7 @@ footer {
             width: 205px;
             width: 100%;
             background: $tel-block-color;
-            z-index: 20;
+            z-index: -1;
             border: 1px solid $tel-block-border;
             border-radius: 6px;
             text-align: center;

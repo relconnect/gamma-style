@@ -46,3 +46,34 @@ input {
   outline: none;
   position: relative;
 }
+.header {
+  .rect {
+    border-radius: unset;
+  }
+}
+
+.header__contact  {
+  .tels-btn {
+    &.rect {
+      border-radius: unset;
+    }
+  }
+}
+
+.control__top {
+  .dropdown__lang {
+    .top {
+     &.rect {
+        border-radius: unset;
+     }
+    }
+  }
+} 
+
+.footer__col--contact {
+  .tels-btn {
+    &.rect {
+      border-radius: unset;
+    }
+  }
+}

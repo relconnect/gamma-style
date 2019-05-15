@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.0",
+    "jquery-bar-rating": "^1.2.2",
     "npm": "^6.9.0",
     "responsive-tabs": "^1.6.3",
     "slick-carousel": "^1.8.1"

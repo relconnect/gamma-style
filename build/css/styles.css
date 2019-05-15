@@ -472,6 +472,22 @@ input {
   position: relative;
 }
 
+.header .rect {
+  border-radius: unset;
+}
+
+.header__contact .tels-btn.rect {
+  border-radius: unset;
+}
+
+.control__top .dropdown__lang .top.rect {
+  border-radius: unset;
+}
+
+.footer__col--contact .tels-btn.rect {
+  border-radius: unset;
+}
+
 .best-sale {
   margin-top: -5px;
   margin-bottom: 85px;
@@ -928,6 +944,10 @@ footer {
   padding-top: 7px;
 }
 
+.footer__col--social .social.rect .social__link {
+  border-radius: unset;
+}
+
 .footer__col--social .social__link {
   position: relative;
   width: 46px;
@@ -1059,7 +1079,7 @@ footer {
   width: 205px;
   width: 100%;
   background: #515f6b;
-  z-index: 20;
+  z-index: -1;
   border: 1px solid #e3e3e3;
   border-radius: 6px;
   text-align: center;
@@ -1380,6 +1400,17 @@ footer {
   padding: 10px 0 0 0;
 }
 
+.header .layer {
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  height: 229px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .header__menu {
   width: 600px;
 }
@@ -1577,6 +1608,7 @@ footer {
 .dropdown__tels.open .dropdown__list {
   opacity: 1;
   transition: all 0.3s ease;
+  z-index: 100;
 }
 
 .dropdown__tels.open .arrow:after {
@@ -1635,7 +1667,7 @@ footer {
   width: 205px;
   width: 100%;
   background: white;
-  z-index: 20;
+  z-index: -1;
   border: 1px solid #e3e3e3;
   border-radius: 6px;
   text-align: center;
@@ -1761,6 +1793,7 @@ footer {
 
 .control__top .dropdown.lang-box.open .dropdown__list {
   opacity: 1;
+  z-index: 100;
   transition: all 0.2s linear;
 }
 
@@ -2429,6 +2462,150 @@ footer {
   color: #67b81d;
   text-transform: uppercase;
   margin-bottom: 5px;
+}
+
+.review__content .reviews__wrap .show__review {
+  margin-top: 35px;
+}
+
+.review__content .reviews__wrap .show__review .show__review-btn {
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 156px;
+  height: 36px;
+  border: 2px solid #67b81d;
+  margin: 0 auto;
+}
+
+.review__content .reviews__wrap .show__review .show__review-btn:hover {
+  cursor: pointer;
+}
+
+.review__content .reviews__wrap .review__item.review_clip {
+  display: none;
+}
+
+.review__content .reviews__wrap .review__item .review {
+  display: flex;
+  margin-top: 40px;
+}
+
+.review__content .reviews__wrap .review__item .review .review__avatar {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.review__content .reviews__wrap .review__item .review .review__avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.review__content .reviews__wrap .review__item .review .review__info .review__name {
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  color: #222222;
+  line-height: 1.5;
+  margin-bottom: 7px;
+}
+
+.review__content .reviews__wrap .review__item .review .review__info .review__text {
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  color: #222222;
+  margin-top: 10px;
+}
+
+.review__content .reviews__wrap .review__item .review .review__info .review__text p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.review__content .reviews__wrap .review__item .review .review__info .rating {
+  display: flex;
+  align-items: center;
+}
+
+.review__content .reviews__wrap .review__item .review .review__info .review__date {
+  font-size: 16px;
+  font-family: "BahnschriftLight";
+  color: #999999;
+  margin-left: 10px;
+}
+
+.review__content .reviews__form-title p {
+  font-size: 26px;
+  font-family: "HelveticaLight";
+  color: #1c1c1c;
+  margin-bottom: 10px;
+}
+
+.review__content .reviews__form-text {
+  resize: none;
+  outline: none;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(154, 154, 154, 0.6);
+  opacity: .6;
+  position: relative;
+  background-color: transparent;
+}
+
+.review__content .reviews__form-text::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9a9a9a;
+  opacity: 1;
+  /* Firefox */
+  transition: all 1 linear;
+}
+
+.review__content .reviews__form-text:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9a9a9a;
+  opacity: 1;
+  /* Firefox */
+  transition: all 1 linear;
+}
+
+.review__content .reviews__form-text::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9a9a9a;
+  opacity: 1;
+  /* Firefox */
+  transition: all 1 linear;
+}
+
+.review__content .reviews__form-text::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9a9a9a;
+  opacity: 1;
+  /* Firefox */
+  transition: all 1 linear;
+}
+
+.review__content .reviews__form-btn {
+  height: 40px;
+  border: unset;
+  font-size: 18px;
+  font-family: "BahnschriftLight";
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;
+  margin-left: auto;
+  background-image: linear-gradient(90deg, #559f18, #67b81d);
+  margin-top: 35px;
+}
+
+.review__content .reviews__form-rating {
+  margin-bottom: 10px;
 }
 
 .recommendation__wrap {
