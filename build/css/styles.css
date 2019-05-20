@@ -3027,6 +3027,280 @@ footer {
   color: #9a9a9a;
 }
 
+.info-page__wrap {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+
+.info-page__wrap h1 {
+  font-size: 32px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h2 {
+  font-size: 24px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h3 {
+  font-size: 20px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h4 {
+  font-size: 18px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h5 {
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h6 {
+  font-size: 14px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap ul {
+  padding-left: 100px;
+}
+
+.info-page__wrap ul li {
+  position: relative;
+}
+
+.info-page__wrap ul li::before {
+  content: url("../../../img/icons/list-item.png");
+  position: absolute;
+  left: -30px;
+}
+
+.info-page__wrap ol {
+  list-style-type: none;
+  counter-reset: item;
+  position: relative;
+  padding-left: 100px;
+}
+
+.info-page__wrap ol li {
+  position: relative;
+}
+
+.info-page__wrap ol li:before {
+  content: counter(item) ".";
+  counter-increment: item;
+  color: #67b81d;
+  position: absolute;
+  left: -30px;
+  font-size: 16px;
+  font-family: "Helvetica";
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons {
+  line-height: 0;
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons .social__link {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: linear-gradient(90deg, #464e56 1%, #6c7b88);
+  transition: 0.2s;
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons .social__link:hover {
+  background-image: linear-gradient(90deg, #559f18, #67b81d);
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons .social__link img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  max-height: 95%;
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons .social__link:nth-child(4) {
+  margin-right: 0px;
+}
+
+.info-page__wrap .info-page__content {
+  flex: 1 1 1170px;
+}
+
+.info-page__wrap .info-page__content .info-page__text {
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  line-height: 1.5;
+}
+
+.info-page__wrap .info-page__content .info-page__text blockquot {
+  font-size: 20px;
+  font-family: "BahnschriftLight";
+  color: #1c1c1c;
+  line-height: 1.5;
+}
+
+.info-page__wrap .info-page__content .info-page__text blockquot .quote {
+  position: relative;
+}
+
+.info-page__wrap .info-page__content .info-page__text blockquot .quote::before {
+  content: url("../../../img/icons/quote.png");
+  position: absolute;
+  left: -50px;
+}
+
+.info-page__wrap .info-page__content .info-page__text blockquot .quote {
+  margin-left: 200px;
+}
+
+.info-page__wrap .info-page__date {
+  display: flex;
+  margin-top: 10px;
+}
+
+.info-page__wrap .info-page__date .date-block,
+.info-page__wrap .info-page__date .comments-block {
+  display: flex;
+  align-items: center;
+}
+
+.info-page__wrap .info-page__date .date-block span,
+.info-page__wrap .info-page__date .comments-block span {
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: #999999;
+  margin-left: 5px;
+}
+
+.info-page__wrap .info-page__date .date-block span:hover,
+.info-page__wrap .info-page__date .comments-block span:hover {
+  cursor: pointer;
+  color: #67b81d;
+}
+
+.info-page__wrap .info-page__date .comments-block {
+  margin-left: 40px;
+}
+
+.info-page__wrap .info-page__relevant {
+  flex: 1 1 370px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  margin-left: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.info-page__wrap .info-page__relevant .title-block {
+  font-size: 22px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  font-weight: bold;
+  padding-left: 28px;
+}
+
+.info-page__wrap .info-page__relevant .article-block {
+  border-bottom: 3px solid #f2f2f3;
+  padding-bottom: 30px;
+  padding-left: 28px;
+}
+
+.info-page__wrap .info-page__relevant .article-block:nth-of-type(3) {
+  border-bottom: unset;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-name a {
+  font-size: 24px;
+  font-family: "HelveticaBold";
+  color: #222222;
+  font-weight: bold;
+  transition: all 0.1s linear;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-name a:hover {
+  cursor: pointer;
+  color: #67b81d;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-description {
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  color: #666666;
+  line-height: 1.5;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-btn {
+  display: flex;
+  align-content: center;
+  font-size: 16px;
+  font-family: "BahnschriftLight";
+  color: #222222;
+  border: 2px solid #57a119;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-btn:hover {
+  color: white;
+  background-image: linear-gradient(90deg, #579f18, #68b71d);
+  border: 2px solid transparent;
+}
+
+.info-page__wrap .info-page__relevant .article-block .info-page__date {
+  margin-bottom: 30px;
+}
+
+.info-page__wrap .info-page__relevant .article-block .info-page__date .comments-block {
+  margin-left: 10%;
+}
+
+.info-page__heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-page__heading .info-page__title {
+  display: flex;
+}
+
+.info-page__heading .info-page__title h2 {
+  margin: auto 0;
+}
+
 .category {
   margin-bottom: 100px;
 }
