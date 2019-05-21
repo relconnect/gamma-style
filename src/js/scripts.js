@@ -8,55 +8,6 @@ $(document).ready(function () {
   $("#prodct-sale-tab").responsiveTabs({
     startCollapsed: "accordion"
   });
-
-  $(".bx-slider").slick({
-    adaptiveHeight: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 6000,
-    verticalSwiping: true
-  });
-  $("#recommendation-slider").slick({
-    adaptiveHeight: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 6000,
-    verticalSwiping: true
-  });
-
-  $(".bs-slider").slick({
-    adaptiveHeight: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 6000,
-    verticalSwiping: true
-  });
-
-  $("#product-action-slider").slick({
-    adaptiveHeight: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 6000,
-    verticalSwiping: true
-  });
-
-  $(".r-tabs-tab").click(function () {
-    $(".bx-slider").slick("setPosition");
-  });
-
-  $(".r-tabs-tab").click(function () {
-    $(".bs-slider").slick("setPosition");
-  });
-
-  $(".stock-compare__link").click(function (e) {
-    e.preventDefault();
-    $(this).toggleClass("active");
-  });
-
   // Плавное появление текста на главной
   $(function () {
     var nav = $(".text-content__wrap"),
@@ -84,6 +35,88 @@ $(document).ready(function () {
       element.stop().animate({ height: autoHeight }, time); // Animate to Auto Height
     }
   });
+
+  $(".bx-category-slider").slick({
+    adaptiveHeight: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 6000,
+    verticalSwiping: true,
+    responsive: [
+      {
+        breakpoint: 1367,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          autoplay: false,
+          autoplaySpeed: 6000,
+          verticalSwiping: true,
+        }
+      },
+
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+
+  });
+
+  $(".bx-slider-index").slick({
+    adaptiveHeight: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 6000,
+    verticalSwiping: true,
+
+  });
+
+
+  $("#recommendation-slider").slick({
+    adaptiveHeight: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 6000,
+    verticalSwiping: true
+  });
+
+  $(".bs-slider").slick({
+    adaptiveHeight: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 6000,
+    verticalSwiping: true
+  });
+
+
+  $("#product-action-slider").slick({
+    adaptiveHeight: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 6000,
+    verticalSwiping: true
+  });
+
+  $(".r-tabs-tab").click(function () {
+    $(".bx-slider").slick("setPosition");
+  });
+
+  $(".r-tabs-tab").click(function () {
+    $(".bs-slider").slick("setPosition");
+  });
+
+  $(".stock-compare__link").click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass("active");
+  });
+
+
 
   //Открыть/закрыть выпадалку с телефонами
   $(function () {

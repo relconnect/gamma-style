@@ -1400,6 +1400,23 @@ footer {
   padding: 10px 0 0 0;
 }
 
+.header .wrap__menu {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 1150px;
+  justify-content: space-between;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.header .inner__wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .header .layer {
   background-color: white;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -1448,7 +1465,7 @@ footer {
 }
 
 .header__logo {
-  max-width: 187px;
+  width: 187px;
 }
 
 .header__logo-img {
@@ -1461,6 +1478,8 @@ footer {
 
 .search {
   display: flex;
+  width: 600px;
+  align-items: flex-end;
 }
 
 .search__text {
@@ -1547,7 +1566,7 @@ footer {
 
 .header__contact {
   display: flex;
-  height: 125px;
+  justify-content: space-between;
 }
 
 .header__contact .tels-block {
@@ -1688,6 +1707,7 @@ footer {
   justify-content: space-between;
   width: 115px;
   margin-left: 38px;
+  height: 126px;
 }
 
 .control__row {
@@ -3025,280 +3045,6 @@ footer {
   font-size: 26px;
   font-family: "HelveticaLight";
   color: #9a9a9a;
-}
-
-.info-page__wrap {
-  width: 100%;
-  display: flex;
-  margin-top: 50px;
-}
-
-.info-page__wrap h1 {
-  font-size: 32px;
-  font-family: "Helvetica";
-  color: #1c1c1c;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.info-page__wrap h2 {
-  font-size: 24px;
-  font-family: "Helvetica";
-  color: #1c1c1c;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.info-page__wrap h3 {
-  font-size: 20px;
-  font-family: "Helvetica";
-  color: #1c1c1c;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.info-page__wrap h4 {
-  font-size: 18px;
-  font-family: "Helvetica";
-  color: #1c1c1c;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.info-page__wrap h5 {
-  font-size: 16px;
-  font-family: "Helvetica";
-  color: #1c1c1c;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.info-page__wrap h6 {
-  font-size: 14px;
-  font-family: "Helvetica";
-  color: #1c1c1c;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.info-page__wrap ul {
-  padding-left: 100px;
-}
-
-.info-page__wrap ul li {
-  position: relative;
-}
-
-.info-page__wrap ul li::before {
-  content: url("../../../img/icons/list-item.png");
-  position: absolute;
-  left: -30px;
-}
-
-.info-page__wrap ol {
-  list-style-type: none;
-  counter-reset: item;
-  position: relative;
-  padding-left: 100px;
-}
-
-.info-page__wrap ol li {
-  position: relative;
-}
-
-.info-page__wrap ol li:before {
-  content: counter(item) ".";
-  counter-increment: item;
-  color: #67b81d;
-  position: absolute;
-  left: -30px;
-  font-size: 16px;
-  font-family: "Helvetica";
-}
-
-.info-page__wrap .info-page__social .info-page__social-icons {
-  line-height: 0;
-}
-
-.info-page__wrap .info-page__social .info-page__social-icons .social__link {
-  position: relative;
-  width: 46px;
-  height: 46px;
-  display: inline-block;
-  margin-right: 10px;
-  background-image: linear-gradient(90deg, #464e56 1%, #6c7b88);
-  transition: 0.2s;
-}
-
-.info-page__wrap .info-page__social .info-page__social-icons .social__link:hover {
-  background-image: linear-gradient(90deg, #559f18, #67b81d);
-}
-
-.info-page__wrap .info-page__social .info-page__social-icons .social__link img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  max-width: 70%;
-  max-height: 95%;
-}
-
-.info-page__wrap .info-page__social .info-page__social-icons .social__link:nth-child(4) {
-  margin-right: 0px;
-}
-
-.info-page__wrap .info-page__content {
-  flex: 1 1 1170px;
-}
-
-.info-page__wrap .info-page__content .info-page__text {
-  font-size: 16px;
-  font-family: "Helvetica";
-  color: #1c1c1c;
-  line-height: 1.5;
-}
-
-.info-page__wrap .info-page__content .info-page__text blockquot {
-  font-size: 20px;
-  font-family: "BahnschriftLight";
-  color: #1c1c1c;
-  line-height: 1.5;
-}
-
-.info-page__wrap .info-page__content .info-page__text blockquot .quote {
-  position: relative;
-}
-
-.info-page__wrap .info-page__content .info-page__text blockquot .quote::before {
-  content: url("../../../img/icons/quote.png");
-  position: absolute;
-  left: -50px;
-}
-
-.info-page__wrap .info-page__content .info-page__text blockquot .quote {
-  margin-left: 200px;
-}
-
-.info-page__wrap .info-page__date {
-  display: flex;
-  margin-top: 10px;
-}
-
-.info-page__wrap .info-page__date .date-block,
-.info-page__wrap .info-page__date .comments-block {
-  display: flex;
-  align-items: center;
-}
-
-.info-page__wrap .info-page__date .date-block span,
-.info-page__wrap .info-page__date .comments-block span {
-  font-size: 16px;
-  font-family: "Helvetica";
-  color: #999999;
-  margin-left: 5px;
-}
-
-.info-page__wrap .info-page__date .date-block span:hover,
-.info-page__wrap .info-page__date .comments-block span:hover {
-  cursor: pointer;
-  color: #67b81d;
-}
-
-.info-page__wrap .info-page__date .comments-block {
-  margin-left: 40px;
-}
-
-.info-page__wrap .info-page__relevant {
-  flex: 1 1 370px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: white;
-  margin-left: 30px;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.info-page__wrap .info-page__relevant .title-block {
-  font-size: 22px;
-  font-family: "Bahnschrift";
-  color: #1c1c1c;
-  font-weight: bold;
-  padding-left: 28px;
-}
-
-.info-page__wrap .info-page__relevant .article-block {
-  border-bottom: 3px solid #f2f2f3;
-  padding-bottom: 30px;
-  padding-left: 28px;
-}
-
-.info-page__wrap .info-page__relevant .article-block:nth-of-type(3) {
-  border-bottom: unset;
-}
-
-.info-page__wrap .info-page__relevant .article-block .article-name a {
-  font-size: 24px;
-  font-family: "HelveticaBold";
-  color: #222222;
-  font-weight: bold;
-  transition: all 0.1s linear;
-}
-
-.info-page__wrap .info-page__relevant .article-block .article-name a:hover {
-  cursor: pointer;
-  color: #67b81d;
-}
-
-.info-page__wrap .info-page__relevant .article-block .article-description {
-  font-size: 16px;
-  font-family: "Bahnschrift";
-  color: #666666;
-  line-height: 1.5;
-}
-
-.info-page__wrap .info-page__relevant .article-block .article-btn {
-  display: flex;
-  align-content: center;
-  font-size: 16px;
-  font-family: "BahnschriftLight";
-  color: #222222;
-  border: 2px solid #57a119;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.info-page__wrap .info-page__relevant .article-block .article-btn:hover {
-  color: white;
-  background-image: linear-gradient(90deg, #579f18, #68b71d);
-  border: 2px solid transparent;
-}
-
-.info-page__wrap .info-page__relevant .article-block .info-page__date {
-  margin-bottom: 30px;
-}
-
-.info-page__wrap .info-page__relevant .article-block .info-page__date .comments-block {
-  margin-left: 10%;
-}
-
-.info-page__heading {
-  display: flex;
-  justify-content: space-between;
-}
-
-.info-page__heading .info-page__title {
-  display: flex;
-}
-
-.info-page__heading .info-page__title h2 {
-  margin: auto 0;
 }
 
 .category {
@@ -5283,4 +5029,840 @@ footer {
   font-family: "BahnschriftLight";
   color: #1c1c1c;
   margin-bottom: 10px;
+}
+
+.info-page__wrap {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+
+.info-page__wrap h1 {
+  font-size: 32px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h2 {
+  font-size: 24px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h3 {
+  font-size: 20px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h4 {
+  font-size: 18px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h5 {
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h6 {
+  font-size: 14px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap ul {
+  padding-left: 100px;
+}
+
+.info-page__wrap ul li {
+  position: relative;
+}
+
+.info-page__wrap ul li::before {
+  content: url("../../../img/icons/list-item.png");
+  position: absolute;
+  left: -30px;
+}
+
+.info-page__wrap ol {
+  list-style-type: none;
+  counter-reset: item;
+  position: relative;
+  padding-left: 100px;
+}
+
+.info-page__wrap ol li {
+  position: relative;
+}
+
+.info-page__wrap ol li:before {
+  content: counter(item) ".";
+  counter-increment: item;
+  color: #67b81d;
+  position: absolute;
+  left: -30px;
+  font-size: 16px;
+  font-family: "Helvetica";
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons {
+  line-height: 0;
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons .social__link {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: linear-gradient(90deg, #464e56 1%, #6c7b88);
+  transition: 0.2s;
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons .social__link:hover {
+  background-image: linear-gradient(90deg, #559f18, #67b81d);
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons .social__link img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  max-height: 95%;
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons .social__link:nth-child(4) {
+  margin-right: 0px;
+}
+
+.info-page__wrap .info-page__content {
+  flex: 1 1 1170px;
+}
+
+.info-page__wrap .info-page__content .info-page__text {
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  line-height: 1.5;
+}
+
+.info-page__wrap .info-page__content .info-page__text blockquot {
+  font-size: 20px;
+  font-family: "BahnschriftLight";
+  color: #1c1c1c;
+  line-height: 1.5;
+}
+
+.info-page__wrap .info-page__content .info-page__text blockquot .quote {
+  position: relative;
+}
+
+.info-page__wrap .info-page__content .info-page__text blockquot .quote::before {
+  content: url("../../../img/icons/quote.png");
+  position: absolute;
+  left: -50px;
+}
+
+.info-page__wrap .info-page__content .info-page__text blockquot .quote {
+  margin-left: 200px;
+}
+
+.info-page__wrap .info-page__date {
+  display: flex;
+  margin-top: 10px;
+}
+
+.info-page__wrap .info-page__date .date-block,
+.info-page__wrap .info-page__date .comments-block {
+  display: flex;
+  align-items: center;
+}
+
+.info-page__wrap .info-page__date .date-block span,
+.info-page__wrap .info-page__date .comments-block span {
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: #999999;
+  margin-left: 5px;
+}
+
+.info-page__wrap .info-page__date .date-block span:hover,
+.info-page__wrap .info-page__date .comments-block span:hover {
+  cursor: pointer;
+  color: #67b81d;
+}
+
+.info-page__wrap .info-page__date .comments-block {
+  margin-left: 40px;
+}
+
+.info-page__wrap .info-page__relevant {
+  flex: 1 1 370px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  margin-left: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.info-page__wrap .info-page__relevant .title-block {
+  font-size: 22px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  font-weight: bold;
+  padding-left: 28px;
+}
+
+.info-page__wrap .info-page__relevant .article-block {
+  border-bottom: 3px solid #f2f2f3;
+  padding-bottom: 30px;
+  padding-left: 28px;
+}
+
+.info-page__wrap .info-page__relevant .article-block:nth-of-type(3) {
+  border-bottom: unset;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-name a {
+  font-size: 24px;
+  font-family: "HelveticaBold";
+  color: #222222;
+  font-weight: bold;
+  transition: all 0.1s linear;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-name a:hover {
+  cursor: pointer;
+  color: #67b81d;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-description {
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  color: #666666;
+  line-height: 1.5;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-btn {
+  display: flex;
+  align-content: center;
+  font-size: 16px;
+  font-family: "BahnschriftLight";
+  color: #222222;
+  border: 2px solid #57a119;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-btn:hover {
+  color: white;
+  background-image: linear-gradient(90deg, #579f18, #68b71d);
+  border: 2px solid transparent;
+}
+
+.info-page__wrap .info-page__relevant .article-block .info-page__date {
+  margin-bottom: 30px;
+}
+
+.info-page__wrap .info-page__relevant .article-block .info-page__date .comments-block {
+  margin-left: 10%;
+}
+
+.info-page__heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-page__heading .info-page__title {
+  display: flex;
+}
+
+.info-page__heading .info-page__title h2 {
+  margin: auto 0;
+}
+
+.info-page__wrap {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+
+.info-page__wrap h1 {
+  font-size: 32px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h2 {
+  font-size: 24px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h3 {
+  font-size: 20px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h4 {
+  font-size: 18px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h5 {
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap h6 {
+  font-size: 14px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-page__wrap ul {
+  padding-left: 100px;
+}
+
+.info-page__wrap ul li {
+  position: relative;
+}
+
+.info-page__wrap ul li::before {
+  content: url("../../../img/icons/list-item.png");
+  position: absolute;
+  left: -30px;
+}
+
+.info-page__wrap ol {
+  list-style-type: none;
+  counter-reset: item;
+  position: relative;
+  padding-left: 100px;
+}
+
+.info-page__wrap ol li {
+  position: relative;
+}
+
+.info-page__wrap ol li:before {
+  content: counter(item) ".";
+  counter-increment: item;
+  color: #67b81d;
+  position: absolute;
+  left: -30px;
+  font-size: 16px;
+  font-family: "Helvetica";
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons {
+  line-height: 0;
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons .social__link {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: linear-gradient(90deg, #464e56 1%, #6c7b88);
+  transition: 0.2s;
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons .social__link:hover {
+  background-image: linear-gradient(90deg, #559f18, #67b81d);
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons .social__link img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  max-height: 95%;
+}
+
+.info-page__wrap .info-page__social .info-page__social-icons .social__link:nth-child(4) {
+  margin-right: 0px;
+}
+
+.info-page__wrap .info-page__content {
+  flex: 1 1 1170px;
+}
+
+.info-page__wrap .info-page__content .info-page__text {
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: #1c1c1c;
+  line-height: 1.5;
+}
+
+.info-page__wrap .info-page__content .info-page__text blockquot {
+  font-size: 20px;
+  font-family: "BahnschriftLight";
+  color: #1c1c1c;
+  line-height: 1.5;
+}
+
+.info-page__wrap .info-page__content .info-page__text blockquot .quote {
+  position: relative;
+}
+
+.info-page__wrap .info-page__content .info-page__text blockquot .quote::before {
+  content: url("../../../img/icons/quote.png");
+  position: absolute;
+  left: -50px;
+}
+
+.info-page__wrap .info-page__content .info-page__text blockquot .quote {
+  margin-left: 200px;
+}
+
+.info-page__wrap .info-page__date {
+  display: flex;
+  margin-top: 10px;
+}
+
+.info-page__wrap .info-page__date .date-block,
+.info-page__wrap .info-page__date .comments-block {
+  display: flex;
+  align-items: center;
+}
+
+.info-page__wrap .info-page__date .date-block span,
+.info-page__wrap .info-page__date .comments-block span {
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: #999999;
+  margin-left: 5px;
+}
+
+.info-page__wrap .info-page__date .date-block span:hover,
+.info-page__wrap .info-page__date .comments-block span:hover {
+  cursor: pointer;
+  color: #67b81d;
+}
+
+.info-page__wrap .info-page__date .comments-block {
+  margin-left: 40px;
+}
+
+.info-page__wrap .info-page__relevant {
+  flex: 1 1 370px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  margin-left: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.info-page__wrap .info-page__relevant .title-block {
+  font-size: 22px;
+  font-family: "Bahnschrift";
+  color: #1c1c1c;
+  font-weight: bold;
+  padding-left: 28px;
+}
+
+.info-page__wrap .info-page__relevant .article-block {
+  border-bottom: 3px solid #f2f2f3;
+  padding-bottom: 30px;
+  padding-left: 28px;
+}
+
+.info-page__wrap .info-page__relevant .article-block:nth-of-type(3) {
+  border-bottom: unset;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-name a {
+  font-size: 24px;
+  font-family: "HelveticaBold";
+  color: #222222;
+  font-weight: bold;
+  transition: all 0.1s linear;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-name a:hover {
+  cursor: pointer;
+  color: #67b81d;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-description {
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  color: #666666;
+  line-height: 1.5;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-btn {
+  display: flex;
+  align-content: center;
+  font-size: 16px;
+  font-family: "BahnschriftLight";
+  color: #222222;
+  border: 2px solid #57a119;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.info-page__wrap .info-page__relevant .article-block .article-btn:hover {
+  color: white;
+  background-image: linear-gradient(90deg, #579f18, #68b71d);
+  border: 2px solid transparent;
+}
+
+.info-page__wrap .info-page__relevant .article-block .info-page__date {
+  margin-bottom: 30px;
+}
+
+.info-page__wrap .info-page__relevant .article-block .info-page__date .comments-block {
+  margin-left: 10%;
+}
+
+.info-page__heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-page__heading .info-page__title {
+  display: flex;
+}
+
+.info-page__heading .info-page__title h2 {
+  margin: auto 0;
+}
+
+@media screen and (max-width: 1366px) {
+  .container {
+    max-width: 1230px;
+  }
+
+  .header__logo {
+    margin-right: 30px;
+    width: 170px;
+  }
+
+  .header__logo-img {
+    width: 100%;
+  }
+
+  .search {
+    max-width: 450px;
+  }
+
+  .search__text {
+    width: unset;
+    flex-grow: 1;
+  }
+
+  .search__button {
+    width: 165px;
+  }
+
+  .header__contact .tels {
+    width: 189px;
+  }
+
+  .header__contact .tels-btn {
+    margin-left: 12px;
+  }
+
+  .dropdown .tel {
+    font-size: 18px;
+  }
+
+  .dropdown .arrow {
+    top: -3px;
+  }
+
+  .dropdown__list-white {
+    right: -10px;
+  }
+
+  .control {
+    margin-left: 20px;
+  }
+
+  .menu__item {
+    flex-grow: 1;
+  }
+
+  .menu__item:first-child {
+    padding-left: 15px;
+  }
+
+  .menu__item:last-child {
+    padding-right: 15px;
+  }
+
+  .menu__link {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .banner__block-sm {
+    margin-left: 20px;
+  }
+
+  .banner__block-lg {
+    flex: 1 1 817px;
+  }
+
+  .banner__large {
+    max-width: 900px;
+  }
+
+  .banner__block-sm {
+    flex: 1 1 335px;
+  }
+
+  .banner__advanteg {
+    width: 62%;
+    left: 4%;
+  }
+
+  .category__item:nth-of-type(2n) {
+    margin-left: 10px;
+  }
+
+  .category__block-wrap {
+    margin-bottom: 10px;
+  }
+
+  .category__block-ml {
+    margin-left: 20px;
+  }
+
+  .category__block-mr {
+    margin-right: 20px;
+  }
+
+  .category {
+    margin-bottom: 50px;
+  }
+
+  .category__block-wrap .category__item {
+    padding-left: 20px;
+  }
+
+  .category__block-wrap .category__item .category__item-title {
+    font-size: 24px;
+  }
+
+  .category__block-wrap .category__item .category__item-img {
+    right: 10px;
+  }
+
+  .r-tabs .r-tabs-panel {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .stock__buy .stock__button {
+    margin-right: 15px;
+  }
+
+  .stock__buy .stock__button:after {
+    right: 20px;
+  }
+
+  .best-sale {
+    margin-bottom: 50px;
+  }
+
+  .footer__content {
+    padding-right: 0px;
+  }
+
+  .footer__col--clients {
+    margin-left: 15px;
+  }
+
+  #bx-slider .slick-prev {
+    left: -25px;
+    z-index: 10;
+  }
+
+  #bx-slider .slick-next {
+    right: -25px;
+    z-index: 10;
+  }
+
+  .catalog__filter-wrap {
+    margin-top: 30px;
+    flex: 1 1 270px;
+    max-width: 270px;
+  }
+
+  .catalog__filter-text {
+    padding-left: 10px;
+  }
+
+  .catalog__filter-item {
+    padding: 20px 10px;
+  }
+
+  .catalog__products .product__item {
+    padding: 20px 10px 30px;
+  }
+
+  .catalog__products .product__item .product__button {
+    width: 83px;
+    height: 47px;
+  }
+
+  .catalog__products .product__item .product__button span {
+    display: none;
+  }
+
+  .catalog__products .product__item .product__button::after {
+    right: 28%;
+  }
+
+  .pagination {
+    margin-right: 215px;
+  }
+
+  .category__menu__list {
+    margin-top: 0px;
+  }
+
+  .category__col-center {
+    padding-left: 30px;
+  }
+
+  .category__col-left {
+    flex: 1 1 400px;
+  }
+
+  .sub-menu__item .sub-menu__list-second {
+    padding-left: 15px;
+  }
+
+  .category__tabs {
+    margin-left: 300px;
+  }
+
+  .category__tabs .stock__item .stock__button {
+    width: 83px;
+    height: 47px;
+    margin-right: 30px;
+  }
+
+  .category__tabs .stock__item .stock__button:after {
+    right: 26px;
+  }
+
+  .category__tabs .stock__item .stock__button span {
+    display: none;
+  }
+
+  .category__tabs .best-sale #bx-slider.bx-category-slider {
+    max-width: 730px;
+  }
+
+  .category__tabs .best-sale #bx-slider .slick-prev {
+    left: -70px;
+  }
+
+  .category__tabs .best-sale #bx-slider .slick-next {
+    right: -70px;
+  }
+
+  .info-page__heading .info-page__title {
+    max-width: 68%;
+  }
+
+  .info-page__wrap .info-page__content {
+    flex: 1 1 770px;
+  }
+
+  .info-page__wrap .info-page__content .info-page__text blockquot .quote {
+    margin-left: 120px;
+  }
+
+  .basket .stock__buy {
+    padding-left: 0px;
+  }
+
+  .basket .basket__table td {
+    padding-left: 30px;
+  }
+
+  .basket .basket__table tbody .basket__table-img {
+    padding-left: 20px;
+  }
+
+  .basket .basket__table thead .basket__table-img {
+    padding-left: 20px;
+  }
+
+  .contact .contact__location {
+    width: 770px;
+    height: 500px;
+  }
+
+  .contact .contact__info {
+    width: 460px;
+    height: 400px;
+    top: 60px;
+  }
+
+  .contact .contact__title {
+    margin-bottom: 15px;
+  }
+
+  .contact .contact__row {
+    margin-bottom: 0px;
+  }
 }
