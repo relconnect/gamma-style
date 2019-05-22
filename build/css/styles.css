@@ -1476,10 +1476,15 @@ footer {
   display: block;
 }
 
+.header__search {
+  width: 100%;
+}
+
 .search {
   display: flex;
-  width: 600px;
+  max-width: 600px;
   align-items: flex-end;
+  width: 100%;
 }
 
 .search__text {
@@ -5593,6 +5598,10 @@ footer {
     width: 100%;
   }
 
+  .header__search {
+    width: 100%;
+  }
+
   .search {
     max-width: 450px;
   }
@@ -5864,5 +5873,114 @@ footer {
 
   .contact .contact__row {
     margin-bottom: 0px;
+  }
+
+  .product .product__img img {
+    max-width: 360px;
+    height: 345px;
+  }
+
+  .product .product__description {
+    position: relative;
+    justify-content: flex-start;
+  }
+
+  .product .product__description .product-name {
+    margin-bottom: 30px;
+  }
+
+  .product .product__description .product-status {
+    margin-bottom: 30px;
+  }
+
+  .product .product__description .product-social {
+    margin-bottom: 30px;
+  }
+
+  .product .product__description .price__block {
+    margin-bottom: 20px;
+  }
+
+  .product .product__description .product-count {
+    position: absolute;
+    bottom: 155px;
+    right: 125px;
+  }
+
+  .product__info .product__slider {
+    height: 300px;
+  }
+
+  .product__info .product__slider .vertica__slider {
+    margin-top: 50px;
+  }
+
+  .product__info .product__slider .vertica__slider .slick-slide {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .product__info .product__slider .vertica__slider .item__img {
+    height: 90px;
+  }
+
+  .product__info .product__slider .vertica__slider .item__img img {
+    height: inherit;
+  }
+
+  .recommendation__wrap .rec-slider .slick-prev {
+    left: -20px;
+    z-index: 2;
+  }
+
+  .recommendation__wrap .rec-slider .slick-next {
+    right: -20px;
+    z-index: 2;
+  }
+
+  .best-sale__product .best-sale .bs-slider .slick-prev {
+    left: -20px;
+    z-index: 2;
+  }
+
+  .best-sale__product .best-sale .bs-slider .slick-next {
+    right: -20px;
+    z-index: 2;
+  }
+
+  .checkout .checkout__table thead {
+    display: none;
+  }
+
+  .checkout .checkout__table tbody tr {
+    position: relative;
+  }
+
+  .checkout .checkout__table tbody .checkout__table-product {
+    position: absolute;
+    padding-left: 0;
+    margin-left: 20px;
+    border-bottom: 1px solid #f2f2f3;
+    max-width: 570px;
+    width: 100%;
+  }
+
+  .checkout .checkout__table tbody .checkout__table-dell {
+    position: absolute;
+    padding-left: 0px;
+    margin-left: -65px;
+    margin-top: 20px;
+  }
+
+  .checkout .checkout__table tbody .checkout__table-img {
+    padding-top: 25px;
+  }
+
+  .checkout .checkout__form-wrap {
+    flex: 1 2 870px;
+  }
+
+  .checkout .checkout__info {
+    flex: 1 1 auto;
   }
 }

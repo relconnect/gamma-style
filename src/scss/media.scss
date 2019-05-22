@@ -19,6 +19,10 @@
     width: 100%;
   }
 
+  .header__search {
+    width: 100%;
+  }
+
   .search {
     max-width: 450px;
 
@@ -328,16 +332,151 @@
       width: 770px;
       height: 500px;
     }
+
     .contact__info {
       width: 460px;
       height: 400px;
       top: 60px;
     }
+
     .contact__title {
       margin-bottom: 15px;
     }
+
     .contact__row {
       margin-bottom: 0px;
+    }
+  }
+
+  //Product page
+
+  .product {
+    .product__img {
+      img {
+        max-width: 360px;
+        height: 345px;
+      }
+    }
+
+    .product__description {
+      position: relative;
+      justify-content: flex-start;
+
+      .product-name {
+        margin-bottom: 30px;
+      }
+
+      .product-status {
+        margin-bottom: 30px;
+      }
+
+      .product-social {
+        margin-bottom: 30px;
+      }
+
+      .price__block {
+        margin-bottom: 20px;
+      }
+
+      .product-count {
+        position: absolute;
+        bottom: 155px;
+        right: 125px;
+      }
+    }
+  }
+
+  .product__info {
+    .product__slider {
+      height: 300px;
+
+      .vertica__slider {
+        margin-top: 50px;
+
+        .slick-slide {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+
+        .item__img {
+          height: 90px;
+
+          img {
+            height: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  .recommendation__wrap {
+    .rec-slider {
+      .slick-prev {
+        left: -20px;
+        z-index: 2;
+      }
+
+      .slick-next {
+        right: -20px;
+        z-index: 2;
+      }
+    }
+  }
+
+  .best-sale__product {
+    .best-sale {
+      .bs-slider {
+        .slick-prev {
+          left: -20px;
+          z-index: 2;
+        }
+
+        .slick-next {
+          right: -20px;
+          z-index: 2;
+        }
+      }
+    }
+  }
+
+  //Checkout
+  .checkout {
+    .checkout__table {
+      thead {
+        display: none;
+      }
+
+      tbody {
+        tr {
+          position: relative;
+        }
+
+        .checkout__table-product {
+          position: absolute;
+          padding-left: 0;
+          margin-left: 20px;
+          border-bottom: 1px solid rgb(242, 242, 243);
+          max-width: 570px;
+          width: 100%;
+        }
+
+        .checkout__table-dell {
+          position: absolute;
+          padding-left: 0px;
+          margin-left: -65px;
+          margin-top: 20px;
+        }
+
+        .checkout__table-img {
+          padding-top: 25px;
+        }
+      }
+    }
+    .checkout__form-wrap {
+      flex: 1 2 870px;
+    }
+    .checkout__info {
+      flex: 1 1 auto;
     }
   }
 }

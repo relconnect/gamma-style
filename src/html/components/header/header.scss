@@ -79,10 +79,15 @@
 
 //Form style
 
+.header__search {
+  width: 100%;
+}
+
 .search {
   display: flex;
-  width: 600px;
+  max-width: 600px;
   align-items: flex-end;
+  width: 100%;
 
   &__text {
     max-width: 435px;
