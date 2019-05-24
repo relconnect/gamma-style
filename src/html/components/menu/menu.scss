@@ -62,52 +62,59 @@
     font-weight: 300;
     text-transform: uppercase;
     padding-top: 14px;
-    width: 100%;
+    width: max-content;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
 .menu__image {
-  background-position-x: center;
-  background-position-y: 36px;
-  background-repeat: no-repeat;
+  width: fit-content;
+  // background-position-x: center;
+  // background-position-y: 36px;
+  // background-repeat: no-repeat;
 
-  &-ofice {
-    background-image: url(../../../img/menu/office.png);
-  }
+  // &-ofice {
+  //   background-image: url(../../../img/menu/office.png);
+  // }
 
-  &-trade {
-    background-image: url(../../../img/menu/trade.png);
-  }
+  // &-trade {
+  //   background-image: url(../../../img/menu/trade.png);
+  // }
 
-  &-drugstore {
-    background-image: url(../../../img/menu/drugstore.png);
-  }
+  // &-drugstore {
+  //   background-image: url(../../../img/menu/drugstore.png);
+  // }
 
-  &-home {
-    background-image: url(../../../img/menu/home.png);
-  }
+  // &-home {
+  //   background-image: url(../../../img/menu/home.png);
+  // }
 
-  &-bank {
-    background-image: url(../../../img/menu/bank.png);
-  }
+  // &-bank {
+  //   background-image: url(../../../img/menu/bank.png);
+  // }
 
-  &-chair {
-    background-image: url(../../../img/menu/chair.png);
-  }
+  // &-chair {
+  //   background-image: url(../../../img/menu/chair.png);
+  // }
 
-  &-sofa {
-    background-image: url(../../../img/menu/sofa.png);
-  }
+  // &-sofa {
+  //   background-image: url(../../../img/menu/sofa.png);
+  // }
 
-  &-call {
-    background-image: url(../../../img/menu/call-center.png);
-  }
+  // &-call {
+  //   background-image: url(../../../img/menu/call-center.png);
+  // }
 
-  &-mattress {
-    background-image: url(../../../img/menu/mattress.png);
-  }
+  // &-mattress {
+  //   background-image: url(../../../img/menu/mattress.png);
+  // }
 }
 
 //Sub-menu styles

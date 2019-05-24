@@ -1,4 +1,7 @@
 .product {
+  .product__wrap {
+    display: flex;
+  }
   &__info {
     height: 456px;
     display: flex;
