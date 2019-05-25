@@ -1100,6 +1100,10 @@ footer {
   display: contents;
 }
 
+.footer .footer__info-wrap {
+  display: contents;
+}
+
 .menu {
   margin-top: 10px;
 }
@@ -1294,7 +1298,7 @@ footer {
   bottom: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("../../../img/banner/fone.png");
+  background-image: url("../../../img/banner/fone-1920.png");
   background-repeat: no-repeat;
   background-position: center 100px;
   opacity: 0.8;
@@ -1374,6 +1378,16 @@ footer {
 
 .header {
   padding: 10px 0 0 0;
+}
+
+.header.rect .search__button,
+.header.rect .search__text,
+.header.rect .tels-btn {
+  border-radius: unset;
+}
+
+.header.rect .control__top .dropdown__lang .top {
+  border-radius: unset;
 }
 
 .header .wrap__menu {
@@ -6357,5 +6371,261 @@ footer {
 
   .checkout .form__info .form__message {
     padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .header .header__logo {
+    max-width: 100px;
+  }
+
+  .header .inner__wrap {
+    position: relative;
+  }
+
+  .header .header__menu {
+    max-width: 496px;
+    width: 100%;
+  }
+
+  .header .header__nav ul {
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  .header .header__nav ul li {
+    font-size: 16px;
+  }
+
+  .header .header__contact .tels-block {
+    align-items: center;
+  }
+
+  .header .header__contact .header__search {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+  }
+
+  .header .header__contact .header__search .search {
+    width: 100%;
+    max-width: 724px;
+  }
+
+  .header .header__contact .header__search .search__text {
+    max-width: 724px;
+  }
+
+  .header .control {
+    flex-direction: column;
+  }
+
+  .header .control .control__box.basket {
+    margin-right: 0px;
+  }
+
+  .header .control .control__top {
+    padding-top: 0;
+  }
+
+  .header .control .control__bot {
+    margin-top: 10px;
+  }
+
+  .menu {
+    margin-top: 70px;
+  }
+
+  .menu .menu__image {
+    display: none;
+  }
+
+  .menu .menu__item:first-child {
+    padding-left: 10px;
+  }
+
+  .menu .menu__item:last-child {
+    padding-right: 10px;
+  }
+
+  .menu .menu__item {
+    flex-basis: unset;
+  }
+
+  .menu .menu__list {
+    height: 54px;
+  }
+
+  .menu .menu__item:after {
+    height: 35px;
+  }
+
+  .menu .menu__link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu .sub-menu__col {
+    max-width: 295px;
+    width: 100%;
+    margin-left: 15px;
+  }
+
+  .menu .sub-menu {
+    top: 51px;
+  }
+
+  .banner__wrap {
+    padding-top: 20px;
+  }
+
+  .banner__wrap .banner {
+    flex-direction: column-reverse;
+    margin-bottom: 145px;
+  }
+
+  .banner__wrap .banner__block-sm {
+    margin-left: 0px;
+    display: flex;
+    flex: 1 1 auto;
+    margin-bottom: 30px;
+  }
+
+  .banner__wrap .banner__small:last-of-type {
+    margin-left: 20px;
+  }
+
+  .banner__wrap .banner__small:first-child {
+    margin-bottom: 0px;
+  }
+
+  .banner__wrap .banner__block-lg {
+    flex: 1 1 auto;
+    max-height: 346px;
+  }
+
+  .banner__wrap .banner__block-lg img {
+    max-height: 346px;
+  }
+
+  .banner__wrap .banner__advanteg {
+    width: 90%;
+    bottom: -18%;
+    left: 6%;
+  }
+
+  .banner__wrap .banner__bg-img {
+    background-image: url(../../../img/banner/fone-768.png);
+    background-position: center 0px;
+  }
+
+  .category .category__block-wrap {
+    margin-bottom: 0px;
+  }
+
+  .category .category__block-wrap:first-of-type {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .category .category__block-wrap .category__item {
+    flex: unset;
+  }
+
+  .category .category__block-wrap .category__item .category__item-title {
+    margin-top: 15px;
+  }
+
+  .category .category__block-wrap .category__item .category__item-links a {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .category .category__block-wrap .category__item .category__item-button {
+    max-width: 180px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .category .category__block-wrap .category__item .category__item-button a {
+    padding-left: 45px;
+    padding-top: 7px;
+  }
+
+  .category .category__block-ml {
+    margin-left: 0px;
+  }
+
+  .category .category__block-mr {
+    margin-right: 0px;
+  }
+
+  .category .category__item {
+    width: 352px;
+    margin-bottom: 25px;
+  }
+
+  .category .banner__category {
+    max-width: 352px;
+  }
+
+  .category .category__row .banner__block {
+    position: absolute;
+    flex: unset;
+    max-width: 352px;
+    max-height: 460px;
+  }
+
+  .r-tabs .r-tabs-accordion-title {
+    display: none;
+  }
+
+  .r-tabs .r-tabs-nav {
+    display: block;
+  }
+
+  #bx-slider {
+    max-width: 600px;
+  }
+
+  #bx-slider .slick-next {
+    right: -50px;
+  }
+
+  #bx-slider .slick-prev {
+    left: -53px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .footer__content {
+    display: flex;
+    margin-right: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer .footer__content .footer__text {
+    margin-left: 30px;
+  }
+
+  .footer .footer__info-wrap {
+    display: flex;
+  }
+
+  .footer .footer_coll-wrap {
+    display: contents;
+  }
+
+  .footer .footer__col--social {
+    max-width: 124px;
+    min-width: unset;
   }
 }

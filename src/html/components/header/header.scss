@@ -1,6 +1,20 @@
 .header {
   padding: 10px 0 0 0;
+  &.rect {
+    .search__button,
+    .search__text,
+    .tels-btn {
+      border-radius: unset;
+    }
 
+    .control__top {
+      .dropdown__lang {
+        .top {
+          border-radius: unset;
+        }
+      }
+    }
+  }
   .wrap__menu {
     display: flex;
     flex-direction: column;
