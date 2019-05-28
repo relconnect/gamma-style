@@ -16,178 +16,278 @@
     margin: 0 auto;
   }
 
-  .basket__table {
-    background-color: $white;
-    width: 100%;
-    border-collapse: collapse; /* Убираем двойные линии между ячейками */
-    tr {
-      padding: 3px; /* Поля вокруг содержимого таблицы */
-      
-      /* Параметры рамки */
-      text-align: left; /* Выравнивание по левому краю */
-      border-bottom: 3px solid #f2f2f3;
-    }
+  // .basket__table {
+  //   background-color: $white;
+  //   width: 100%;
+  //   border-collapse: collapse; /* Убираем двойные линии между ячейками */
+  //   tr {
+  //     padding: 3px; /* Поля вокруг содержимого таблицы */
 
-    td {
-      padding-left: 40px;
+  //     /* Параметры рамки */
+  //     text-align: left; /* Выравнивание по левому краю */
+  //     border-bottom: 3px solid #f2f2f3;
+  //   }
+
+  //   td {
+  //     padding-left: 40px;
+  //     box-sizing: border-box;
+  //   }
+
+  //   thead {
+  //     tr {
+  //       height: 50px;
+  //       font-size: 17px;
+  //       font-family: "Bahnschrift";
+  //       color: $main-color;
+  //       line-height: 1.75;
+  //       text-align: left;
+  //     }
+  //   }
+
+  //   tbody {
+  //     td {
+  //       box-sizing: border-box;
+  //       min-width: 120px;
+  //     }
+  .basket__title {
+    display: flex;
+    background-color: $white;
+    border-bottom: 3px solid #f2f2f3;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+
+    font-size: 17px;
+    font-family: "Bahnschrift";
+    color: $main-color;
+
+    .basket__item-img {
+      max-width: 180px;
+      width: 100%;
+      // flex: 1 1 180px;
+      // min-width: 180px;
+    }
+    .basket__item-name {
+      max-width: 520px;
+      width: 100%;
+      // flex: 1 1 520px;
+      // justify-content: center;
+    }
+    .basket__item-price {
+      align-items: flex-start;
+      // flex: 1 1 130px;
+      max-width: 130px;
+      width: 100%;
+    }
+    .basket__item-quantity {
+      // flex: 1 1 220px;
+      max-width: 185px;
+      width: 100%;
+      justify-content: flex-start;
+      padding-left: 30px;
       box-sizing: border-box;
     }
+    .basket__item-total {
+      // flex: 1 1 185px;
+      max-width: 185px;
+      width: 100%;
+    }
+    .basket__item-dell {
+      // flex: 1 1 auto;
+      width: 28px;
+    }
+  }
+  .basket_item-wrap {
+    display: contents;
+  }
+  .basket_wrap-inner {
+    display: contents;
+  }
 
-    thead {
-      tr {
-        height: 50px;
-        font-size: 17px;
-        font-family: "Bahnschrift";
-        color: $main-color;
-        line-height: 1.75;
-        text-align: left;
+  .basket__item {
+    display: flex;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    background-color: $white;
+    border-bottom: 3px solid #f2f2f3;
+    position: relative;
+  }
+  .basket__item-img {
+    margin-right: 30px;
+    // flex: 1 1 180px;
+    max-width: 180px;
+    width: 100%;
+
+    a {
+      display: block;
+      max-height: 180px;
+      width: fit-content;
+
+      img {
+        max-width: 180px;
+        max-height: 180px;
       }
     }
+  }
 
-    tbody {
-      td {
-        box-sizing: border-box;
-        min-width: 120px;
+  .basket__item-name {
+    //  max-width: 520px;
+    // flex: 1 1 520px;
+    max-width: 520px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    margin-right: 15px;
+    min-width: 200px;
+    a {
+      display: block;
+
+      p {
+        font-size: 20px;
+        font-family: $main-font;
+        color: rgb(28, 28, 28);
+        line-height: 1.5;
+        transition: all 0.2s linear;
       }
 
-      .basket__table-img {
-        padding: 40px 0px 40px 40px;
-        width: 16%;
-
-        a {
-          display: block;
-          max-height: 180px;
-          width: fit-content;
-
-          img {
-            max-width: 180px;
-            max-height: 180px;
-          }
-        }
-      }
-
-      .basket__table-product {
-        // width: 520px;
-
-        a {
-          display: block;
-          
-
-          p {
-            font-size: 20px;
-            font-family: $main-font;
-            color: rgb(28, 28, 28);
-            line-height: 1.5;
-            transition: all 0.2s linear;
-          }
-          
-          &:hover {
-            p {
-              color: $main-color;
-            }
-          }
-        }
-      }
-
-      .basket__table-price {
-        .currency {
-          padding-left: 6px;
-        }
-
-        .basket__price--old,
-        .basket__price--curent {
-          margin: 0;
-        }
-
-        .basket__price--old {
-          font-size: 18px;
-          font-family: "Bahnschrift";
-          color: rgb(154, 154, 154);
-          font-weight: bold;
-          text-decoration: line-through;
-          line-height: 1.5;
-        }
-
-        .basket__price--curent {
-          font-size: 26px;
-          font-family: $main-font;
-          color: $text-color;
-          font-weight: bold;
-          // margin-bottom: 30px;
-        }
-      }
-
-      .basket__table-quantity {
-        .product__quantity {
-          display: flex;
-          align-items: center;
-
-          .minus {
-            cursor: pointer;
-
-            img {
-              width: 15px;
-            }
-          }
-
-          .plus {
-            cursor: pointer;
-
-            img {
-              width: 15px;
-              // zoom: 1.2;
-            }
-          }
-
-          .number {
-            input {
-              text-align: center;
-              width: 56px;
-              font-size: 22px;
-              font-family: $PTSans-bold;
-              color: rgb(34, 34, 34);
-              line-height: 2.273;
-              border: none;
-              margin-left: 10px;
-              margin-right: 10px;
-              border-bottom: 2px solid $main-color;
-            }
-          }
-        }
-      }
-
-      .basket__table-total {
-        .total__price {
-          font-size: 26px;
-          font-family: $main-font;
-          color: $text-color;
-          font-weight: bold;
-
-          .currency {
-            padding-left: 6px;
-          }
-        }
-      }
-
-      .basket__table-dell {
-        .product__dell {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 4px;
-          background-color: rgb(255, 0, 0);
-          width: 28px;
-          height: 28px;
-          cursor: pointer;
-
-          img {
-            width: 14px;
-            height: 14px;
-          }
+      &:hover {
+        p {
+          color: $main-color;
         }
       }
     }
   }
+
+  .basket__item-price {
+    // width: 130px;
+    // flex: 1 1 130px;
+    max-width: 130px;
+    width: 100%;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .currency {
+      padding-left: 6px;
+    }
+
+    .basket__price--old,
+    .basket__price--curent {
+      margin: 0;
+    }
+
+    .basket__price--old {
+      font-size: 18px;
+      font-family: "Bahnschrift";
+      color: rgb(154, 154, 154);
+      font-weight: bold;
+      text-decoration: line-through;
+      line-height: 1.5;
+    }
+
+    .basket__price--curent {
+      font-size: 26px;
+      font-family: $main-font;
+      color: $text-color;
+      font-weight: bold;
+      // margin-bottom: 30px;
+    }
+  }
+
+  .basket__item-quantity {
+    // width: 185px;
+    // flex: 1 1 185px;
+    max-width: 185px;
+    width: 100%;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    .product__quantity {
+      display: flex;
+      align-items: center;
+
+      .minus {
+        cursor: pointer;
+
+        img {
+          width: 15px;
+        }
+      }
+
+      .plus {
+        cursor: pointer;
+
+        img {
+          width: 15px;
+          // zoom: 1.2;
+        }
+      }
+
+      .number {
+        input {
+          text-align: center;
+          width: 56px;
+          font-size: 22px;
+          font-family: $PTSans-bold;
+          color: rgb(34, 34, 34);
+          line-height: 2.273;
+          border: none;
+          margin-left: 10px;
+          margin-right: 10px;
+          border-bottom: 2px solid $main-color;
+        }
+      }
+    }
+  }
+
+  .basket__item-total {
+    // width: 185px;
+    // flex: 1 1 185px;
+    max-width: 185px;
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    .total__price {
+      font-size: 26px;
+      font-family: $main-font;
+      color: $text-color;
+      font-weight: bold;
+
+      .currency {
+        padding-left: 6px;
+      }
+    }
+  }
+
+  .basket__item-dell {
+    display: flex;
+    align-items: center;
+    // flex: 1 1 auto;
+    width: 28px;
+    .product__dell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      background-color: rgb(255, 0, 0);
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+
+      img {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+  //   }
+  // }
 
   .basket__control {
     display: flex;
@@ -241,15 +341,10 @@
         border-style: solid;
         width: 247px;
         height: 50px;
-        
 
         &:hover {
           color: $white;
-          background-image: linear-gradient(
-          90deg,
-          rgb(87, 159, 24) 2%,
-          rgb(104, 183, 29) 100%
-        );
+          background-image: linear-gradient(90deg, rgb(87, 159, 24) 2%, rgb(104, 183, 29) 100%);
         }
       }
     }
@@ -259,21 +354,13 @@
 
       .basket__btn--chekout {
         color: rgb(255, 255, 255);
-        background-image: linear-gradient(
-          90deg,
-          rgb(87, 159, 24) 2%,
-          rgb(104, 183, 29) 100%
-        );
+        background-image: linear-gradient(90deg, rgb(87, 159, 24) 2%, rgb(104, 183, 29) 100%);
         border: none;
         width: 251px;
         height: 50px;
 
         &:hover {
-          background-image: linear-gradient(
-          90deg,
-          rgb(104, 183, 29) 2%,
-          rgb(87, 159, 24) 100%
-        );
+          background-image: linear-gradient(90deg, rgb(104, 183, 29) 2%, rgb(87, 159, 24) 100%);
         }
       }
     }

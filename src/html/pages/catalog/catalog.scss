@@ -290,6 +290,7 @@
   &__banner {
     margin-bottom: 10px;
     position: relative;
+    cursor: pointer;
     &-img {
       width: 100%;
     }
@@ -361,6 +362,9 @@
   .catalog__baner--left {
     display: none;
   }
+  .catalog__baner--mobile {
+    display: none;
+  }
 }
  //Выпадающее меню на странице каталога
  .pop-up__submenu {
@@ -393,7 +397,7 @@
       position: absolute;
       background: url(../../../img/arrow/arrow-active-top.svg) no-repeat 50%;
       background-size: 60%;
-      z-index: 1000;
+      z-index: 100;
       top: 0;
       right: -30px;
       transform: rotate(90deg);

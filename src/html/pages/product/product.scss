@@ -2,15 +2,24 @@
   .product__wrap {
     display: flex;
   }
+  .product-img__wrap {
+    display:contents;
+  }
   &__info {
     height: 456px;
     display: flex;
     margin-bottom: 50px;
+    justify-content:space-between;
+
     .product__slider {
       display: flex;
       align-items: center;
       margin-right: 20px;
-      .vertica__slider {
+      .horizontal_slider {
+        display: none;
+      }
+     
+      .vertica__slider,.horizontal_slider {
         .item__img {
           width: 100px;
           height: 100px;
@@ -271,6 +280,9 @@
         margin-top: 0px;
         margin-bottom: 0px;
         text-align: center;
+        width: max-content;
+        margin: 0 auto;
+        
       }
 
       &-text {
@@ -278,6 +290,49 @@
         font-family: $main-font-light;
         color: rgb(28, 28, 28);
         margin-bottom: 10px;
+      }    
+      .feature-text {
+        position: relative;
+        &:before {
+          content: url('../../../img/icons/list-img.png');
+          position: absolute;
+    left: -15px;
+    top: -2px;
+        }
+      }
+      
+    }
+    .feature-garanty {
+      .feature-title {
+        position: relative;
+        &::before {
+          content: url("../../../img/icons/garanty.png");          
+        position: absolute;
+        left: -40px;
+        top: -3px;
+        }
+      }
+    }
+    .feature-delivery {
+      .feature-title {
+        position: relative;
+        &::before {
+          content: url("../../../img/icons/delivery.png");          
+        position: absolute;
+        left: -40px;
+        top: -3px;
+        }
+      }
+    }
+    .feature-payment {
+      .feature-title {
+        position: relative;
+        &::before {
+          content: url("../../../img/icons/payment.png");          
+        position: absolute;
+        left: -40px;
+        top: -3px;
+        }
       }
     }
   }
