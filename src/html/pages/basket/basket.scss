@@ -68,18 +68,21 @@
       // flex: 1 1 180px;
       // min-width: 180px;
     }
+
     .basket__item-name {
       max-width: 520px;
       width: 100%;
       // flex: 1 1 520px;
       // justify-content: center;
     }
+
     .basket__item-price {
       align-items: flex-start;
       // flex: 1 1 130px;
       max-width: 130px;
       width: 100%;
     }
+
     .basket__item-quantity {
       // flex: 1 1 220px;
       max-width: 185px;
@@ -88,19 +91,23 @@
       padding-left: 30px;
       box-sizing: border-box;
     }
+
     .basket__item-total {
       // flex: 1 1 185px;
       max-width: 185px;
       width: 100%;
     }
+
     .basket__item-dell {
       // flex: 1 1 auto;
       width: 28px;
     }
   }
+
   .basket_item-wrap {
     display: contents;
   }
+
   .basket_wrap-inner {
     display: contents;
   }
@@ -115,6 +122,7 @@
     border-bottom: 3px solid #f2f2f3;
     position: relative;
   }
+
   .basket__item-img {
     margin-right: 30px;
     // flex: 1 1 180px;
@@ -142,6 +150,7 @@
     display: flex;
     margin-right: 15px;
     min-width: 200px;
+
     a {
       display: block;
 
@@ -171,6 +180,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+
     .currency {
       padding-left: 6px;
     }
@@ -207,6 +217,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
+
     .product__quantity {
       display: flex;
       align-items: center;
@@ -246,13 +257,12 @@
   }
 
   .basket__item-total {
-    // width: 185px;
-    // flex: 1 1 185px;
     max-width: 185px;
     width: 100%;
     margin-right: 20px;
     display: flex;
     align-items: center;
+
     .total__price {
       font-size: 26px;
       font-family: $main-font;
@@ -268,8 +278,9 @@
   .basket__item-dell {
     display: flex;
     align-items: center;
-    // flex: 1 1 auto;
+
     width: 28px;
+
     .product__dell {
       display: flex;
       justify-content: center;
@@ -286,8 +297,6 @@
       }
     }
   }
-  //   }
-  // }
 
   .basket__control {
     display: flex;

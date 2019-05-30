@@ -849,6 +849,10 @@ footer {
   padding-bottom: 30px;
 }
 
+.footer .footer__logo-link {
+  display: block;
+}
+
 .footer__copyright {
   display: flex;
   background-color: #515f6b;
@@ -1104,6 +1108,10 @@ footer {
   display: contents;
 }
 
+.footer .footer__mob {
+  display: none;
+}
+
 .menu {
   margin-top: 10px;
 }
@@ -1180,6 +1188,10 @@ footer {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.menu .menu__mob {
+  display: none;
 }
 
 .menu__image {
@@ -1337,6 +1349,10 @@ footer {
   left: 7%;
 }
 
+.banner .banner__advanteg-mob {
+  display: none;
+}
+
 .breadcrumbs__list {
   display: flex;
   margin: 0;
@@ -1381,6 +1397,7 @@ footer {
 }
 
 .header.rect .search__button,
+.header.rect .search__button--mob,
 .header.rect .search__text,
 .header.rect .tels-btn {
   border-radius: unset;
@@ -1464,6 +1481,10 @@ footer {
 
 .header__logo-link {
   display: block;
+}
+
+.header .header__contact .tels__mobile {
+  display: none;
 }
 
 .header__search {
@@ -1555,6 +1576,19 @@ footer {
   font-size: 18px;
   font-family: "Bahnschrift";
   color: white;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+}
+
+.search__button--mob {
+  display: none;
+  background-image: url("../../../img/icons/searcher.svg");
+  background-size: 60%;
+  background-color: #67b81d;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 45px;
+  width: 58px;
   border-radius: 0px 10px 10px 0px;
   border: none;
 }
@@ -3840,6 +3874,7 @@ footer {
 
 .checkout__container {
   display: flex;
+  flex-direction: row;
 }
 
 .checkout .checkout__info {
@@ -3909,90 +3944,106 @@ footer {
   flex: 1 1 auto;
 }
 
-.checkout .checkout__table {
-  background-color: white;
-  width: 100%;
-  border-collapse: collapse;
-  /* Убираем двойные линии между ячейками */
-}
-
-.checkout .checkout__table tr {
-  padding: 3px;
-  /* Поля вокруг содержимого таблицы */
-  /* Параметры рамки */
-  text-align: left;
-  /* Выравнивание по левому краю */
-  border-bottom: 3px solid #f2f2f3;
-}
-
-.checkout .checkout__table td {
-  padding-left: 20px;
-  box-sizing: border-box;
-}
-
-.checkout .checkout__table thead tr {
-  height: 50px;
-  font-size: 17px;
-  font-family: "Bahnschrift";
+.checkout .basket__title {
+  display: flex;
+  padding: 20px;
+  font-size: 16px;
+  font-family: "BahnschriftLight";
   color: #67b81d;
   line-height: 1.75;
-  text-align: left;
+  background-color: white;
+  margin-bottom: 3px;
 }
 
-.checkout .checkout__table tbody td {
-  box-sizing: border-box;
+.checkout .basket__title .checkout__item-img {
+  width: 15%;
 }
 
-.checkout .checkout__table tbody .checkout__table-img {
-  padding: 40px 0px 40px 20px;
+.checkout .basket__title .checkout__item-product {
+  width: 38%;
+  padding-left: 20px;
+}
+
+.checkout .basket__title .checkout__item-price {
+  width: 13%;
+}
+
+.checkout .basket__title .checkout__item-quantity {
   width: 16%;
 }
 
-.checkout .checkout__table tbody .checkout__table-img a {
-  display: block;
-  max-height: 180px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.checkout .checkout__item {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 45px;
+  background-color: white;
+  border-bottom: 3px solid #f2f2f3;
 }
 
-.checkout .checkout__table tbody .checkout__table-img a img {
+.checkout .checkout__item .checkout__inner-wrap,
+.checkout .checkout__item .checkout__item-wrap {
+  display: contents;
+}
+
+.checkout .checkout__item .checkout__item-img {
+  width: 15%;
+}
+
+.checkout .checkout__item .checkout__item-img a {
+  display: block;
+  width: 100%;
+}
+
+.checkout .checkout__item .checkout__item-img a img {
+  width: 100%;
   max-width: 180px;
   max-height: 180px;
 }
 
-.checkout .checkout__table tbody .checkout__table-product {
-  width: 490px;
-  padding-left: 20px;
+.checkout .checkout__item .checkout__item-product {
+  width: 38%;
+  display: flex;
+  align-items: center;
 }
 
-.checkout .checkout__table tbody .checkout__table-product a {
+.checkout .checkout__item .checkout__item-product a {
   display: block;
 }
 
-.checkout .checkout__table tbody .checkout__table-product a p {
+.checkout .checkout__item .checkout__item-product a p {
   font-size: 20px;
   font-family: "Bahnschrift";
   color: #1c1c1c;
+  padding-left: 20px;
+  padding-right: 20px;
   line-height: 1.5;
   transition: all 0.2s linear;
-  max-width: 470px;
 }
 
-.checkout .checkout__table tbody .checkout__table-product a:hover p {
+.checkout .checkout__item .checkout__item-product a:hover p {
   color: #67b81d;
 }
 
-.checkout .checkout__table tbody .checkout__table-price .currency {
+.checkout .checkout__item .checkout__item-price {
+  width: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout .checkout__item .checkout__item-price .currency {
   padding-left: 6px;
 }
 
-.checkout .checkout__table tbody .checkout__table-price .checkout__price--old,
-.checkout .checkout__table tbody .checkout__table-price .checkout__price--curent {
+.checkout .checkout__item .checkout__item-price .checkout__price--old,
+.checkout .checkout__item .checkout__item-price .checkout__price--curent {
   margin: 0;
 }
 
-.checkout .checkout__table tbody .checkout__table-price .checkout__price--old {
+.checkout .checkout__item .checkout__item-price .checkout__price--old {
   font-size: 18px;
   font-family: "Bahnschrift";
   color: #9a9a9a;
@@ -4001,35 +4052,43 @@ footer {
   line-height: 1.5;
 }
 
-.checkout .checkout__table tbody .checkout__table-price .checkout__price--curent {
+.checkout .checkout__item .checkout__item-price .checkout__price--curent {
   font-size: 26px;
   font-family: "Bahnschrift";
   color: black;
   font-weight: bold;
 }
 
-.checkout .checkout__table tbody .checkout__table-quantity .product__quantity {
+.checkout .checkout__item .checkout__item-quantity {
+  width: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.checkout .checkout__item .checkout__item-quantity .product__quantity {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.checkout .checkout__table tbody .checkout__table-quantity .product__quantity .minus {
+.checkout .checkout__item .checkout__item-quantity .product__quantity .minus {
   cursor: pointer;
 }
 
-.checkout .checkout__table tbody .checkout__table-quantity .product__quantity .minus img {
+.checkout .checkout__item .checkout__item-quantity .product__quantity .minus img {
   width: 15px;
 }
 
-.checkout .checkout__table tbody .checkout__table-quantity .product__quantity .plus {
+.checkout .checkout__item .checkout__item-quantity .product__quantity .plus {
   cursor: pointer;
 }
 
-.checkout .checkout__table tbody .checkout__table-quantity .product__quantity .plus img {
+.checkout .checkout__item .checkout__item-quantity .product__quantity .plus img {
   width: 15px;
 }
 
-.checkout .checkout__table tbody .checkout__table-quantity .product__quantity .number input {
+.checkout .checkout__item .checkout__item-quantity .product__quantity .number input {
   text-align: center;
   width: 56px;
   font-size: 22px;
@@ -4042,22 +4101,32 @@ footer {
   border-bottom: 2px solid #67b81d;
 }
 
-.checkout .checkout__table tbody .checkout__table-total .total__price {
+.checkout .checkout__item .checkout__item-total {
+  width: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkout .checkout__item .checkout__item-total .total__price {
   font-size: 26px;
   font-family: "Bahnschrift";
   color: black;
   font-weight: bold;
 }
 
-.checkout .checkout__table tbody .checkout__table-total .total__price .currency {
+.checkout .checkout__item .checkout__item-total .total__price .currency {
   padding-left: 6px;
 }
 
-.checkout .checkout__table tbody .checkout__table-dell {
-  width: 75px;
+.checkout .checkout__item .checkout__item-del {
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.checkout .checkout__table tbody .checkout__table-dell .product__dell {
+.checkout .checkout__item .checkout__item-del .product__dell {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4068,7 +4137,7 @@ footer {
   cursor: pointer;
 }
 
-.checkout .checkout__table tbody .checkout__table-dell .product__dell img {
+.checkout .checkout__item .checkout__item-del .product__dell img {
   width: 17px;
   height: 17px;
 }
@@ -4292,10 +4361,6 @@ footer {
   box-sizing: border-box;
   border-radius: 10px;
   overflow: hidden;
-}
-
-.catalog__products:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
 }
 
 .catalog .page__title-text {
@@ -4553,10 +4618,6 @@ footer {
   font-size: 18px;
   font-family: "BahnschriftLight";
   color: black;
-}
-
-.catalog .product__item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
 }
 
 .catalog__popup-menu {
@@ -6105,35 +6166,58 @@ footer {
     z-index: 2;
   }
 
-  .checkout .checkout__table thead {
+  .checkout .basket__title {
     display: none;
   }
 
-  .checkout .checkout__table tbody tr {
+  .checkout .checkout__item {
+    padding: 20px;
     position: relative;
   }
 
-  .checkout .checkout__table tbody .checkout__table-product {
+  .checkout .checkout__item .checkout__item-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .checkout .checkout__item .checkout__inner-wrap {
+    display: flex;
+    height: 100%;
+  }
+
+  .checkout .checkout__item .checkout__item-del {
     position: absolute;
-    padding-left: 0;
+    width: auto;
+    right: 20px;
+    top: 20px;
+  }
+
+  .checkout .checkout__item .checkout__item-img {
+    width: 20%;
+  }
+
+  .checkout .checkout__item .checkout__item-product {
+    width: 95%;
     margin-left: 20px;
-    border-bottom: 1px solid #f2f2f3;
-    max-width: 570px;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    border-bottom: 3px solid #f2f2f3;
   }
 
-  .checkout .checkout__table tbody .checkout__table-dell {
-    position: absolute;
+  .checkout .checkout__item .checkout__item-product a p {
+    margin-top: 0px;
     padding-left: 0px;
-    margin-left: -65px;
-    margin-top: 20px;
-    width: unset;
   }
 
-  .checkout .checkout__table tbody .checkout__table-img {
-    padding-top: 25px;
+  .checkout .checkout__item .checkout__item-price {
+    width: 33.33%;
+  }
+
+  .checkout .checkout__item .checkout__item-quantity {
+    width: 33.33%;
+  }
+
+  .checkout .checkout__item .checkout__item-total {
+    width: 33.33%;
   }
 
   .checkout .checkout__form-wrap {
@@ -6313,6 +6397,10 @@ footer {
 
   .header .control .control__box {
     margin-right: 20px;
+  }
+
+  .category__row .banner__block {
+    min-width: 240px;
   }
 
   .menu .menu__link {
@@ -6527,6 +6615,10 @@ footer {
     width: 440px;
   }
 
+  .checkout .checkout__item .checkout__item-img {
+    width: 30%;
+  }
+
   .checkout .form__info {
     flex-wrap: wrap;
   }
@@ -6691,6 +6783,10 @@ footer {
 
   .header .header__logo {
     max-width: 100px;
+  }
+
+  .header .layer {
+    height: 170px;
   }
 
   .header .inner__wrap {
@@ -7243,5 +7339,345 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     margin-right: 20px;
+  }
+
+  .checkout .checkout__container {
+    flex-direction: column-reverse;
+  }
+
+  .checkout .checkout__info {
+    margin-bottom: 30px;
+    margin-left: 0px;
+    max-width: unset;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .header {
+    padding-top: 10px;
+  }
+
+  .header .header__menu {
+    display: none;
+  }
+
+  .header .inner__wrap {
+    height: 146px;
+  }
+
+  .header .header__contact .header__search {
+    width: calc(100% - 120px);
+    bottom: 0px;
+    right: 0;
+    left: unset;
+  }
+
+  .header .header__contact .header__search .search__text {
+    padding-left: 10px;
+  }
+
+  .header .header__contact .header__search .search__text::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+
+  .header .header__contact .header__search .search__text:-ms-input-placeholder {
+    font-size: 14px;
+  }
+
+  .header .header__contact .header__search .search__text::-ms-input-placeholder {
+    font-size: 14px;
+  }
+
+  .header .header__contact .header__search .search__text::placeholder {
+    font-size: 14px;
+  }
+
+  .header .header__contact .header__search .search {
+    max-width: 100%;
+  }
+
+  .header .header__contact .header__search .search__button {
+    display: none;
+  }
+
+  .header .header__contact .header__search .search__button--mob {
+    display: block;
+  }
+
+  .header .header__contact .control {
+    right: 10px;
+  }
+
+  .header .header__contact .tels {
+    display: none;
+  }
+
+  .header .header__contact .tels-btn {
+    display: none;
+  }
+
+  .header .header__contact .tels__mobile {
+    width: 34px;
+    display: block;
+  }
+
+  .header .header__contact .tels__mobile img {
+    width: 100%;
+  }
+
+  .header .header__contact .tels-block {
+    position: absolute;
+    right: 100px;
+    display: flex;
+  }
+
+  .menu {
+    margin-top: 0;
+    width: 100px;
+    position: absolute;
+    top: 112px;
+    left: 10px;
+  }
+
+  .menu .container {
+    display: none;
+  }
+
+  .menu .menu__mob {
+    display: block;
+  }
+
+  .menu .menu__button--mob {
+    width: 100px;
+    height: 42px;
+    background-image: linear-gradient(90deg, #559f18, #67b81d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menu .menu__button--mob .button__tetx--mob {
+    font-size: 18px;
+    font-family: "BahnschriftLight";
+    color: white;
+  }
+
+  .menu .menu__list--mob {
+    display: none;
+    position: relative;
+    z-index: 1;
+    width: calc(100vw - 20px);
+    padding-left: 0px;
+    box-sizing: border-box;
+    background-color: #67b81d;
+  }
+
+  .menu .menu__list--mob .menu__item--mob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    position: relative;
+  }
+
+  .menu .menu__list--mob .menu__item--mob a {
+    font-size: 18px;
+    font-family: "BahnschriftLight";
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .menu .menu__list--mob .menu__item--mob a:after {
+    content: "";
+    position: absolute;
+    background: url("../img/arrow/arrow-bot-white.svg");
+    height: 20px;
+    width: 20px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    right: -30px;
+    top: 3px;
+  }
+
+  .menu .menu__list--mob .menu__item--mob:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #fff;
+    width: 90%;
+    bottom: 0;
+  }
+
+  .menu .menu__list--mob .menu__item--mob:last-of-type:before {
+    content: unset;
+  }
+
+  .footer .footer_coll-wrap {
+    display: none;
+  }
+
+  .footer .footer__content {
+    flex-direction: column;
+  }
+
+  .footer .footer__content .footer__text {
+    margin-left: 0px;
+  }
+
+  .footer .footer__mob {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer .footer__mob .footer__cross-img {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    transition: all 0.1s linear;
+  }
+
+  .footer .footer__mob .footer__cross-img.show {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .footer .footer__mob .footer__mob--clients {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    position: relative;
+  }
+
+  .footer .footer__mob .footer__mob--about {
+    border-bottom: 1px solid white;
+    position: relative;
+  }
+
+  .footer .footer__mob .footer__mob--contact {
+    position: relative;
+    border-bottom: 1px solid white;
+  }
+
+  .footer .footer__mob .footer__mob--contact .tel {
+    font-size: 24px;
+    font-family: "BahnschriftLight";
+    letter-spacing: 0.7px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer .footer__mob .footer__col--social {
+    position: relative;
+    max-width: unset;
+  }
+
+  .footer .footer__logo-link img {
+    margin: 0 auto;
+  }
+
+  .stock__buy .stock__button {
+    width: 100px;
+    height: 46px;
+  }
+
+  .stock__buy .stock__button:after {
+    top: 5px;
+    right: 30px;
+  }
+
+  .stock__buy .stock__button span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .catalog .catalog__products .product__item {
+    width: 49%;
+    margin-bottom: 3px;
+  }
+
+  .catalog .catalog__baner--mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catalog .catalog__baner--mobile .catalog__banner {
+    max-height: unset;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .catalog .catalog__banner-btn {
+    top: 150px;
+  }
+
+  .category__list .cat__block {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .stock__buy .stock__button {
+    width: 183px;
+    height: unset;
+  }
+
+  .stock__buy .stock__button:after {
+    top: 8px;
+    right: 20px;
+  }
+
+  .stock__buy .stock__button span {
+    display: inline;
+  }
+
+  .banner__wrap .banner__block-sm {
+    flex-direction: column;
+  }
+
+  .banner__wrap .banner__small:last-of-type {
+    margin-left: 0px;
+  }
+
+  .banner__wrap .banner__small {
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+    max-width: 747px;
+  }
+
+  .banner__wrap .banner__small:first-of-type {
+    margin-bottom: 30px;
+  }
+
+  .banner__wrap .banner__advanteg {
+    bottom: -9%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .catalog .catalog__controls {
+    flex-direction: column;
+  }
+
+  .catalog .catalog__controls .sort {
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+
+  .catalog .catalog__products .product__item {
+    width: 100%;
   }
 }

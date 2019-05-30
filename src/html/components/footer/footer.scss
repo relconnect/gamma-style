@@ -8,6 +8,10 @@ footer {
   padding-top: 45px;
   padding-bottom: 30px;
 
+  .footer__logo-link {
+    display: block;
+  }
+
   &__copyright {
     display: flex;
     background-color: $footer-color;
@@ -283,5 +287,8 @@ footer {
 
   .footer__info-wrap {
     display: contents;
+  }
+  .footer__mob {
+    display: none;
   }
 }

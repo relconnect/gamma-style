@@ -8,37 +8,35 @@
       <div class="checkout__container">
         <div class="checkout__form-wrap">
           <form action="#">
-            <!-- <table class="checkout__table">
-              <thead>
-                <tr>
-                  <td class="checkout__table-img">Фото</td>
-                  <td class="checkout__table-product">
-                    Товар
-                  </td>
-                  <td class="checkout__table-price">Цена</td>
-                  <td class="checkout__table-quantity">К-во</td>
-                  <td class="checkout__table-all">Всего</td>
-                  <td class="checkout__table-dell"></td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="checkout__table-img">
-                    <a href=""><img src="../../../img/basket-img/basket-image.png" alt=""/></a>
-                  </td>
+            <div class="basket__title">
+              <div class="checkout__item-img">Фото</div>
+              <div class="checkout__item-product">
+                Товар
+              </div>
+              <div class="checkout__item-price">Цена</div>
+              <div class="checkout__item-quantity">К-во</div>
+              <div class="checkout__item-all">Всего</div>
+              <div class="checkout__item-dell"></div>
+            </div>
+            <div class="checkout__item">
+              <div class="checkout__item-img">
+                <a href=""><img src="../../../img/basket-img/basket-image.png" alt=""/></a>
+              </div>
+              <div class="checkout__item-wrap">
+                <div class="checkout__item-product">
+                  <a href="#">
+                    <p>
+                      Кoнферент стол для переговоров
+                    </p>
+                  </a>
+                </div>
 
-                  <td class="checkout__table-product">
-                    <a href="#"
-                      ><p>
-                        Кoнферент стол для переговоров
-                      </p></a
-                    >
-                  </td>
-                  <td class="checkout__table-price">
+                <div class="checkout__inner-wrap">
+                  <div class="checkout__item-price">
                     <p class="checkout__price--old">8500<span class="currency">грн</span></p>
                     <p class="checkout__price--curent">7800<span class="currency">грн</span></p>
-                  </td>
-                  <td class="checkout__table-quantity">
+                  </div>
+                  <div class="checkout__item-quantity">
                     <div class="product__quantity">
                       <div class="minus">
                         <img src="../../../img/icons/minus.svg" alt="" />
@@ -50,18 +48,19 @@
                         <img src="../../../img/icons/plus.svg" alt="" />
                       </div>
                     </div>
-                  </td>
-                  <td class="checkout__table-total">
+                  </div>
+                  <div class="checkout__item-total">
                     <div class="total__price">7800<span class="currency">грн</span></div>
-                  </td>
-                  <td class="checkout__table-dell">
-                    <div class="product__dell">
-                      <img src="../../../img/icons/dell-button-red.svg" alt="" />
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table> -->
+                  </div>
+                </div>
+              </div>
+              <div class="checkout__item-del">
+                <div class="product__dell">
+                  <img src="../../../img/icons/dell-button-red.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
             <div class="checkout__control">
               <div class="checkout__buymore">
                 <a href="#">
@@ -120,8 +119,12 @@
                 <p class="form__message-text">
                   Спасибо за покупки в нашем интернет-магазине!
                 </p>
-                <img class="form__message-img" src="../../../img/checkout/bag-success@1x.png"
-                  srcset="img/checkout/bag-success@1x.png, img/checkout/bag-success@2x.png 2x" alt="bag" />
+                <img
+                  class="form__message-img"
+                  src="../../../img/checkout/bag-success@1x.png"
+                  srcset="img/checkout/bag-success@1x.png, img/checkout/bag-success@2x.png 2x"
+                  alt="bag"
+                />
               </div>
             </div>
           </form>

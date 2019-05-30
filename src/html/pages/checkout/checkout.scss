@@ -17,6 +17,7 @@
 
   &__container {
     display: flex;
+    flex-direction: row;
   }
 
   .checkout__info {
@@ -85,177 +86,206 @@
     flex: 1 1 auto;
   }
 
-  .checkout__table {
+  .basket__title {
+    display: flex;
+    padding: 20px;
+    font-size: 16px;
+    font-family: $main-font-light;
+    color: rgb(103, 184, 29);
+    line-height: 1.75;
     background-color: $white;
-    width: 100%;
-    border-collapse: collapse; /* Убираем двойные линии между ячейками */
-    tr {
-      padding: 3px; /* Поля вокруг содержимого таблицы */
+    margin-bottom: 3px;
 
-      /* Параметры рамки */
-      text-align: left; /* Выравнивание по левому краю */
-      border-bottom: 3px solid #f2f2f3;
+    .checkout__item-img {
+      width: 15%;
     }
 
-    td {
+    .checkout__item-product {
+      width: 38%;
       padding-left: 20px;
-      box-sizing: border-box;
     }
 
-    thead {
-      tr {
-        height: 50px;
-        font-size: 17px;
-        font-family: "Bahnschrift";
-        color: $main-color;
-        line-height: 1.75;
-        text-align: left;
-      }
+    .checkout__item-price {
+      width: 13%;
     }
 
-    tbody {
-      td {
-        box-sizing: border-box;
-        // min-width: 120px;
-      }
+    .checkout__item-quantity {
+      width: 16%;
+    }
+  }
 
-      .checkout__table-img {
-        padding: 40px 0px 40px 20px;
-        width: 16%;
+  .checkout__item {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 45px;
+    background-color: $white;
+    border-bottom: 3px solid #f2f2f3;
 
-        a {
-          display: block;
+    .checkout__inner-wrap,
+    .checkout__item-wrap {
+      display: contents;
+    }
+
+    .checkout__item-img {
+      width: 15%;
+
+      a {
+        display: block;
+        width: 100%;
+
+        img {
+          width: 100%;
+          max-width: 180px;
           max-height: 180px;
-          width: fit-content;
-
-          img {
-            max-width: 180px;
-            max-height: 180px;
-          }
         }
       }
+    }
 
-      .checkout__table-product {
-        width: 490px;
-        padding-left: 20px;
+    .checkout__item-product {
+      width: 38%;
+      display: flex;
+      align-items: center;
 
-        a {
-          display: block;
+      a {
+        display: block;
 
-          p {
-            font-size: 20px;
-            font-family: $main-font;
-            color: rgb(28, 28, 28);
-            line-height: 1.5;
-            transition: all 0.2s linear;
-            max-width: 470px;
-          }
-
-          &:hover {
-            p {
-              color: $main-color;
-            }
-          }
-        }
-      }
-
-      .checkout__table-price {
-        .currency {
-          padding-left: 6px;
-        }
-
-        .checkout__price--old,
-        .checkout__price--curent {
-          margin: 0;
-        }
-
-        .checkout__price--old {
-          font-size: 18px;
-          font-family: "Bahnschrift";
-          color: rgb(154, 154, 154);
-          font-weight: bold;
-          text-decoration: line-through;
+        p {
+          font-size: 20px;
+          font-family: $main-font;
+          color: rgb(28, 28, 28);
+          padding-left: 20px;
+          padding-right: 20px;
           line-height: 1.5;
+          transition: all 0.2s linear;
         }
 
-        .checkout__price--curent {
-          font-size: 26px;
-          font-family: $main-font;
-          color: $text-color;
-          font-weight: bold;
-          // margin-bottom: 30px;
-        }
-      }
-
-      .checkout__table-quantity {
-        .product__quantity {
-          display: flex;
-          align-items: center;
-
-          .minus {
-            cursor: pointer;
-
-            img {
-              width: 15px;
-            }
-          }
-
-          .plus {
-            cursor: pointer;
-
-            img {
-              width: 15px;
-              // zoom: 1.2;
-            }
-          }
-
-          .number {
-            input {
-              text-align: center;
-              width: 56px;
-              font-size: 22px;
-              font-family: $PTSans-bold;
-              color: rgb(34, 34, 34);
-              line-height: 2.273;
-              border: none;
-              margin-left: 10px;
-              margin-right: 10px;
-              border-bottom: 2px solid $main-color;
-            }
+        &:hover {
+          p {
+            color: $main-color;
           }
         }
       }
+    }
 
-      .checkout__table-total {
-        .total__price {
-          font-size: 26px;
-          font-family: $main-font;
-          color: $text-color;
-          font-weight: bold;
+    .checkout__item-price {
+      width: 13%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-          .currency {
-            padding-left: 6px;
-          }
-        }
+      .currency {
+        padding-left: 6px;
       }
 
-      .checkout__table-dell {
-        width: 75px;
-        .product__dell {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50%;
-          border: 2px solid rgb(255, 0, 0);
-          //   background-color:
-          width: 31px;
-          height: 31px;
+      .checkout__price--old,
+      .checkout__price--curent {
+        margin: 0;
+      }
+
+      .checkout__price--old {
+        font-size: 18px;
+        font-family: "Bahnschrift";
+        color: rgb(154, 154, 154);
+        font-weight: bold;
+        text-decoration: line-through;
+        line-height: 1.5;
+      }
+
+      .checkout__price--curent {
+        font-size: 26px;
+        font-family: $main-font;
+        color: $text-color;
+        font-weight: bold;
+        // margin-bottom: 30px;
+      }
+    }
+
+    .checkout__item-quantity {
+      width: 16%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .product__quantity {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .minus {
           cursor: pointer;
 
           img {
-            width: 17px;
-            height: 17px;
+            width: 15px;
           }
+        }
+
+        .plus {
+          cursor: pointer;
+
+          img {
+            width: 15px;
+            // zoom: 1.2;
+          }
+        }
+
+        .number {
+          input {
+            text-align: center;
+            width: 56px;
+            font-size: 22px;
+            font-family: $PTSans-bold;
+            color: rgb(34, 34, 34);
+            line-height: 2.273;
+            border: none;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-bottom: 2px solid $main-color;
+          }
+        }
+      }
+    }
+
+    .checkout__item-total {
+      width: 13%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .total__price {
+        font-size: 26px;
+        font-family: $main-font;
+        color: $text-color;
+        font-weight: bold;
+
+        .currency {
+          padding-left: 6px;
+        }
+      }
+    }
+
+    .checkout__item-del {
+      width: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      .product__dell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid rgb(255, 0, 0);
+        //   background-color:
+        width: 31px;
+        height: 31px;
+        cursor: pointer;
+
+        img {
+          width: 17px;
+          height: 17px;
         }
       }
     }
@@ -316,11 +346,7 @@
 
         &:hover {
           color: $white;
-          background-image: linear-gradient(
-            90deg,
-            rgb(87, 159, 24) 2%,
-            rgb(104, 183, 29) 100%
-          );
+          background-image: linear-gradient(90deg, rgb(87, 159, 24) 2%, rgb(104, 183, 29) 100%);
         }
       }
     }
@@ -330,21 +356,13 @@
 
       .checkout__btn--chekout {
         color: rgb(255, 255, 255);
-        background-image: linear-gradient(
-          90deg,
-          rgb(87, 159, 24) 2%,
-          rgb(104, 183, 29) 100%
-        );
+        background-image: linear-gradient(90deg, rgb(87, 159, 24) 2%, rgb(104, 183, 29) 100%);
         border: none;
         width: 251px;
         height: 50px;
 
         &:hover {
-          background-image: linear-gradient(
-            90deg,
-            rgb(104, 183, 29) 2%,
-            rgb(87, 159, 24) 100%
-          );
+          background-image: linear-gradient(90deg, rgb(104, 183, 29) 2%, rgb(87, 159, 24) 100%);
         }
       }
     }
@@ -390,11 +408,7 @@
         font-family: $main-font-light;
         height: 50px;
         width: 100%;
-        background-image: linear-gradient(
-          90deg,
-          rgb(87, 159, 24) 2%,
-          rgb(104, 183, 29) 100%
-        );
+        background-image: linear-gradient(90deg, rgb(87, 159, 24) 2%, rgb(104, 183, 29) 100%);
         border: none;
         outline: none;
       }

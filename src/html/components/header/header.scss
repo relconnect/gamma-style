@@ -2,6 +2,7 @@
   padding: 10px 0 0 0;
   &.rect {
     .search__button,
+    .search__button--mob,
     .search__text,
     .tels-btn {
       border-radius: unset;
@@ -89,6 +90,14 @@
       display: block;
     }
   }
+  .header__contact {
+    // .tels-block {
+    //   display: none;
+    // }
+    .tels__mobile {
+      display: none;
+    }
+  }
 }
 
 //Form style
@@ -154,6 +163,18 @@
     font-size: $search-button-fs;
     font-family: $main-font;
     color: $icon-text-color;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+  }
+  &__button--mob {
+    display: none;
+    background-image: url("../../../img/icons/searcher.svg");
+    background-size: 60%;
+    background-color: #67b81d;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 45px;
+    width: 58px;
     border-radius: 0px 10px 10px 0px;
     border: none;
   }
