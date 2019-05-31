@@ -264,6 +264,9 @@
           padding-left: 6px;
         }
       }
+      .total__price-text {
+        display: none;
+      }
     }
 
     .checkout__item-del {
@@ -271,7 +274,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      
+
       .product__dell {
         display: flex;
         justify-content: center;

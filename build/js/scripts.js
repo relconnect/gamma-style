@@ -67,8 +67,21 @@ $(document).ready(function() {
           autoplaySpeed: 6000,
           verticalSwiping: true
         }
+      },
+      {
+        breakpoint: 651,
+        settings: {
+          vertical: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          autoplay: false,
+          autoplaySpeed: 6000,
+          verticalSwiping: true,
+          arrows: false
+        }
       }
-
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
@@ -185,6 +198,21 @@ $(document).ready(function() {
           dots: true,
           autoplay: false,
           autoplaySpeed: 6000,
+          verticalSwiping: true,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          vertical: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: false,
+          autoplay: false,
+          autoplaySpeed: 6000,
           verticalSwiping: true
         }
       }
@@ -233,6 +261,21 @@ $(document).ready(function() {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
+          autoplay: false,
+          autoplaySpeed: 6000,
+          verticalSwiping: true,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          vertical: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: false,
           autoplay: false,
           autoplaySpeed: 6000,
           verticalSwiping: true
@@ -348,19 +391,23 @@ $(document).ready(function() {
 
   //Показать/скрыть дополнительное меню вторго уровня в каталоге
   $(function() {
-    $(".sub-menu__item").hover(function(e) {
-      console.log(1);
-      let item = $(this);
-      let link = item.find(".sub-menu__link");
-      link.toggleClass("show");
-      if ($(link).hasClass("show")) {
-        $(link)
-          .next(".sub-menu__list-second")
-          .show();
-      } else {
-        link.next(".sub-menu__list-second").hide();
-      }
-    });
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      return false;
+    } else {
+      $(".sub-menu__item").hover(function(e) {
+        console.log(1);
+        let item = $(this);
+        let link = item.find(".sub-menu__link");
+        link.toggleClass("show");
+        if ($(link).hasClass("show")) {
+          $(link)
+            .next(".sub-menu__list-second")
+            .show();
+        } else {
+          link.next(".sub-menu__list-second").hide();
+        }
+      });
+    }
   });
 
   $(function() {
