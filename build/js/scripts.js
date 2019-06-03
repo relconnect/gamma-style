@@ -140,7 +140,7 @@ $(document).ready(function() {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 766,
         settings: {
           vertical: true,
           slidesToShow: 4,
@@ -199,11 +199,12 @@ $(document).ready(function() {
           autoplay: false,
           autoplaySpeed: 6000,
           verticalSwiping: true,
-          arrows: false
+          arrows: false,
+          vertical: true
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 766,
         settings: {
           vertical: true,
           slidesToShow: 4,
@@ -268,7 +269,7 @@ $(document).ready(function() {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 766,
         settings: {
           vertical: true,
           slidesToShow: 4,
@@ -422,6 +423,45 @@ $(document).ready(function() {
       }
     });
   });
+});
+
+//Показать/скрыть меню на мобилке
+
+$(function() {
+  if (window.matchMedia("(max-width: 767px)").matches) {
+    $(".menu__button--mob").click(function(e) {
+      let item = $(this);
+      let parent = item.parent();
+
+      parent.toggleClass("show");
+      if (parent.hasClass("show")) {
+        parent.find(".menu__list--mob").show();
+      } else {
+        parent.find(".menu__list--mob").hide();
+      }
+    });
+  } else {
+    return false;
+  }
+});
+
+//Показать/скрыть дополнительное меню на мобилке
+$(function() {
+  if (window.matchMedia("(max-width: 767px)").matches) {
+    $(".menu__link--mob").click(function(e) {
+      let item = $(this);
+      let parent = item.parent();
+
+      parent.toggleClass("show");
+      if (parent.hasClass("show")) {
+        parent.find(".sub__menu--mob").show();
+      } else {
+        parent.find(".sub__menu--mob").hide();
+      }
+    });
+  } else {
+    return false;
+  }
 });
 //Настройка range слайдера
 $(document).ready(function() {

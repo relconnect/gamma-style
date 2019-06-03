@@ -1,0 +1,124 @@
+.menu {
+  margin-top: 0;
+  // width: 100px;
+  // position: absolute;
+  // top: 112px;
+  // left: 10px;
+  // .container {
+  //   display: none;
+  // }
+  .menu__box {
+    display: none;
+  }
+  // .menu__desctop {
+  //   display: none;
+  // }
+
+  .menu__mob {
+    display: block;
+  }
+
+  .menu__button--mob {
+    width: 100px;
+    height: 42px;
+    background-image: linear-gradient(90deg, #559f18, #67b81d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .button__tetx--mob {
+      font-size: 18px;
+      font-family: $main-font-light;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .menu__list--mob {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    background-color: rgb(103, 184, 29);
+
+    .menu__item--mob {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      // height: 60px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      position: relative;
+
+      .menu__link--mob {
+        font-size: 18px;
+        font-family: $main-font-light;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          background: url("../img/arrow/arrow-bot-white.svg");
+          height: 20px;
+          width: 20px;
+          background-size: 50%;
+          background-repeat: no-repeat;
+          right: -30px;
+          top: -1px;
+          background-position: center center;
+          transition: all 0.2s linear;
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        background-color: #fff;
+        width: 90%;
+        bottom: 0;
+      }
+
+      &:last-of-type {
+        &:before {
+          content: unset;
+        }
+      }
+
+      &.show {
+        .menu__link--mob {
+          &:after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+
+  .sub__menu--mob {
+    text-align: left;
+    width: 100%;
+    display: none;
+
+    .sub__list--mob {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .sub__item--mob {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .sub__link--mob {
+          font-size: 14px;
+          font-family: $main-font-light;
+          color: rgb(255, 255, 255);
+          text-transform: uppercase;
+          position: relative;
+        }
+      }
+    }
+  }
+}
